@@ -14,6 +14,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Wood_Creaks" ID="{BB303756-D55C-48B1-8EBE-05645137F9E6}">
+					<ChildrenList>
+						<Action Name="" ID="{476ED691-92AB-4BCD-91B8-1EF6F8CE1707}" ShortID="281810357">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Creaks" ID="{3CBA5BC7-9632-49FD-AFA0-593F3AA92FE7}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Door_Open" ID="{F7C29F0F-A571-421B-B746-35E39F6E1C22}">
+					<ChildrenList>
+						<Action Name="" ID="{92B6C9CF-8B8F-4915-8FF7-08C480EB9991}" ShortID="666773401">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door_Open" ID="{969A4DC4-A7A4-4AEF-A104-C1886CDFC707}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
