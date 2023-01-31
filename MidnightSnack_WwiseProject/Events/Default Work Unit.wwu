@@ -3,12 +3,12 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Player_WoodFootsteps" ID="{C2013B83-8D46-4614-A1F9-4DC13024100D}">
+				<Event Name="Footsteps" ID="{C2013B83-8D46-4614-A1F9-4DC13024100D}">
 					<ChildrenList>
 						<Action Name="" ID="{C6FEEAB7-3B26-4D65-A7F9-51096D071E6E}" ShortID="375574702">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Wood + Creeks" ID="{809CA24B-4596-41E8-B68D-43B1A432537F}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+									<ObjectRef Name="Footsteps" ID="{D2BDA16F-BE99-479F-94BA-E3DC7048324B}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

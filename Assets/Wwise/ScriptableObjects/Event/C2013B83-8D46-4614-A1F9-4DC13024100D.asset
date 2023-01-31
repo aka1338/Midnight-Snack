@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 144e6dadceabb8247bacc0dbfed55e87, type: 3}
   m_Name: C2013B83-8D46-4614-A1F9-4DC13024100D
   m_EditorClassIdentifier: 
-  objectName: Player_WoodFootsteps
-  id: 4036251043
+  objectName: Footsteps
+  id: 2385628198
   guid: C2013B83-8D46-4614-A1F9-4DC13024100D

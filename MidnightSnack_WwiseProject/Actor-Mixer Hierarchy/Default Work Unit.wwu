@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}" PersistMode="Standalone">
 			<ChildrenList>
 				<RandomSequenceContainer Name="Creeks" ID="{3CBA5BC7-9632-49FD-AFA0-593F3AA92FE7}" ShortID="923856063">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
@@ -64,8 +71,14 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
 						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Carpet" ID="{EBDA5CB7-287D-4549-9402-0BC362C3B265}" WorkUnitID="{7AE4D494-F3A9-4D0B-846D-81EBBFCA213F}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Footsteps" ID="{F80381F3-F6F1-4D92-9E04-18EFDDF38816}" WorkUnitID="{7AE4D494-F3A9-4D0B-846D-81EBBFCA213F}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -264,7 +277,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Bathroom" ID="{506739A3-2D6E-4822-AC73-0F09E8DA0B98}" ShortID="86172651">
+						<RandomSequenceContainer Name="Tiles" ID="{506739A3-2D6E-4822-AC73-0F09E8DA0B98}" ShortID="86172651">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -415,6 +428,16 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Carpet" ID="{7614AED5-4DA4-4710-B6FE-0E9BD479C312}" ShortID="891778684">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
@@ -422,9 +445,32 @@
 								<ItemRef Name="Wood" ID="{AF4C1D61-FF1B-490B-B698-29419E7C4423}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="Bathroom" ID="{506739A3-2D6E-4822-AC73-0F09E8DA0B98}"/>
+								<ItemRef Name="Tiles" ID="{506739A3-2D6E-4822-AC73-0F09E8DA0B98}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Carpet" ID="{7614AED5-4DA4-4710-B6FE-0E9BD479C312}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Tiles" ID="{4324C33E-ED6F-4E3E-9A3B-AB8AA59E95A3}"/>
+								<ItemList>
+									<ItemRef Name="Tiles" ID="{506739A3-2D6E-4822-AC73-0F09E8DA0B98}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Carpet" ID="{EBDA5CB7-287D-4549-9402-0BC362C3B265}"/>
+								<ItemList>
+									<ItemRef Name="Carpet" ID="{7614AED5-4DA4-4710-B6FE-0E9BD479C312}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Wood" ID="{DA285DC4-AA60-4A4A-BA81-10FBED496DBE}"/>
+								<ItemList>
+									<ItemRef Name="Wood" ID="{AF4C1D61-FF1B-490B-B698-29419E7C4423}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 			</ChildrenList>

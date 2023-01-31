@@ -21,18 +21,35 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<SwitchGroups>
+				<SwitchGroup Id="2385628198" Name="Footsteps">
+					<Switches>
+						<Switch Id="2058049674" Name="Wood"/>
+						<Switch Id="2412606308" Name="Carpet"/>
+						<Switch Id="3316001432" Name="Tiles"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2058049674" Type="User" Language="SFX" Hash="{BBBC08E9-A8A4-F5D1-A9DB-60B16339C1F7}">
-			<ShortName>Wood</ShortName>
-			<Path>Wood.bnk</Path>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{3DA53C7A-0A0C-961F-DFC4-82C043C3395A}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
 			<Media>
-				<File Id="1525529" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MS_Footstep_Creak_2.wav</ShortName>
-					<CachePath>SFX/MS_Footstep_Creak_2_10C4C929.wem</CachePath>
+				<File Id="95118756" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteos_Bathroom_3.wav</ShortName>
+					<CachePath>SFX/MS_Footsteos_Bathroom_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="273609102" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteos_Bathroom_2.wav</ShortName>
+					<CachePath>SFX/MS_Footsteos_Bathroom_2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="297618981" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_8.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_8_10C4C929.wem</CachePath>
+				</File>
+				<File Id="560158159" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteos_Bathroom_5.wav</ShortName>
+					<CachePath>SFX/MS_Footsteos_Bathroom_5_10C4C929.wem</CachePath>
 				</File>
 				<File Id="603231246" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_6.wav</ShortName>
@@ -50,6 +67,10 @@
 					<ShortName>MS_Footstep_1.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_1_10C4C929.wem</CachePath>
 				</File>
+				<File Id="805385492" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteos_Bathroom_4.wav</ShortName>
+					<CachePath>SFX/MS_Footsteos_Bathroom_4_10C4C929.wem</CachePath>
+				</File>
 				<File Id="829762603" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_3.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_3_10C4C929.wem</CachePath>
@@ -58,9 +79,13 @@
 					<ShortName>MS_Footstep_2.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_2_10C4C929.wem</CachePath>
 				</File>
-				<File Id="1046736714" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MS_Footstep_Creak_1.wav</ShortName>
-					<CachePath>SFX/MS_Footstep_Creak_1_10C4C929.wem</CachePath>
+				<File Id="1002065778" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteos_Bathroom_1.wav</ShortName>
+					<CachePath>SFX/MS_Footsteos_Bathroom_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1009247771" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteos_Bathroom_6.wav</ShortName>
+					<CachePath>SFX/MS_Footsteos_Bathroom_6_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1056363622" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_5.wav</ShortName>
@@ -68,30 +93,45 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="4036251043" Name="Player_WoodFootsteps" DurationType="OneShot" DurationMin="1.4509375" DurationMax="1.5">
-					<MediaRefs>
-						<MediaRef Id="1525529"/>
-						<MediaRef Id="297618981"/>
-						<MediaRef Id="603231246"/>
-						<MediaRef Id="672131314"/>
-						<MediaRef Id="721017236"/>
-						<MediaRef Id="773427032"/>
-						<MediaRef Id="829762603"/>
-						<MediaRef Id="956033431"/>
-						<MediaRef Id="1046736714"/>
-						<MediaRef Id="1056363622"/>
-					</MediaRefs>
+				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="1.37">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="3316001432"/>
+							<MediaRefs>
+								<MediaRef Id="95118756"/>
+								<MediaRef Id="273609102"/>
+								<MediaRef Id="560158159"/>
+								<MediaRef Id="805385492"/>
+								<MediaRef Id="1002065778"/>
+								<MediaRef Id="1009247771"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2058049674"/>
+							<MediaRefs>
+								<MediaRef Id="297618981"/>
+								<MediaRef Id="603231246"/>
+								<MediaRef Id="672131314"/>
+								<MediaRef Id="721017236"/>
+								<MediaRef Id="773427032"/>
+								<MediaRef Id="829762603"/>
+								<MediaRef Id="956033431"/>
+								<MediaRef Id="1056363622"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 			</Events>
-		</SoundBank>
-		<SoundBank Id="2185786256" Type="User" Language="SFX">
-			<ShortName>Gravel</ShortName>
-			<Path>Gravel.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="2637588553" Type="User" Language="SFX">
-			<ShortName>Tile</ShortName>
-			<Path>Tile.bnk</Path>
+			<SwitchGroups>
+				<SwitchGroup Id="2385628198" Name="Footsteps">
+					<Switches>
+						<Switch Id="2058049674" Name="Wood"/>
+						<Switch Id="2412606308" Name="Carpet"/>
+						<Switch Id="3316001432" Name="Tiles"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{60156B45-73EB-2CEE-377C-0119D05FA2B5}</FileHash>
+	<FileHash>{1A2F054D-193A-A884-A813-310A0BBBE46A}</FileHash>
 </SoundBanksInfo>
