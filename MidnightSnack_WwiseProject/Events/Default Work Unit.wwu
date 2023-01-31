@@ -3,28 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Footsteps" ID="{C2013B83-8D46-4614-A1F9-4DC13024100D}">
-					<ChildrenList>
-						<Action Name="" ID="{C6FEEAB7-3B26-4D65-A7F9-51096D071E6E}" ShortID="375574702">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{D2BDA16F-BE99-479F-94BA-E3DC7048324B}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Wood_Creaks" ID="{BB303756-D55C-48B1-8EBE-05645137F9E6}">
-					<ChildrenList>
-						<Action Name="" ID="{476ED691-92AB-4BCD-91B8-1EF6F8CE1707}" ShortID="281810357">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Creaks" ID="{3CBA5BC7-9632-49FD-AFA0-593F3AA92FE7}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Door_Open" ID="{F7C29F0F-A571-421B-B746-35E39F6E1C22}">
 					<ChildrenList>
 						<Action Name="" ID="{92B6C9CF-8B8F-4915-8FF7-08C480EB9991}" ShortID="666773401">
@@ -36,6 +14,58 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Sound_Triggers" ID="{ABCF726A-BC8E-4ACD-834E-C1DE779775B0}" ShortID="604710658">
+					<ChildrenList>
+						<Event Name="Vase" ID="{D6667AF1-ED96-4F93-8690-2A5C4F97EB92}">
+							<ChildrenList>
+								<Action Name="" ID="{9C3204BE-E02D-429C-A73D-1F3B6C64A756}" ShortID="815286638">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Vase" ID="{75E11654-462C-46AC-8B10-1600FCC36E15}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Toy" ID="{EEC81BD9-83B2-4D0E-9B9F-A33C305C0C41}">
+							<ChildrenList>
+								<Action Name="" ID="{3090FC45-AF8A-43E6-88DE-84CC61A1FED3}" ShortID="877805259">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Toy" ID="{93BE1718-1FE2-4C4D-982E-B7E3066110AA}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Player" ID="{113FE7BA-AAD8-4D9F-B332-8CC8A3F974C5}" ShortID="927867976">
+					<ChildrenList>
+						<Event Name="Footsteps" ID="{C2013B83-8D46-4614-A1F9-4DC13024100D}">
+							<ChildrenList>
+								<Action Name="" ID="{C6FEEAB7-3B26-4D65-A7F9-51096D071E6E}" ShortID="375574702">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{D2BDA16F-BE99-479F-94BA-E3DC7048324B}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Wood_Creaks" ID="{BB303756-D55C-48B1-8EBE-05645137F9E6}">
+							<ChildrenList>
+								<Action Name="" ID="{476ED691-92AB-4BCD-91B8-1EF6F8CE1707}" ShortID="281810357">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Creaks" ID="{3CBA5BC7-9632-49FD-AFA0-593F3AA92FE7}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
