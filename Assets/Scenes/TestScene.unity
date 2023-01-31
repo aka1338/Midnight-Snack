@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 394808747}
   - component: {fileID: 394808749}
   - component: {fileID: 394808748}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Livingroom Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1126,7 +1126,7 @@ GameObject:
   - component: {fileID: 731228209}
   - component: {fileID: 731228211}
   - component: {fileID: 731228210}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Entrance Hallway Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1421,7 +1421,7 @@ GameObject:
   - component: {fileID: 835112814}
   - component: {fileID: 835112816}
   - component: {fileID: 835112815}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Baby Bedroom Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1864,6 +1864,7 @@ GameObject:
   m_Component:
   - component: {fileID: 893995854}
   - component: {fileID: 893995853}
+  - component: {fileID: 893995855}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -1911,6 +1912,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &893995855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893995852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf23563ff848f6e4fa71173ccca91726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8353d95b1fb5c674db9f1a443746e83f, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1011588913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,6 +1986,7 @@ GameObject:
   - component: {fileID: 1047849435}
   - component: {fileID: 1047849438}
   - component: {fileID: 1047849439}
+  - component: {fileID: 1047849440}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2147,6 +2173,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1047849440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047849434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3764717b21dcf3946bead72cb629cee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1070048301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,7 +2196,7 @@ GameObject:
   - component: {fileID: 1070048302}
   - component: {fileID: 1070048305}
   - component: {fileID: 1070048304}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mama Bedroom Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2269,7 +2307,7 @@ GameObject:
   - component: {fileID: 1149413223}
   - component: {fileID: 1149413225}
   - component: {fileID: 1149413224}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bedroom Hallway Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2892,7 +2930,7 @@ GameObject:
   - component: {fileID: 1549588536}
   - component: {fileID: 1549588538}
   - component: {fileID: 1549588537}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Kitchen Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3259,7 +3297,7 @@ GameObject:
   - component: {fileID: 1892120901}
   - component: {fileID: 1892120903}
   - component: {fileID: 1892120902}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Laundry Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3808,7 +3846,7 @@ GameObject:
   - component: {fileID: 2116371958}
   - component: {fileID: 2116371960}
   - component: {fileID: 2116371959}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bathroom Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
