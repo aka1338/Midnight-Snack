@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{52029E9E-D93B-4F97-AA68-9484D89E505A}" SchemaVersion="110">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{52029E9E-D93B-4F97-AA68-9484D89E505A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{52029E9E-D93B-4F97-AA68-9484D89E505A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Footsteps" ID="{1C6FA9F1-B046-4A9E-B963-279D7EFFC1D7}" ShortID="150163232">
+					<ChildrenList>
+						<SoundBank Name="Wood" ID="{1C4732B7-A281-47AB-95F6-26688EF5E545}">
+							<ObjectInclusionList/>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Tile" ID="{ACCAA9BF-63A8-4834-8055-606DDB452832}">
+							<ObjectInclusionList/>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Gravel" ID="{C50B3BD1-E648-4A55-952B-A7D0F4869D1B}">
+							<ObjectInclusionList/>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Footstep Container" ID="{AF4C1D61-FF1B-490B-B698-29419E7C4423}" ShortID="640753358">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+						</Reference>
+					</ReferenceList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
