@@ -6,7 +6,9 @@
 				<Folder Name="Footsteps" ID="{1C6FA9F1-B046-4A9E-B963-279D7EFFC1D7}" ShortID="150163232">
 					<ChildrenList>
 						<SoundBank Name="Wood" ID="{1C4732B7-A281-47AB-95F6-26688EF5E545}">
-							<ObjectInclusionList/>
+							<ObjectInclusionList>
+								<ObjectRef Name="Player_WoodFootsteps" ID="{C2013B83-8D46-4614-A1F9-4DC13024100D}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+							</ObjectInclusionList>
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>
 						</SoundBank>
