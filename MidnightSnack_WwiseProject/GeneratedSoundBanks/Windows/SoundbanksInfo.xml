@@ -31,7 +31,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D01A15E9-DB38-6398-E7D0-69D5F2161B93}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4C215B93-C39E-E79F-D417-CDE05E3C054A}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -45,7 +45,7 @@
 				</File>
 				<File Id="276710545" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_194F691C.wem</CachePath>
+					<CachePath>SFX/MS_Footsteps_Carpet_30BBD105.wem</CachePath>
 				</File>
 				<File Id="297618981" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_8.wav</ShortName>
@@ -53,11 +53,11 @@
 				</File>
 				<File Id="361128640" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_A0C9C5B6.wem</CachePath>
+					<CachePath>SFX/MS_Footsteps_Carpet_E48BF307.wem</CachePath>
 				</File>
 				<File Id="529054368" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_0412C7E8.wem</CachePath>
+					<CachePath>SFX/MS_Footsteps_Carpet_8793FAA9.wem</CachePath>
 				</File>
 				<File Id="560158159" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_5.wav</ShortName>
@@ -69,7 +69,7 @@
 				</File>
 				<File Id="622648913" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_BB78F39F.wem</CachePath>
+					<CachePath>SFX/MS_Footsteps_Carpet_D138263D.wem</CachePath>
 				</File>
 				<File Id="672131314" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_4.wav</ShortName>
@@ -85,7 +85,7 @@
 				</File>
 				<File Id="796463663" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_F7EB09B8.wem</CachePath>
+					<CachePath>SFX/MS_Footsteps_Carpet_8AD8FE85.wem</CachePath>
 				</File>
 				<File Id="805385492" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_4.wav</ShortName>
@@ -101,7 +101,7 @@
 				</File>
 				<File Id="972795060" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_CFC4174B.wem</CachePath>
+					<CachePath>SFX/MS_Footsteps_Carpet_2696CC3C.wem</CachePath>
 				</File>
 				<File Id="1002065778" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_1.wav</ShortName>
@@ -168,5 +168,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{34D9E9B5-A181-E357-DE74-1A9947219B6C}</FileHash>
+	<FileHash>{FCF5E63A-D402-E66A-DD99-5791B6B94CC2}</FileHash>
 </SoundBanksInfo>
