@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
+// TODO - This entire thing needs to be refactored badly. 
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D rb;
