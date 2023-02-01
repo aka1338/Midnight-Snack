@@ -31,7 +31,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{3DA53C7A-0A0C-961F-DFC4-82C043C3395A}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4C215B93-C39E-E79F-D417-CDE05E3C054A}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -43,9 +43,21 @@
 					<ShortName>MS_Footsteos_Bathroom_2.wav</ShortName>
 					<CachePath>SFX/MS_Footsteos_Bathroom_2_10C4C929.wem</CachePath>
 				</File>
+				<File Id="276710545" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
+					<CachePath>SFX/MS_Footsteps_Carpet_30BBD105.wem</CachePath>
+				</File>
 				<File Id="297618981" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_8.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_8_10C4C929.wem</CachePath>
+				</File>
+				<File Id="361128640" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
+					<CachePath>SFX/MS_Footsteps_Carpet_E48BF307.wem</CachePath>
+				</File>
+				<File Id="529054368" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
+					<CachePath>SFX/MS_Footsteps_Carpet_8793FAA9.wem</CachePath>
 				</File>
 				<File Id="560158159" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_5.wav</ShortName>
@@ -54,6 +66,10 @@
 				<File Id="603231246" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_6.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_6_10C4C929.wem</CachePath>
+				</File>
+				<File Id="622648913" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
+					<CachePath>SFX/MS_Footsteps_Carpet_D138263D.wem</CachePath>
 				</File>
 				<File Id="672131314" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_4.wav</ShortName>
@@ -67,6 +83,10 @@
 					<ShortName>MS_Footstep_1.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_1_10C4C929.wem</CachePath>
 				</File>
+				<File Id="796463663" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
+					<CachePath>SFX/MS_Footsteps_Carpet_8AD8FE85.wem</CachePath>
+				</File>
 				<File Id="805385492" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_4.wav</ShortName>
 					<CachePath>SFX/MS_Footsteos_Bathroom_4_10C4C929.wem</CachePath>
@@ -78,6 +98,10 @@
 				<File Id="956033431" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_2.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="972795060" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
+					<CachePath>SFX/MS_Footsteps_Carpet_2696CC3C.wem</CachePath>
 				</File>
 				<File Id="1002065778" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_1.wav</ShortName>
@@ -93,7 +117,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="1.37">
+				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0.17296387" DurationMax="1.37">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="3316001432"/>
@@ -104,6 +128,17 @@
 								<MediaRef Id="805385492"/>
 								<MediaRef Id="1002065778"/>
 								<MediaRef Id="1009247771"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2412606308" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="276710545"/>
+								<MediaRef Id="361128640"/>
+								<MediaRef Id="529054368"/>
+								<MediaRef Id="622648913"/>
+								<MediaRef Id="796463663"/>
+								<MediaRef Id="972795060"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -133,5 +168,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D8AA7A51-E90A-66FC-6489-F4547FCEE966}</FileHash>
+	<FileHash>{83E72F41-4904-F936-FC5E-3AD978057CF1}</FileHash>
 </SoundBanksInfo>

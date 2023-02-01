@@ -178,7 +178,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131042176}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -304,6 +304,7 @@ GameObject:
   - component: {fileID: 360143998}
   - component: {fileID: 360144000}
   - component: {fileID: 360143999}
+  - component: {fileID: 360144001}
   m_Layer: 0
   m_Name: Kitchen Wall (2)
   m_TagString: Untagged
@@ -404,6 +405,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &360144001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360143997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &394808746
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +432,8 @@ GameObject:
   - component: {fileID: 394808747}
   - component: {fileID: 394808749}
   - component: {fileID: 394808748}
-  m_Layer: 0
+  - component: {fileID: 394808750}
+  m_Layer: 10
   m_Name: Livingroom Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,6 +533,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &394808750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394808746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &437202401
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,6 +628,7 @@ GameObject:
   - component: {fileID: 503315236}
   - component: {fileID: 503315238}
   - component: {fileID: 503315237}
+  - component: {fileID: 503315239}
   m_Layer: 0
   m_Name: Bathroom Wall
   m_TagString: Untagged
@@ -694,6 +729,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &503315239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503315235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &508620943
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,7 +919,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 1.8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1025,6 +1076,7 @@ GameObject:
   - component: {fileID: 629274530}
   - component: {fileID: 629274532}
   - component: {fileID: 629274531}
+  - component: {fileID: 629274533}
   m_Layer: 0
   m_Name: Kitchen Wall (3)
   m_TagString: Untagged
@@ -1125,6 +1177,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &629274533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629274529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &704762566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,6 +1332,7 @@ GameObject:
   - component: {fileID: 725064283}
   - component: {fileID: 725064285}
   - component: {fileID: 725064284}
+  - component: {fileID: 725064286}
   m_Layer: 0
   m_Name: Kitchen Wall (1)
   m_TagString: Untagged
@@ -1364,6 +1433,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &725064286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725064282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &731228208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1376,7 +1461,7 @@ GameObject:
   - component: {fileID: 731228211}
   - component: {fileID: 731228210}
   - component: {fileID: 731228212}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Entrance Hallway Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1391,7 +1476,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731228208}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.60587, y: -10.0425, z: 0}
+  m_LocalPosition: {x: -5.60587, y: -10.0425, z: 1}
   m_LocalScale: {x: 4.9564223, y: 19.826385, z: 1.5251}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1550,7 +1635,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751139241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1576,6 +1661,7 @@ GameObject:
   - component: {fileID: 753452911}
   - component: {fileID: 753452913}
   - component: {fileID: 753452912}
+  - component: {fileID: 753452914}
   m_Layer: 0
   m_Name: Baby Bedroom Wall  (2)
   m_TagString: Untagged
@@ -1676,6 +1762,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &753452914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753452910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &835112813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,7 +1790,7 @@ GameObject:
   - component: {fileID: 835112816}
   - component: {fileID: 835112815}
   - component: {fileID: 835112817}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Baby Bedroom Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1815,6 +1917,7 @@ GameObject:
   - component: {fileID: 870377666}
   - component: {fileID: 870377668}
   - component: {fileID: 870377667}
+  - component: {fileID: 870377669}
   m_Layer: 0
   m_Name: Bathroom Wall (1)
   m_TagString: Untagged
@@ -1915,6 +2018,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &870377669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870377665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &877124579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1926,6 +2045,7 @@ GameObject:
   - component: {fileID: 877124580}
   - component: {fileID: 877124582}
   - component: {fileID: 877124581}
+  - component: {fileID: 877124583}
   m_Layer: 0
   m_Name: Laundry Wall (2)
   m_TagString: Untagged
@@ -2026,6 +2146,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &877124583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877124579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &878349530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2259,8 +2395,11 @@ GameObject:
   - component: {fileID: 1047849437}
   - component: {fileID: 1047849436}
   - component: {fileID: 1047849435}
-  - component: {fileID: 1047849438}
   - component: {fileID: 1047849439}
+  - component: {fileID: 1047849438}
+  - component: {fileID: 1047849440}
+  - component: {fileID: 1047849441}
+  - component: {fileID: 1047849442}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2286,7 +2425,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!212 &1047849436
@@ -2330,7 +2469,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -9823622, guid: e85fd723dbcd5924fbe0bb5cf641ad69, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2349,7 +2488,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047849434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.17, y: -17.72, z: 0}
+  m_LocalPosition: {x: 13.17, y: -17.72, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2369,7 +2508,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 240d31bc0231a0f4e98ef504452c2de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1047849435}
+  body: {fileID: 1047849435}
+  spriteRenderer: {fileID: 1047849436}
+  walkSpeed: 1
   playerControls:
     m_Name: Player Controls
     m_Type: 0
@@ -2419,8 +2560,45 @@ MonoBehaviour:
       m_Action: Player Controls
       m_Flags: 8
     m_Flags: 0
+  frameRate: 1
+  nSprites:
+  - {fileID: 485055969, guid: e85fd723dbcd5924fbe0bb5cf641ad69, type: 3}
+  - {fileID: -1065265021, guid: e85fd723dbcd5924fbe0bb5cf641ad69, type: 3}
+  - {fileID: 1298354530, guid: e85fd723dbcd5924fbe0bb5cf641ad69, type: 3}
+  neSprites: []
+  eSprites:
+  - {fileID: 2068591305, guid: e85fd723dbcd5924fbe0bb5cf641ad69, type: 3}
+  - {fileID: -1048853149, guid: e85fd723dbcd5924fbe0bb5cf641ad69, type: 3}
+  - {fileID: 1836531107, guid: e85fd723dbcd5924fbe0bb5cf641ad69, type: 3}
+  seSprites: []
+  sSprites:
+  - {fileID: -9823622, guid: e85fd723dbcd5924fbe0bb5cf641ad69, type: 3}
+  - {fileID: -1599508840, guid: e85fd723dbcd5924fbe0bb5cf641ad69, type: 3}
+  - {fileID: -1906339445, guid: e85fd723dbcd5924fbe0bb5cf641ad69, type: 3}
   moveDirection: {x: 0, y: 0}
   moveSpeed: 200
+  footstepSpeed: 0.3
+  currentTerrain: 0
+  footstepsEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 457bee3a0e4ac4c4ebf6d8a94c1fb34a, type: 2}
+  terrainSwitch:
+  - idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4b1a1d500396f4849819851b0b1ae7d9, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e1a8cfa9e07f0d943a4bfdd7feebb74a, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 06e88fee5ad1822499db3666d06fbb03, type: 2}
 --- !u!61 &1047849439
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2431,14 +2609,14 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.32666668, y: 0.43}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2447,6 +2625,87 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1047849440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047849434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6aeba918078548459c17eaaba4a1963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &1047849441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047849434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56721b85637940d40a40f5eba6b7e308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 457bee3a0e4ac4c4ebf6d8a94c1fb34a, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
+  LargeModePositions:
+  - {fileID: 0}
+  multiPositionArray: []
+--- !u!114 &1047849442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047849434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf23563ff848f6e4fa71173ccca91726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8353d95b1fb5c674db9f1a443746e83f, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1070048301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2459,8 +2718,7 @@ GameObject:
   - component: {fileID: 1070048305}
   - component: {fileID: 1070048304}
   - component: {fileID: 1070048306}
-  - component: {fileID: 1070048307}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mama Bedroom Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2576,32 +2834,6 @@ MonoBehaviour:
   m_Area: 0
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!61 &1070048307
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070048301}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1149413222
 GameObject:
   m_ObjectHideFlags: 0
@@ -2614,7 +2846,7 @@ GameObject:
   - component: {fileID: 1149413225}
   - component: {fileID: 1149413224}
   - component: {fileID: 1149413226}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bedroom Hallway Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2861,6 +3093,7 @@ GameObject:
   - component: {fileID: 1198465588}
   - component: {fileID: 1198465590}
   - component: {fileID: 1198465589}
+  - component: {fileID: 1198465591}
   m_Layer: 0
   m_Name: Laundry Wall (1)
   m_TagString: Untagged
@@ -2961,6 +3194,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1198465591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198465587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1206010473
 GameObject:
   m_ObjectHideFlags: 0
@@ -3005,6 +3254,7 @@ GameObject:
   - component: {fileID: 1300789769}
   - component: {fileID: 1300789771}
   - component: {fileID: 1300789770}
+  - component: {fileID: 1300789772}
   m_Layer: 0
   m_Name: Bathroom Wall (2)
   m_TagString: Untagged
@@ -3105,6 +3355,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1300789772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300789768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1327386290
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,6 +3417,7 @@ GameObject:
   - component: {fileID: 1462802354}
   - component: {fileID: 1462802356}
   - component: {fileID: 1462802355}
+  - component: {fileID: 1462802357}
   m_Layer: 0
   m_Name: Laundry Wall
   m_TagString: Untagged
@@ -3251,6 +3518,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1462802357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462802353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1478754653
 GameObject:
   m_ObjectHideFlags: 0
@@ -3341,6 +3624,7 @@ GameObject:
   - component: {fileID: 1485015684}
   - component: {fileID: 1485015686}
   - component: {fileID: 1485015685}
+  - component: {fileID: 1485015687}
   m_Layer: 0
   m_Name: 'Baby Bedroom Wall '
   m_TagString: Untagged
@@ -3441,6 +3725,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1485015687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485015683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1549588535
 GameObject:
   m_ObjectHideFlags: 0
@@ -3453,7 +3753,7 @@ GameObject:
   - component: {fileID: 1549588538}
   - component: {fileID: 1549588537}
   - component: {fileID: 1549588539}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Kitchen Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3614,6 +3914,7 @@ GameObject:
   - component: {fileID: 1613064089}
   - component: {fileID: 1613064091}
   - component: {fileID: 1613064090}
+  - component: {fileID: 1613064092}
   m_Layer: 0
   m_Name: Livingroom Wall
   m_TagString: Untagged
@@ -3714,6 +4015,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1613064092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613064088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1863855228
 GameObject:
   m_ObjectHideFlags: 0
@@ -3725,6 +4042,7 @@ GameObject:
   - component: {fileID: 1863855229}
   - component: {fileID: 1863855231}
   - component: {fileID: 1863855230}
+  - component: {fileID: 1863855232}
   m_Layer: 0
   m_Name: Baby Bedroom Wall  (1)
   m_TagString: Untagged
@@ -3825,6 +4143,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1863855232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863855228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1892120900
 GameObject:
   m_ObjectHideFlags: 0
@@ -3837,7 +4171,7 @@ GameObject:
   - component: {fileID: 1892120903}
   - component: {fileID: 1892120902}
   - component: {fileID: 1892120904}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Laundry Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4092,6 +4426,7 @@ GameObject:
   - component: {fileID: 2002244749}
   - component: {fileID: 2002244751}
   - component: {fileID: 2002244750}
+  - component: {fileID: 2002244752}
   m_Layer: 0
   m_Name: 'Livingroom Wall '
   m_TagString: Untagged
@@ -4192,6 +4527,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2002244752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002244748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &2020150674
 GameObject:
   m_ObjectHideFlags: 0
@@ -4203,6 +4554,7 @@ GameObject:
   - component: {fileID: 2020150675}
   - component: {fileID: 2020150677}
   - component: {fileID: 2020150676}
+  - component: {fileID: 2020150678}
   m_Layer: 0
   m_Name: Kitchen Wall
   m_TagString: Untagged
@@ -4303,6 +4655,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2020150678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020150674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &2116371957
 GameObject:
   m_ObjectHideFlags: 0
@@ -4315,7 +4683,7 @@ GameObject:
   - component: {fileID: 2116371960}
   - component: {fileID: 2116371959}
   - component: {fileID: 2116371961}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bathroom Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
