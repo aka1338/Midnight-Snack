@@ -34,8 +34,14 @@ public class PlayerController : MonoBehaviour
     int prevFrame = -1;
 
     private enum CURRENT_TERRAIN { CARPET, TILE, WOOD };
+    private enum CURRENT_ROOM { BABY_BEDROOM, MAMA_BEDROOM, BEDROOM_HALLWAY, BATHROOM, LIVINGROOM, KITCHEN, LAUNDRY_ROOM, ENTRANCE_HALLWAY };
+
     [SerializeField]
     private CURRENT_TERRAIN currentTerrain;
+
+    [SerializeField]
+    private CURRENT_ROOM currentRoom;
+
     [SerializeField]
     private AK.Wwise.Event footstepsEvent;
     [SerializeField]
@@ -50,6 +56,46 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         DetermineTerrain(collider);
+        DetermineRoom(collider); 
+    }
+
+    private void DetermineRoom(Collider2D collider)
+    {
+        // Can change this to a switch later but this was just faster to copy/paste out 
+        if (collider.gameObject.CompareTag("MamaBedroom"))
+        {
+            currentRoom = CURRENT_ROOM.MAMA_BEDROOM;    
+        }
+        if (collider.gameObject.CompareTag("BabyBedroom"))
+        {
+            currentRoom = CURRENT_ROOM.BABY_BEDROOM;
+        }
+        if (collider.gameObject.CompareTag("BedroomHallway"))
+        {
+            currentRoom = CURRENT_ROOM.BEDROOM_HALLWAY;
+        }
+        if (collider.gameObject.CompareTag("Bathroom"))
+        {
+            currentRoom = CURRENT_ROOM.BATHROOM;
+        }
+        if (collider.gameObject.CompareTag("EntranceHallway"))
+        {
+            currentRoom = CURRENT_ROOM.ENTRANCE_HALLWAY;
+
+        }
+        if (collider.gameObject.CompareTag("LaundryRoom"))
+        {
+            currentRoom = CURRENT_ROOM.LAUNDRY_ROOM;
+        }
+        if (collider.gameObject.CompareTag("Livingroom"))
+        {
+            currentRoom = CURRENT_ROOM.LIVINGROOM;
+        }
+        if (collider.gameObject.CompareTag("Kitchen"))
+        {
+            currentRoom = CURRENT_ROOM.KITCHEN;
+        }
+        Debug.Log(currentRoom); 
     }
 
     private void DetermineTerrain(Collider2D collider)
