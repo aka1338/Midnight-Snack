@@ -70,7 +70,6 @@ public class DoorController : MonoBehaviour
     private void DisableDoorCollider()
     {
         doorCollider.enabled = false;
-
     }
 
     private void EnableDoorCollider()

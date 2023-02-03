@@ -8,16 +8,14 @@ using UnityEngine.InputSystem;
 // TODO - This entire thing needs to be refactored badly. 
 public class PlayerController : MonoBehaviour
 {
-    private enum CURRENT_TERRAIN { CARPET, TILE, WOOD };
 
-    // TODO: Make the CURRENT_ROOM enum public. 
-    private enum CURRENT_ROOM { BABY_BEDROOM, MAMA_BEDROOM, BEDROOM_HALLWAY, BATHROOM, LIVINGROOM, KITCHEN, LAUNDRY_ROOM, ENTRANCE_HALLWAY };
+    // TODO: Make the ROOM enum public. 
 
     [SerializeField]
-    private CURRENT_TERRAIN currentTerrain;
+    private TERRAIN currentTerrain;
 
     [SerializeField]
-    private CURRENT_ROOM currentRoom;
+    private ROOM currentRoom;
     private int currentDoorTrigger; 
 
     internal void SetDoorTriggerArea(int id)
@@ -89,6 +87,13 @@ public class PlayerController : MonoBehaviour
     {
         DetermineTerrain(collider);
         DetermineRoom(collider); 
+
+        // If the collider is equal to the snack, move to the next game phase. 
+        if(collider.gameObject.name == "Snack")
+        {
+            Debug.Log("Snack obtained!");
+            GameEvents.current.SnackObtained(); 
+        }
     }
 
     private void DetermineRoom(Collider2D collider)
@@ -96,36 +101,36 @@ public class PlayerController : MonoBehaviour
         // Can change this to a switch later but this was just faster to copy/paste out 
         if (collider.gameObject.CompareTag("MamaBedroom"))
         {
-            currentRoom = CURRENT_ROOM.MAMA_BEDROOM;    
+            currentRoom = ROOM.MAMA_BEDROOM;    
         }
         if (collider.gameObject.CompareTag("BabyBedroom"))
         {
-            currentRoom = CURRENT_ROOM.BABY_BEDROOM;
+            currentRoom = ROOM.BABY_BEDROOM;
         }
         if (collider.gameObject.CompareTag("BedroomHallway"))
         {
-            currentRoom = CURRENT_ROOM.BEDROOM_HALLWAY;
+            currentRoom = ROOM.BEDROOM_HALLWAY;
         }
         if (collider.gameObject.CompareTag("Bathroom"))
         {
-            currentRoom = CURRENT_ROOM.BATHROOM;
+            currentRoom = ROOM.BATHROOM;
         }
         if (collider.gameObject.CompareTag("EntranceHallway"))
         {
-            currentRoom = CURRENT_ROOM.ENTRANCE_HALLWAY;
+            currentRoom = ROOM.ENTRANCE_HALLWAY;
 
         }
         if (collider.gameObject.CompareTag("LaundryRoom"))
         {
-            currentRoom = CURRENT_ROOM.LAUNDRY_ROOM;
+            currentRoom = ROOM.LAUNDRY_ROOM;
         }
         if (collider.gameObject.CompareTag("Livingroom"))
         {
-            currentRoom = CURRENT_ROOM.LIVINGROOM;
+            currentRoom = ROOM.LIVINGROOM;
         }
         if (collider.gameObject.CompareTag("Kitchen"))
         {
-            currentRoom = CURRENT_ROOM.KITCHEN;
+            currentRoom = ROOM.KITCHEN;
         }
         Debug.Log(currentRoom); 
     }
@@ -134,15 +139,15 @@ public class PlayerController : MonoBehaviour
     {
         if (collider.gameObject.layer == LayerMask.NameToLayer("Wood"))
         {
-            currentTerrain = CURRENT_TERRAIN.WOOD;
+            currentTerrain = TERRAIN.WOOD;
         }
         if (collider.gameObject.layer == LayerMask.NameToLayer("Carpet"))
         {
-            currentTerrain = CURRENT_TERRAIN.CARPET;
+            currentTerrain = TERRAIN.CARPET;
         }
         if (collider.gameObject.layer == LayerMask.NameToLayer("Tile"))
         {
-            currentTerrain = CURRENT_TERRAIN.TILE;
+            currentTerrain = TERRAIN.TILE;
         }
     }
 
@@ -150,15 +155,15 @@ public class PlayerController : MonoBehaviour
     {
         switch (currentTerrain)
         {
-            case CURRENT_TERRAIN.CARPET:
+            case TERRAIN.CARPET:
                 PlayFootstep(0);
                 break;
 
-            case CURRENT_TERRAIN.TILE:
+            case TERRAIN.TILE:
                 PlayFootstep(1);
                 break;
 
-            case CURRENT_TERRAIN.WOOD:
+            case TERRAIN.WOOD:
                 PlayFootstep(2);
                 break;
 
