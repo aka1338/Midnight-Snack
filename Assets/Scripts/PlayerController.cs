@@ -8,13 +8,31 @@ using UnityEngine.InputSystem;
 // TODO - This entire thing needs to be refactored badly. 
 public class PlayerController : MonoBehaviour
 {
+    private enum CURRENT_TERRAIN { CARPET, TILE, WOOD };
+
+    // TODO: Make the CURRENT_ROOM enum public. 
+    private enum CURRENT_ROOM { BABY_BEDROOM, MAMA_BEDROOM, BEDROOM_HALLWAY, BATHROOM, LIVINGROOM, KITCHEN, LAUNDRY_ROOM, ENTRANCE_HALLWAY };
+
+    [SerializeField]
+    private CURRENT_TERRAIN currentTerrain;
+
+    [SerializeField]
+    private CURRENT_ROOM currentRoom;
+    private int currentDoorTrigger; 
+
+    internal void SetDoorTriggerArea(int id)
+    {
+        currentDoorTrigger = id;
+    }
+
     // Player Controls 
     public Rigidbody2D body;
     public SpriteRenderer spriteRenderer;
     public float walkSpeed;
-    public InputAction playerControls;
-
-
+    public PlayerInputActions playerControls;
+    private InputAction move;
+    private InputAction interact;
+    public Vector2 moveDirection = Vector2.zero;
 
     // Animation Logic
     public float frameRate;
@@ -26,31 +44,45 @@ public class PlayerController : MonoBehaviour
     public List<Sprite> seSprites;
     public List<Sprite> sSprites;
 
-    public Vector2 moveDirection = Vector2.zero;
-
     // SOUNDS
 
     // Footsteps 
     int prevFrame = -1;
-
-    private enum CURRENT_TERRAIN { CARPET, TILE, WOOD };
-    private enum CURRENT_ROOM { BABY_BEDROOM, MAMA_BEDROOM, BEDROOM_HALLWAY, BATHROOM, LIVINGROOM, KITCHEN, LAUNDRY_ROOM, ENTRANCE_HALLWAY };
-
-    [SerializeField]
-    private CURRENT_TERRAIN currentTerrain;
-
-    [SerializeField]
-    private CURRENT_ROOM currentRoom;
-
     [SerializeField]
     private AK.Wwise.Event footstepsEvent;
     [SerializeField]
     private AK.Wwise.Switch[] terrainSwitch;
 
-    private void OnEnable()
+    public static PlayerController current;
+
+    private void Awake()
     {
-        body = GetComponent<Rigidbody2D>();
+        playerControls = new PlayerInputActions();
+        current = this;
+
+    }
+
+    private void OnEnable() 
+    {
         playerControls.Enable();
+
+        // Player Move 
+        move = playerControls.Player.Move;
+        move.Enable(); 
+
+        // Player Interact
+        interact = playerControls.Player.Interact;
+        interact.Enable();
+        interact.performed += Interact;
+
+        // Rigidbody interactions 
+        body = GetComponent<Rigidbody2D>();
+    }
+
+    private void OnDisable()
+    {
+        move.Disable();
+        interact.Disable(); 
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -144,7 +176,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        moveDirection = playerControls.ReadValue<Vector2>().normalized;
+        moveDirection = move.ReadValue<Vector2>().normalized;
         body.velocity = moveDirection * walkSpeed;
 
         HandleSpriteFlip();
@@ -175,7 +207,12 @@ public class PlayerController : MonoBehaviour
             idleTime = Time.time;
         }
     }
-
+    
+    // TODO: This might have to reference the current TriggerArea the player is inside of. 
+    private void Interact(InputAction.CallbackContext context)
+    {
+        GameEvents.current.DoorwayTriggerEnter((int)currentDoorTrigger); 
+    }
     private List<Sprite> GetSpriteDirection()
     {
         List<Sprite> selectedSprites = null;

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,10 +7,30 @@ using UnityEngine;
 // Contains the logic for dispatching events related to gameplay. 
 public class GameEvents : MonoBehaviour
 {
-    // public event Action onDoorwayTriggerEnter;
-    // public void DoorwayTriggerEnter()
-    // public void DoorwayTriggerExit() 
+    public static GameEvents current;
 
-    // Script attached to the entity that calls GameEvents to dispatch an event, like DoorwayTriggerEnter(). 
+    private void Awake()
+    {
+        current = this;
+    }
 
+    public event Action<int> onDoorwayTriggerEnter;
+
+    public void DoorwayTriggerEnter(int id)
+    {
+        if (onDoorwayTriggerEnter != null)
+        {
+            onDoorwayTriggerEnter(id);
+        }
+    }
+
+    public event Action<int> onDoorwayTriggerExit;
+ 
+    public void DoorwayTriggerExit(int id)
+    {
+        if (onDoorwayTriggerExit != null)
+        {
+            onDoorwayTriggerExit(id);
+        }
+    }
 }
