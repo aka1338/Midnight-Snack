@@ -10,6 +10,11 @@ public class MamaMovement : MonoBehaviour
     private Vector3 target;
     NavMeshAgent agent;
 
+    // MamaWalkTo()
+    // MamaSwitchLightOn(Room room) 
+    // MamaAlerted()
+    // MamaReturnToBed() 
+
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
