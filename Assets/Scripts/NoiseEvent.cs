@@ -5,6 +5,8 @@ using UnityEngine;
 public class NoiseEvent : MonoBehaviour
 {
     public int noiseID; // ID Tied to the noise this NoiseEvent should emit. 
+    public ROOM roomID; 
+
     public float cooldownTime = 2f;
     private bool onCooldown;
     private float cooldownTimer;
@@ -32,10 +34,10 @@ public class NoiseEvent : MonoBehaviour
                 {
                     oneShotEventTriggered = true;
                 }
-                Debug.Log("Player tripped a noise event!"); // play event
+                Debug.Log("Player tripped a noise event from " + roomID); // play event
+                GameEvents.current.NoiseEventTriggerEnter(roomID); 
                 onCooldown = true;
                 cooldownTimer = cooldownTime;
-
             }
         }
     }
