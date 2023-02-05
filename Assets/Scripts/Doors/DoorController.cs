@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    public TriggerArea triggerArea;
+    public DoorTriggerArea triggerArea;
     public BoxCollider2D doorCollider;
     public int openRotationDirection;
     public int closeRotationDirection;
