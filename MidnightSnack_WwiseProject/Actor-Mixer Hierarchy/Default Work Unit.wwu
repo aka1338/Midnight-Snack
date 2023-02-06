@@ -942,6 +942,201 @@
 						</BlendContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Ambiences" ID="{8B07C71B-412F-4BD1-B66D-7BCAAA5C05A2}" ShortID="1019177221">
+					<ChildrenList>
+						<Sound Name="MS_Bathroom_Ambience_TapDrip" ID="{7107093B-0A2E-4A4A-A4D3-169A2690B484}" ShortID="811282434">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Mom" ID="{B468644B-EDEC-413D-AD61-11D2E7639532}" WorkUnitID="{707360A6-12C7-4CA5-9C1B-B3CC2F350D79}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_Bathroom_Ambience_TapDrip" ID="{3B4A0C7F-33CE-42A5-B195-79FF8891D837}">
+									<Language>SFX</Language>
+									<AudioFile>MS_Bathroom_Ambience_TapDrip.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="778452409"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_Bathroom_Ambience_TapDrip" ID="{3B4A0C7F-33CE-42A5-B195-79FF8891D837}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_Frontdoor_Ambience" ID="{039C65D7-2080-40B7-9767-B6813E355A47}" ShortID="1037915010">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Mom" ID="{B468644B-EDEC-413D-AD61-11D2E7639532}" WorkUnitID="{707360A6-12C7-4CA5-9C1B-B3CC2F350D79}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_Frontdoor_Ambience" ID="{0D7B8B8B-298F-4907-9492-607D1C9C8825}">
+									<Language>SFX</Language>
+									<AudioFile>MS_Frontdoor_Ambience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="774870520"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_Frontdoor_Ambience" ID="{0D7B8B8B-298F-4907-9492-607D1C9C8825}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_Kitchen_Ambience" ID="{1ECF69CD-D02C-4066-8265-8B8F439B0C22}" ShortID="899761643">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Mom" ID="{B468644B-EDEC-413D-AD61-11D2E7639532}" WorkUnitID="{707360A6-12C7-4CA5-9C1B-B3CC2F350D79}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_Kitchen_Ambience" ID="{EB5ABD71-6CB6-44FA-816E-85694841148B}">
+									<Language>SFX</Language>
+									<AudioFile>MS_Kitchen_Ambience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="444567866"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_Kitchen_Ambience" ID="{EB5ABD71-6CB6-44FA-816E-85694841148B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_Window_Ambience" ID="{28921109-B0E3-4A52-9567-A3A701C5F278}" ShortID="755489615">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_Window_Ambience" ID="{88A53CE4-508D-4BE1-8E89-FBAB8ADFC55A}">
+									<Language>SFX</Language>
+									<AudioFile>MS_Window_Ambience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="519280723"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_Window_Ambience" ID="{88A53CE4-508D-4BE1-8E89-FBAB8ADFC55A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enemies" ID="{CB81D4DD-B861-4CF9-BF58-62B799654E57}" ShortID="641350361">
+					<ChildrenList>
+						<Folder Name="Mum" ID="{DB417048-ECC6-4DA3-9114-F64631BD34AF}" ShortID="284675735">
+							<ChildrenList>
+								<Sound Name="MS_MomBreathing" ID="{5B15A7E3-41E8-4A97-A05C-B36A5D25FC12}" ShortID="909640288">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Mom" ID="{B468644B-EDEC-413D-AD61-11D2E7639532}" WorkUnitID="{707360A6-12C7-4CA5-9C1B-B3CC2F350D79}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MS_MomBreathing" ID="{1C334565-3BB9-4597-B7BB-82B1C682E0F6}">
+											<Language>SFX</Language>
+											<AudioFile>MS_MomBreathing.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="797784940"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MS_MomBreathing" ID="{1C334565-3BB9-4597-B7BB-82B1C682E0F6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="ShadowMonsters" ID="{3BB8FEE6-2B70-44DE-9680-60440E05E8D1}" ShortID="530286541">
+							<ChildrenList>
+								<Sound Name="MS_ShadowMonster_Snarl" ID="{24DB5BE4-5EA7-4616-9D19-B19CC48A0C1F}" ShortID="754989776">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MS_ShadowMonster_Snarl" ID="{24D0BAC1-3B70-4EFB-921A-E1AE228E55E5}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.0064695892575"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.657116508688783"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.1959336492891"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MS_ShadowMonster_Snarl.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="758012510"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MS_ShadowMonster_Snarl" ID="{24D0BAC1-3B70-4EFB-921A-E1AE228E55E5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
