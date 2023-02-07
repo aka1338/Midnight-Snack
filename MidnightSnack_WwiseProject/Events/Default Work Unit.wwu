@@ -38,6 +38,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Shadowmonsters" ID="{54D17A7B-7636-4D7B-9C58-C2FD470579A8}">
+							<ChildrenList>
+								<Action Name="" ID="{52A3A09E-6750-450F-9B84-0BECB6A89D20}" ShortID="664027946">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_ShadowMonster_Snarl" ID="{24DB5BE4-5EA7-4616-9D19-B19CC48A0C1F}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player" ID="{113FE7BA-AAD8-4D9F-B332-8CC8A3F974C5}" ShortID="927867976">
@@ -66,6 +77,65 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Ambient" ID="{0B982BE1-63F6-4AC6-ADED-8AA42E842ED1}" ShortID="839650516">
+					<ChildrenList>
+						<Event Name="Bathroom" ID="{BB84EAB5-E495-45DF-AF37-98C7649043B9}">
+							<ChildrenList>
+								<Action Name="" ID="{09073906-2D66-496C-A560-5B034FF77E68}" ShortID="638991292">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_Bathroom_Ambience_TapDrip" ID="{7107093B-0A2E-4A4A-A4D3-169A2690B484}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Frontdoor" ID="{7D972C1F-931D-4FE1-9028-E95136BC6743}">
+							<ChildrenList>
+								<Action Name="" ID="{2AF20EF2-645B-4B1C-BD11-961DC824C111}" ShortID="939792244">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_Frontdoor_Ambience" ID="{039C65D7-2080-40B7-9767-B6813E355A47}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Kitchen" ID="{3F1D90B9-7473-4D1D-A5B5-C26BAE7E58FE}">
+							<ChildrenList>
+								<Action Name="" ID="{54A0EDF2-6D0D-49C7-905C-4A268AF22C22}" ShortID="484447866">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_Kitchen_Ambience" ID="{1ECF69CD-D02C-4066-8265-8B8F439B0C22}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Window" ID="{A5F58A4B-62A3-457A-B8D1-36415CB0DB5F}">
+							<ChildrenList>
+								<Action Name="" ID="{6CD4757C-C4B3-49B4-82BD-1B6435373D37}" ShortID="1003785045">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_Window_Ambience" ID="{28921109-B0E3-4A52-9567-A3A701C5F278}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="MOM" ID="{68120470-F06A-4EE5-B31D-DF88FD308DC8}">
+					<ChildrenList>
+						<Action Name="" ID="{F1F92544-2999-4088-8996-580AD14E35AA}" ShortID="473610475">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MS_MomBreathing" ID="{5B15A7E3-41E8-4A97-A05C-B36A5D25FC12}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

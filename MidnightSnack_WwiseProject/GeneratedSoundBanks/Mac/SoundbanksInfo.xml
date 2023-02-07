@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F56A610C-C7C4-F874-B68B-7ADDF94EBB7A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D3EC513C-F1F9-6683-7ABC-035189511D74}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -31,45 +31,73 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4C215B93-C39E-E79F-D417-CDE05E3C054A}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7635560D-9625-00BB-14E6-1BD2D49CE729}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="1525529" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footstep_Creak_2.wav</ShortName>
+					<CachePath>SFX/MS_Footstep_Creak_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="78706318" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DoorUnlock.wav</ShortName>
+					<CachePath>SFX/DoorUnlock_25941C73.wem</CachePath>
+				</File>
 				<File Id="95118756" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_3.wav</ShortName>
 					<CachePath>SFX/MS_Footsteos_Bathroom_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="109493106" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
+					<CachePath>SFX/MS_Footsteps_Carpet_Mono_29591BC8.wem</CachePath>
+				</File>
+				<File Id="117734691" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
+					<CachePath>SFX/MS_Footsteps_Carpet_Mono_7EE15505.wem</CachePath>
+				</File>
+				<File Id="139559262" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Vase_Rolling.wav</ShortName>
+					<CachePath>SFX/Vase_Rolling_79AEACFE.wem</CachePath>
+				</File>
+				<File Id="160299734" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Vase_Smash.wav</ShortName>
+					<CachePath>SFX/Vase_Smash_10C4C929.wem</CachePath>
 				</File>
 				<File Id="273609102" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_2.wav</ShortName>
 					<CachePath>SFX/MS_Footsteos_Bathroom_2_10C4C929.wem</CachePath>
 				</File>
-				<File Id="276710545" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_30BBD105.wem</CachePath>
+				<File Id="281478492" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
+					<CachePath>SFX/MS_Footsteps_Carpet_Mono_CE487502.wem</CachePath>
 				</File>
 				<File Id="297618981" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_8.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_8_10C4C929.wem</CachePath>
 				</File>
-				<File Id="361128640" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_E48BF307.wem</CachePath>
+				<File Id="299336329" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DoorUnlock_Squeak_1.wav</ShortName>
+					<CachePath>SFX/DoorUnlock_Squeak_1_10C4C929.wem</CachePath>
 				</File>
-				<File Id="529054368" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_8793FAA9.wem</CachePath>
+				<File Id="489675898" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Toy_Knockover.wav</ShortName>
+					<CachePath>SFX/Toy_Knockover_1C723C24.wem</CachePath>
+				</File>
+				<File Id="514119297" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
+					<CachePath>SFX/MS_Footsteps_Carpet_Mono_AFDD85A8.wem</CachePath>
 				</File>
 				<File Id="560158159" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_5.wav</ShortName>
 					<CachePath>SFX/MS_Footsteos_Bathroom_5_10C4C929.wem</CachePath>
 				</File>
+				<File Id="584325035" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Toy_Hit_Knockover.wav</ShortName>
+					<CachePath>SFX/Toy_Hit_Knockover_ED03813F.wem</CachePath>
+				</File>
 				<File Id="603231246" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_6.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_6_10C4C929.wem</CachePath>
-				</File>
-				<File Id="622648913" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_D138263D.wem</CachePath>
 				</File>
 				<File Id="672131314" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_4.wav</ShortName>
@@ -83,10 +111,6 @@
 					<ShortName>MS_Footstep_1.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_1_10C4C929.wem</CachePath>
 				</File>
-				<File Id="796463663" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_8AD8FE85.wem</CachePath>
-				</File>
 				<File Id="805385492" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_4.wav</ShortName>
 					<CachePath>SFX/MS_Footsteos_Bathroom_4_10C4C929.wem</CachePath>
@@ -95,13 +119,13 @@
 					<ShortName>MS_Footstep_3.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_3_10C4C929.wem</CachePath>
 				</File>
+				<File Id="930616706" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DoorUnlock_Squeak_2.wav</ShortName>
+					<CachePath>SFX/DoorUnlock_Squeak_2_10C4C929.wem</CachePath>
+				</File>
 				<File Id="956033431" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_2.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_2_10C4C929.wem</CachePath>
-				</File>
-				<File Id="972795060" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MS_Footsteps_Carpet.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_2696CC3C.wem</CachePath>
 				</File>
 				<File Id="1002065778" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_1.wav</ShortName>
@@ -111,13 +135,37 @@
 					<ShortName>MS_Footsteos_Bathroom_6.wav</ShortName>
 					<CachePath>SFX/MS_Footsteos_Bathroom_6_10C4C929.wem</CachePath>
 				</File>
+				<File Id="1028470573" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
+					<CachePath>SFX/MS_Footsteps_Carpet_Mono_B8F880CD.wem</CachePath>
+				</File>
+				<File Id="1046736714" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footstep_Creak_1.wav</ShortName>
+					<CachePath>SFX/MS_Footstep_Creak_1_10C4C929.wem</CachePath>
+				</File>
 				<File Id="1056363622" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_5.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_5_10C4C929.wem</CachePath>
 				</File>
+				<File Id="1059218504" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
+					<CachePath>SFX/MS_Footsteps_Carpet_Mono_45E7445F.wem</CachePath>
+				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="526444594" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
+			</Plugins>
 			<Events>
-				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0.17296387" DurationMax="1.37">
+				<Event Id="535830432" Name="Door_Open" DurationType="OneShot" DurationMin="2.7670217" DurationMax="3.5058966">
+					<MediaRefs>
+						<MediaRef Id="78706318"/>
+						<MediaRef Id="299336329"/>
+						<MediaRef Id="930616706"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0.22730817" DurationMax="1.37">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="3316001432"/>
@@ -133,12 +181,12 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2412606308" Default="true"/>
 							<MediaRefs>
-								<MediaRef Id="276710545"/>
-								<MediaRef Id="361128640"/>
-								<MediaRef Id="529054368"/>
-								<MediaRef Id="622648913"/>
-								<MediaRef Id="796463663"/>
-								<MediaRef Id="972795060"/>
+								<MediaRef Id="109493106"/>
+								<MediaRef Id="117734691"/>
+								<MediaRef Id="281478492"/>
+								<MediaRef Id="514119297"/>
+								<MediaRef Id="1028470573"/>
+								<MediaRef Id="1059218504"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -156,6 +204,29 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1080872003" Name="Toy" DurationType="OneShot" DurationMin="0.7083333" DurationMax="0.7083333">
+					<MediaRefs>
+						<MediaRef Id="489675898"/>
+						<MediaRef Id="584325035"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3807673842" Name="Vase" DurationType="OneShot" DurationMin="4.3805847" DurationMax="4.3805847">
+					<MediaRefs>
+						<MediaRef Id="139559262"/>
+						<MediaRef Id="160299734"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="526444594"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3917875690" Name="Wood_Creaks" DurationType="OneShot" DurationMin="1.4509375" DurationMax="1.5">
+					<MediaRefs>
+						<MediaRef Id="1525529"/>
+						<MediaRef Id="1046736714"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
@@ -168,5 +239,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{83E72F41-4904-F936-FC5E-3AD978057CF1}</FileHash>
+	<FileHash>{9CFE22C8-03EB-2772-C020-906E62484415}</FileHash>
 </SoundBanksInfo>

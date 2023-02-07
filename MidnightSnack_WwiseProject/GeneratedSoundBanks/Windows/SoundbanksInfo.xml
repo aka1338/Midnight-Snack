@@ -31,7 +31,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2EFF29C2-B0CD-2D93-64CB-04EC11485D6F}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7635560D-9625-00BB-14E6-1BD2D49CE729}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -41,7 +41,7 @@
 				</File>
 				<File Id="78706318" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DoorUnlock.wav</ShortName>
-					<CachePath>SFX/DoorUnlock_DD7D7D32.wem</CachePath>
+					<CachePath>SFX/DoorUnlock_25941C73.wem</CachePath>
 				</File>
 				<File Id="95118756" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_3.wav</ShortName>
@@ -49,15 +49,15 @@
 				</File>
 				<File Id="109493106" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_Mono_E3BFA187.wem</CachePath>
+					<CachePath>SFX/MS_Footsteps_Carpet_Mono_29591BC8.wem</CachePath>
 				</File>
 				<File Id="117734691" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_Mono_D686F204.wem</CachePath>
+					<CachePath>SFX/MS_Footsteps_Carpet_Mono_7EE15505.wem</CachePath>
 				</File>
 				<File Id="139559262" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Vase_Rolling.wav</ShortName>
-					<CachePath>SFX/Vase_Rolling_FCA5A52D.wem</CachePath>
+					<CachePath>SFX/Vase_Rolling_79AEACFE.wem</CachePath>
 				</File>
 				<File Id="160299734" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Vase_Smash.wav</ShortName>
@@ -69,7 +69,7 @@
 				</File>
 				<File Id="281478492" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_Mono_93C26FB9.wem</CachePath>
+					<CachePath>SFX/MS_Footsteps_Carpet_Mono_CE487502.wem</CachePath>
 				</File>
 				<File Id="297618981" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_8.wav</ShortName>
@@ -81,11 +81,11 @@
 				</File>
 				<File Id="489675898" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Toy_Knockover.wav</ShortName>
-					<CachePath>SFX/Toy_Knockover_6DB297ED.wem</CachePath>
+					<CachePath>SFX/Toy_Knockover_1C723C24.wem</CachePath>
 				</File>
 				<File Id="514119297" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_Mono_8F18A1B4.wem</CachePath>
+					<CachePath>SFX/MS_Footsteps_Carpet_Mono_AFDD85A8.wem</CachePath>
 				</File>
 				<File Id="560158159" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_5.wav</ShortName>
@@ -93,7 +93,7 @@
 				</File>
 				<File Id="584325035" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Toy_Hit_Knockover.wav</ShortName>
-					<CachePath>SFX/Toy_Hit_Knockover_87B2EBC5.wem</CachePath>
+					<CachePath>SFX/Toy_Hit_Knockover_ED03813F.wem</CachePath>
 				</File>
 				<File Id="603231246" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_6.wav</ShortName>
@@ -137,7 +137,7 @@
 				</File>
 				<File Id="1028470573" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_Mono_7C354B6B.wem</CachePath>
+					<CachePath>SFX/MS_Footsteps_Carpet_Mono_B8F880CD.wem</CachePath>
 				</File>
 				<File Id="1046736714" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_Creak_1.wav</ShortName>
@@ -149,7 +149,7 @@
 				</File>
 				<File Id="1059218504" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
-					<CachePath>SFX/MS_Footsteps_Carpet_Mono_D559A16E.wem</CachePath>
+					<CachePath>SFX/MS_Footsteps_Carpet_Mono_45E7445F.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -239,5 +239,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{078E1408-11D2-7AAF-7B36-5BA03EE2EC88}</FileHash>
+	<FileHash>{777CC023-C657-DD49-5938-D07BD2ABD814}</FileHash>
 </SoundBanksInfo>
