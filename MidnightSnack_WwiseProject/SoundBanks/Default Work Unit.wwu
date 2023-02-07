@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Door_Open" ID="{F7C29F0F-A571-421B-B746-35E39F6E1C22}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{C2013B83-8D46-4614-A1F9-4DC13024100D}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Wood_Creaks" ID="{BB303756-D55C-48B1-8EBE-05645137F9E6}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Toy" ID="{EEC81BD9-83B2-4D0E-9B9F-A33C305C0C41}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Vase" ID="{D6667AF1-ED96-4F93-8690-2A5C4F97EB92}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
