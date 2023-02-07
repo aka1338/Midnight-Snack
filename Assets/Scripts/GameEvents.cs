@@ -17,6 +17,9 @@ public class GameEvents : MonoBehaviour
     public event Action<int> onDoorwayTriggerEnter;
     public event Action<int> onDoorwayTriggerExit;
 
+    public event Action<int> onMamaDoorwayTriggerEnter;
+    public event Action<int> onMamaDoorwayTriggerExit;
+
     // Mama should subscribe to this event. 
     public event Action<ROOM> onNoiseEventTriggerEnter;
 
@@ -31,6 +34,21 @@ public class GameEvents : MonoBehaviour
         }
     }
 
+    public void MamaDoorwayTriggerEnter(int id)
+    {
+        if (onMamaDoorwayTriggerEnter != null)
+        {
+            onMamaDoorwayTriggerEnter(id);
+        }
+    }
+
+    public void MamaDoorwayTriggerExit(int id)
+    {
+        if (onMamaDoorwayTriggerExit != null)
+        {
+            onMamaDoorwayTriggerExit(id);
+        }
+    }
     public void SnackObtained()
     {
         if (onSnackObtained != null)

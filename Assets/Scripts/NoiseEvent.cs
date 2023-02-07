@@ -34,7 +34,6 @@ public class NoiseEvent : MonoBehaviour
                 {
                     oneShotEventTriggered = true;
                 }
-                Debug.Log("Player tripped a noise event from " + roomID); // play event
                 GameEvents.current.NoiseEventTriggerEnter(roomID); 
                 onCooldown = true;
                 cooldownTimer = cooldownTime;

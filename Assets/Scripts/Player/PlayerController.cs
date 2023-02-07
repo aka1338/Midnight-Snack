@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     private TERRAIN currentTerrain;
 
     [SerializeField]
-    private ROOM currentRoom;
+    public ROOM currentRoom;
     private int currentDoorTrigger; 
 
     internal void SetDoorTriggerArea(int id)
@@ -57,7 +57,6 @@ public class PlayerController : MonoBehaviour
     {
         playerControls = new PlayerInputActions();
         current = this;
-
     }
 
     private void OnEnable() 
@@ -132,7 +131,6 @@ public class PlayerController : MonoBehaviour
         {
             currentRoom = ROOM.KITCHEN;
         }
-        Debug.Log(currentRoom); 
     }
 
     private void DetermineTerrain(Collider2D collider)
@@ -213,7 +211,6 @@ public class PlayerController : MonoBehaviour
         }
     }
     
-    // TODO: This might have to reference the current TriggerArea the player is inside of. 
     private void Interact(InputAction.CallbackContext context)
     {
         GameEvents.current.DoorwayTriggerEnter((int)currentDoorTrigger); 
