@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -9,6 +7,19 @@ public class GameManager : MonoBehaviour
     public bool playerHasSnack = false;
 
     public static GameManager current;
+
+    private void Awake()
+    {
+        current = this;
+    }
+
+    // Should track mama's state here. 
+    private MAMA_STATE mamaState = MAMA_STATE.IDLE; 
+
+    public void SetMamaState(MAMA_STATE state)
+    {
+        mamaState = state;
+    }
 
     private void Start()
     {
@@ -24,8 +35,10 @@ public class GameManager : MonoBehaviour
     void OnSnackObtained()
     {
         playerHasSnack = true; 
-        // And then spawn the ghost. 
     }
 
+    public void SetGameOver(bool state) {
+        isGameOver = state; 
+    }
 
 }

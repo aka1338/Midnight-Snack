@@ -7,41 +7,32 @@ using UnityEngine.AI;
 // Singleton
 public class MamaController : MonoBehaviour
 {
-
     public static MamaController current;
 
-    public GameObject player;
+    private Vector2 moveDirection = Vector2.zero;
     NavMeshAgent agent;
-    bool isPaused;
-    public int currentDoorTrigger;
 
-    // Footsteps 
+
+    [Header("Mama State")]
     public ROOM currentRoom;
-
-    public enum MAMA_STATE
-    {
-        IDLE,
-        ALERTED,
-        SEEKING_PLAYER,
-        RETURNING_TO_BED
-    };
-
+    public TERRAIN currentTerrain;
     public MAMA_STATE mamaState = MAMA_STATE.IDLE;
-
+    public int currentDoorTrigger;
+    
+    [Header("Navigation Targets")]
+    public GameObject player;
     public GameObject mamaBed;
     public List<GameObject> lightSwitches;
     public Stack<GameObject> flippedSwitches = new Stack<GameObject>();
-
     public GameObject currentNavTarget;
-
     public float positionTolerance = 0.5f;
 
     // Animation Logic
-    public float frameRate;
     float idleTime;
-    public SpriteRenderer spriteRenderer;
-    public Vector2 moveDirection = Vector2.zero;
 
+    [Header("Mama Sprites")]
+    public float frameRate;
+    public SpriteRenderer spriteRenderer;
     public List<Sprite> nSprites;
     public List<Sprite> neSprites;
     public List<Sprite> eSprites;
@@ -50,14 +41,13 @@ public class MamaController : MonoBehaviour
 
     int prevFrame = -1;
 
+    [Header("Wwise")]
     [SerializeField]
     private AK.Wwise.Event footstepsEvent;
     [SerializeField]
     private AK.Wwise.Switch[] terrainSwitch;
 
-    [SerializeField]
-    private TERRAIN currentTerrain;
-
+  
     private void Start()
     {
         GameEvents.current.onNoiseEventTriggerEnter += FlipLightOnInAlertedRoom;
@@ -66,6 +56,14 @@ public class MamaController : MonoBehaviour
     private void OnDisable()
     {
         GameEvents.current.onNoiseEventTriggerEnter -= FlipLightOnInAlertedRoom;
+    }
+
+    private void Awake()
+    {
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
+        current = this;
     }
 
     internal void SetDoorTriggerArea(int id)
@@ -96,6 +94,7 @@ public class MamaController : MonoBehaviour
             {
                 // Uncomment this if we implement 8-Way directionals
                 //selectedSprites = neSprites;
+                selectedSprites = nSprites;
             }
             else
             { // neutral x 
@@ -108,10 +107,13 @@ public class MamaController : MonoBehaviour
             {
                 // Uncomment this if we implement 8 - Way directionals
                 //selectedSprites = seSprites;
+                selectedSprites = sSprites;
+
             }
             else
             { // neutral x 
                 selectedSprites = sSprites;
+
             }
         }
         else // neutral
@@ -208,7 +210,7 @@ public class MamaController : MonoBehaviour
 
     private void HandleMamaWalkingAnimation()
     {
-        moveDirection = agent.velocity.normalized * agent.speed;
+        moveDirection = agent.velocity.normalized;
 
         HandleSpriteFlip();
 
@@ -216,21 +218,19 @@ public class MamaController : MonoBehaviour
 
         if (directionSprites != null) // holding a direction 
         {
-
             float playTime = Time.time - idleTime;
             if (playTime != 0)
             {
-                // Uncomment when adding mama sprites
-                /*                int totalFrames = (int)(playTime * frameRate);
-                                int frame = totalFrames % directionSprites.Count;
-                                spriteRenderer.sprite = directionSprites[frame];
+                int totalFrames = (int)(playTime * frameRate);
+                int frame = totalFrames % directionSprites.Count;
+                spriteRenderer.sprite = directionSprites[frame];
 
-                                if (frame != prevFrame)
-                                {
-                                    prevFrame = frame;
-                                    SelectAndPlayFootstep();
-                                }
-                */
+                if (frame != prevFrame)
+                {
+                    prevFrame = frame;
+                    SelectAndPlayFootstep();
+                }
+
             }
 
         }
@@ -240,71 +240,13 @@ public class MamaController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        DetermineTerrain(collider);
-        DetermineRoom(collider);
-    }
-
-    private void Awake()
-    {
-        agent = GetComponent<NavMeshAgent>();
-        agent.updateRotation = false;
-        agent.updateUpAxis = false;
-        current = this;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        // Turn off the light in this room. 
-
-    }
-
-    void Update()
-    {
-        // When Mom gets a noise event, she will come into the room the player is on and flip the light on.
-        // She first navigates to the light and flips the light on or off. 
-        if (agent.hasPath)
-        {
-            if (Vector2.Distance(transform.position, currentNavTarget.transform.position) < positionTolerance) // Mama Arrived at Target Location
-            {
-                if (currentNavTarget.name.Contains("Lightswitch")) // Arrived at a lightswitch. Sound event goes here.
-                {
-                    if (mamaState == MAMA_STATE.ALERTED)
-                    {
-                        // Turn on the light in this room. 
-                        StartCoroutine(PauseAtLightAndTrackPlayer());
-                    }
-                }
-
-                if (currentNavTarget.name.Contains("Bed")) // Arrived to bed.
-                {
-                    mamaState = MAMA_STATE.IDLE;
-                }
-
-            }
-        }
-        else
-        {
-            if (currentNavTarget != null)
-            {
-                if (currentNavTarget.name.Contains("Player"))
-                {
-                    StartCoroutine(WaitAndReturnToBed());
-                }
-            }
-        }
-
-        // Animation 
-        HandleMamaWalkingAnimation();
-
-    }
-
+    // AI Logic 
     IEnumerator PauseAtLightAndTrackPlayer()
     {
         yield return new WaitForSecondsRealtime(1);
         // Flip on the light of the room Mama is currently in/ 
         mamaState = MAMA_STATE.SEEKING_PLAYER;
+        GameManager.current.SetMamaState(mamaState);
         currentNavTarget = player;
         agent.SetDestination(currentNavTarget.transform.position);
     }
@@ -314,6 +256,7 @@ public class MamaController : MonoBehaviour
         yield return new WaitForSecondsRealtime(5);
         // Check for currently flipped on lights. 
         mamaState = MAMA_STATE.RETURNING_TO_BED;
+        GameManager.current.SetMamaState(mamaState);
         currentNavTarget = mamaBed;
         agent.SetDestination(mamaBed.transform.position);
     }
@@ -324,10 +267,10 @@ public class MamaController : MonoBehaviour
         agent.SetDestination(mamaBed.transform.position);
     }
 
-
     public void FlipLightOnInAlertedRoom(ROOM room)
     {
         mamaState = MAMA_STATE.ALERTED;
+        GameManager.current.SetMamaState(mamaState);
 
         // Take the room and navigate to the lightswitch GameObject of the corresponding room. 
         if (room == ROOM.BEDROOM_HALLWAY)
@@ -365,4 +308,59 @@ public class MamaController : MonoBehaviour
         currentNavTarget = lightSwitch;
         agent.SetDestination(lightSwitch.transform.position);
     }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        DetermineTerrain(collider);
+        DetermineRoom(collider);
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        // Turn off the light in this room. 
+
+    }
+
+    void Update()
+    {
+        HandleMamaWalkingAnimation();
+
+        // When Mom gets a noise event, she will come into the room the player is on and flip the light on.
+        // She first navigates to the light and flips the light on or off. 
+        if (agent.hasPath)
+        {
+            if (Vector2.Distance(transform.position, currentNavTarget.transform.position) < positionTolerance) // Mama Arrived at Target Location
+            {
+                if (currentNavTarget.name.Contains("Lightswitch")) // Arrived at a lightswitch. Sound event goes here.
+                {
+                    if (mamaState == MAMA_STATE.ALERTED)
+                    {
+                        // Turn on the light in this room. 
+                        StartCoroutine(PauseAtLightAndTrackPlayer());
+                    }
+                }
+
+                if (currentNavTarget.name.Contains("Bed")) // Arrived to bed.
+                {
+                    mamaState = MAMA_STATE.IDLE;
+                    GameManager.current.SetMamaState(mamaState);
+                }
+
+            }
+        }
+        else
+        {
+            if (currentNavTarget != null)
+            {
+                if (currentNavTarget.name.Contains("Player"))
+                {
+                    StartCoroutine(WaitAndReturnToBed());
+                }
+            }
+        }
+
+        // Animation 
+
+    }
+
 }

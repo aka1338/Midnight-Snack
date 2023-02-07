@@ -5,12 +5,20 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 
-// TODO - This entire thing needs to be refactored badly. 
 public class PlayerController : MonoBehaviour
 {
+    // Singleton
+    public static PlayerController current;
 
-    // TODO: Make the ROOM enum public. 
+    private Rigidbody2D body;
+    private InputAction move;
+    private InputAction interact;
+    private Vector2 moveDirection = Vector2.zero;
 
+    [Header("Player Controls")]
+    public PlayerInputActions playerControls;
+
+    [Header("Player Room and Terrain")]
     [SerializeField]
     private TERRAIN currentTerrain;
 
@@ -23,19 +31,19 @@ public class PlayerController : MonoBehaviour
         currentDoorTrigger = id;
     }
 
+    [Header("Player Render Properties")]
     // Player Controls 
-    public Rigidbody2D body;
     public SpriteRenderer spriteRenderer;
+    public float frameRate;
+
+    [Header("Player Properties")]
     public float walkSpeed;
-    public PlayerInputActions playerControls;
-    private InputAction move;
-    private InputAction interact;
-    public Vector2 moveDirection = Vector2.zero;
 
     // Animation Logic
-    public float frameRate;
     float idleTime;
+    int prevFrame = -1;
 
+    [Header("Player Sprites")]
     public List<Sprite> nSprites;
     public List<Sprite> neSprites;
     public List<Sprite> eSprites;
@@ -45,13 +53,12 @@ public class PlayerController : MonoBehaviour
     // SOUNDS
 
     // Footsteps 
-    int prevFrame = -1;
+    [Header("Wwise")]
     [SerializeField]
     private AK.Wwise.Event footstepsEvent;
     [SerializeField]
     private AK.Wwise.Switch[] terrainSwitch;
 
-    public static PlayerController current;
 
     private void Awake()
     {
@@ -188,7 +195,6 @@ public class PlayerController : MonoBehaviour
 
         if (directionSprites != null) // holding a direction 
         {
-            
             float playTime = Time.time - idleTime;
             if (playTime != 0)
             {
@@ -225,6 +231,8 @@ public class PlayerController : MonoBehaviour
             {
                 // Uncomment this if we implement 8-Way directionals
                 //selectedSprites = neSprites;
+                selectedSprites = nSprites;
+
             }
             else
             { // neutral x 
@@ -237,6 +245,8 @@ public class PlayerController : MonoBehaviour
             {
                 // Uncomment this if we implement 8 - Way directionals
                 //selectedSprites = seSprites;
+                selectedSprites = sSprites;
+
             }
             else
             { // neutral x 

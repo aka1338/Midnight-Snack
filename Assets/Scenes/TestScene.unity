@@ -154,7 +154,7 @@ Transform:
   - {fileID: 1783489200}
   - {fileID: 1350631524}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &107452694
 GameObject:
@@ -249,7 +249,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 193556807, guid: 03dfd616bc24fef419b5a80c536f517f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -287,10 +287,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96b51ab0af6ce243b645edaa3708046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1047849434}
-  currentDoorTrigger: 0
   currentRoom: 0
+  currentTerrain: 0
   mamaState: 0
+  currentDoorTrigger: 0
+  player: {fileID: 1047849434}
   mamaBed: {fileID: 652387049}
   lightSwitches:
   - {fileID: 2030260151}
@@ -302,20 +303,42 @@ MonoBehaviour:
   - {fileID: 1133763629}
   currentNavTarget: {fileID: 0}
   positionTolerance: 0.1
-  frameRate: 0
+  frameRate: 1
   spriteRenderer: {fileID: 131042179}
-  moveDirection: {x: 0, y: 0}
-  nSprites: []
+  nSprites:
+  - {fileID: 193556807, guid: 03dfd616bc24fef419b5a80c536f517f, type: 3}
+  - {fileID: -363441491, guid: 03dfd616bc24fef419b5a80c536f517f, type: 3}
+  - {fileID: -888681391, guid: 03dfd616bc24fef419b5a80c536f517f, type: 3}
   neSprites: []
-  eSprites: []
+  eSprites:
+  - {fileID: 697776142, guid: 03dfd616bc24fef419b5a80c536f517f, type: 3}
+  - {fileID: -1759503526, guid: 03dfd616bc24fef419b5a80c536f517f, type: 3}
+  - {fileID: 1564349453, guid: 03dfd616bc24fef419b5a80c536f517f, type: 3}
   seSprites: []
-  sSprites: []
+  sSprites:
+  - {fileID: 193556807, guid: 03dfd616bc24fef419b5a80c536f517f, type: 3}
+  - {fileID: -1359425907, guid: 03dfd616bc24fef419b5a80c536f517f, type: 3}
+  - {fileID: -1066180825, guid: 03dfd616bc24fef419b5a80c536f517f, type: 3}
   footstepsEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  terrainSwitch: []
-  currentTerrain: 0
+    WwiseObjectReference: {fileID: 11400000, guid: 457bee3a0e4ac4c4ebf6d8a94c1fb34a, type: 2}
+  terrainSwitch:
+  - idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4b1a1d500396f4849819851b0b1ae7d9, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e1a8cfa9e07f0d943a4bfdd7feebb74a, type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 06e88fee5ad1822499db3666d06fbb03, type: 2}
 --- !u!195 &131042182
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -326,7 +349,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1
-  m_Speed: 5
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -355,7 +378,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.27, y: 0.86}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1529,7 +1552,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420034}
-  - component: {fileID: 519420033}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1595,20 +1618,6 @@ Transform:
   m_Father: {fileID: 1047849437}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 480f4a80c42e88640a32d9745d961852, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1622,7 +1631,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_listeners:
-    initialListenerList: []
+    initialListenerList:
+    - {fileID: 1047849441}
     useDefaultListeners: 1
   isEnvironmentAware: 0
   isStaticObject: 0
@@ -1631,6 +1641,20 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 480f4a80c42e88640a32d9745d961852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 0
+  listenerId: 0
 --- !u!1 &526718129
 GameObject:
   m_ObjectHideFlags: 0
@@ -2140,8 +2164,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInTriggerArea: 0
-  mamaInTriggerArea: 1
   isDoorClosed: 1
+  mamaInTriggerArea: 1
   id: 6
 --- !u!1 &680761065
 GameObject:
@@ -2647,8 +2671,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInTriggerArea: 0
-  mamaInTriggerArea: 1
   isDoorClosed: 1
+  mamaInTriggerArea: 1
   id: 1
 --- !u!1 &751139241
 GameObject:
@@ -3696,7 +3720,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &893995855
 MonoBehaviour:
@@ -4081,11 +4105,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTerrain: 0
   currentRoom: 0
-  body: {fileID: 1047849435}
   spriteRenderer: {fileID: 1047849436}
-  walkSpeed: 10
-  moveDirection: {x: 0, y: 0}
   frameRate: 1
+  walkSpeed: 10
   nSprites:
   - {fileID: 485055969, guid: e85fd723dbcd5924fbe0bb5cf641ad69, type: 3}
   - {fileID: -1065265021, guid: e85fd723dbcd5924fbe0bb5cf641ad69, type: 3}
@@ -4177,32 +4199,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1047849434}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56721b85637940d40a40f5eba6b7e308, type: 3}
+  m_Script: {fileID: 11500000, guid: 480f4a80c42e88640a32d9745d961852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 457bee3a0e4ac4c4ebf6d8a94c1fb34a, type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions:
-  - {fileID: 0}
-  multiPositionArray: []
+  isDefaultListener: 1
+  listenerId: 0
 --- !u!1 &1070048301
 GameObject:
   m_ObjectHideFlags: 0
@@ -4487,8 +4488,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInTriggerArea: 0
-  mamaInTriggerArea: 1
   isDoorClosed: 1
+  mamaInTriggerArea: 1
   id: 3
 --- !u!61 &1176246881
 BoxCollider2D:
@@ -5105,7 +5106,7 @@ GameObject:
   - component: {fileID: 1340038662}
   - component: {fileID: 1340038661}
   m_Layer: 0
-  m_Name: ShadowCreature
+  m_Name: ShadowCreature (TBD)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7521,8 +7522,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInTriggerArea: 0
-  mamaInTriggerArea: 1
   isDoorClosed: 1
+  mamaInTriggerArea: 1
   id: 0
 --- !u!61 &2108149772
 BoxCollider2D:
