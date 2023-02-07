@@ -100,6 +100,18 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Snack obtained!");
             GameEvents.current.SnackObtained(); 
         }
+
+        if(collider.gameObject.name.Contains("Hiding"))
+        {
+            GameEvents.current.PlayerEnterHidingSpot(); 
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.gameObject.name.Contains("Hiding"))
+        {
+            GameEvents.current.PlayerExitHidingSpot();
+        }
     }
 
     private void DetermineRoom(Collider2D collider)

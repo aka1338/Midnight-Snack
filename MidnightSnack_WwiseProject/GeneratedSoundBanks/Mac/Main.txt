@@ -1,7 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	535830432	Door_Open			\Default Work Unit\Door_Open	
 	1080872003	Toy			\Default Work Unit\Sound_Triggers\Toy	
+	1082004790	MOM			\Default Work Unit\MOM	
+	1586158131	Kitchen			\Default Work Unit\Ambient\Kitchen	
+	1831461191	Bathroom			\Default Work Unit\Ambient\Bathroom	
+	2330457189	Window			\Default Work Unit\Ambient\Window	
 	2385628198	Footsteps			\Default Work Unit\Player\Footsteps	
+	2574270862	Frontdoor			\Default Work Unit\Ambient\Frontdoor	
 	3807673842	Vase			\Default Work Unit\Sound_Triggers\Vase	
 	3917875690	Wood_Creaks			\Default Work Unit\Player\Wood_Creaks	
 
@@ -17,33 +22,38 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	526444594	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Sound_Triggers\Vase\Silence\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	1525529	MS_Footstep_Creak_2	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_Creak_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\MS_Footstep_Creak_2		288096
-	78706318	DoorUnlock	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\DoorUnlock_25941C73.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door_Open\DoorUnlock		119748
-	95118756	MS_Footsteos_Bathroom_3	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteos_Bathroom_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_3		214176
-	109493106	MS_Footsteps_Carpet_Mono_05	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteps_Carpet_Mono_29591BC8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\MS_Footsteps_Carpet_Mono_05		23692
-	117734691	MS_Footsteps_Carpet_Mono_04	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteps_Carpet_Mono_7EE15505.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\MS_Footsteps_Carpet_Mono_04		22286
-	139559262	Vase_Rolling	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\Vase_Rolling_79AEACFE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_Triggers\Vase\Vase_Rolling		386752
-	160299734	Vase_Smash	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\Vase_Smash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_Triggers\Vase\Vase_Smash		358512
-	273609102	MS_Footsteos_Bathroom_2	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteos_Bathroom_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_2		223008
-	281478492	MS_Footsteps_Carpet_Mono_02	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteps_Carpet_Mono_CE487502.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\MS_Footsteps_Carpet_Mono_02		27564
-	297618981	MS_Footstep_8	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_8		246816
-	299336329	DoorUnlock_Squeak_1	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\DoorUnlock_Squeak_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door_Open\Door_Creaks\DoorUnlock_Squeak_1		411712
-	489675898	Toy_Knockover	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\Toy_Knockover_1C723C24.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_Triggers\Toy\Toy_Knockover		136096
-	514119297	MS_Footsteps_Carpet_Mono_01	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteps_Carpet_Mono_AFDD85A8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\MS_Footsteps_Carpet_Mono_01		23340
-	560158159	MS_Footsteos_Bathroom_5	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteos_Bathroom_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_5		224544
-	584325035	Toy_Hit_Knockover	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\Toy_Hit_Knockover_ED03813F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_Triggers\Toy\Toy_Hit_Knockover		37536
-	603231246	MS_Footstep_6	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_6		238176
-	672131314	MS_Footstep_4	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_4		250080
-	721017236	MS_Footstep_7	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_7		239328
-	773427032	MS_Footstep_1	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_1		263136
-	805385492	MS_Footsteos_Bathroom_4	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteos_Bathroom_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_4		214176
-	829762603	MS_Footstep_3	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_3		243552
-	930616706	DoorUnlock_Squeak_2	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\DoorUnlock_Squeak_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door_Open\Door_Creaks\DoorUnlock_Squeak_2		553576
-	956033431	MS_Footstep_2	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_2		252192
-	1002065778	MS_Footsteos_Bathroom_1	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteos_Bathroom_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_1		227424
-	1009247771	MS_Footsteos_Bathroom_6	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteos_Bathroom_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_6		228960
-	1028470573	MS_Footsteps_Carpet_Mono	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteps_Carpet_Mono_B8F880CD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\MS_Footsteps_Carpet_Mono		21932
-	1046736714	MS_Footstep_Creak_1	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_Creak_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\MS_Footstep_Creak_1		278676
-	1056363622	MS_Footstep_5	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_5		236064
-	1059218504	MS_Footsteps_Carpet_Mono_03	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteps_Carpet_Mono_45E7445F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\MS_Footsteps_Carpet_Mono_03		44458
+	1525529	MS_Footstep_Creak_2	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_Creak_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\MS_Footstep_Creak_2		288096
+	78706318	DoorUnlock	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\DoorUnlock_25941C73.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door_Open\DoorUnlock		119748
+	95118756	MS_Footsteos_Bathroom_3	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteos_Bathroom_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_3		214176
+	109493106	MS_Footsteps_Carpet_Mono_05	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteps_Carpet_Mono_29591BC8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\MS_Footsteps_Carpet_Mono_05		23692
+	117734691	MS_Footsteps_Carpet_Mono_04	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteps_Carpet_Mono_7EE15505.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\MS_Footsteps_Carpet_Mono_04		22286
+	139559262	Vase_Rolling	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\Vase_Rolling_79AEACFE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_Triggers\Vase\Vase_Rolling		386752
+	160299734	Vase_Smash	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\Vase_Smash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_Triggers\Vase\Vase_Smash		358512
+	273609102	MS_Footsteos_Bathroom_2	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteos_Bathroom_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_2		223008
+	281478492	MS_Footsteps_Carpet_Mono_02	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteps_Carpet_Mono_CE487502.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\MS_Footsteps_Carpet_Mono_02		27564
+	297618981	MS_Footstep_8	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_8		246816
+	299336329	DoorUnlock_Squeak_1	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\DoorUnlock_Squeak_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door_Open\Door_Creaks\DoorUnlock_Squeak_1		411712
+	444567866	MS_Kitchen_Ambience	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Kitchen_Ambience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\MS_Kitchen_Ambience		4800096
+	489675898	Toy_Knockover	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\Toy_Knockover_1C723C24.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_Triggers\Toy\Toy_Knockover		136096
+	514119297	MS_Footsteps_Carpet_Mono_01	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteps_Carpet_Mono_AFDD85A8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\MS_Footsteps_Carpet_Mono_01		23340
+	519280723	MS_Window_Ambience	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Window_Ambience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\MS_Window_Ambience		4375776
+	560158159	MS_Footsteos_Bathroom_5	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteos_Bathroom_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_5		224544
+	584325035	Toy_Hit_Knockover	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\Toy_Hit_Knockover_ED03813F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_Triggers\Toy\Toy_Hit_Knockover		37536
+	603231246	MS_Footstep_6	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_6		238176
+	672131314	MS_Footstep_4	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_4		250080
+	721017236	MS_Footstep_7	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_7		239328
+	773427032	MS_Footstep_1	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_1		263136
+	774870520	MS_Frontdoor_Ambience	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Frontdoor_Ambience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\MS_Frontdoor_Ambience		4375776
+	778452409	MS_Bathroom_Ambience_TapDrip	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Bathroom_Ambience_TapDrip_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\MS_Bathroom_Ambience_TapDrip		1822176
+	797784940	MS_MomBreathing	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_MomBreathing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Mum\MS_MomBreathing		5692576
+	805385492	MS_Footsteos_Bathroom_4	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteos_Bathroom_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_4		214176
+	829762603	MS_Footstep_3	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_3		243552
+	930616706	DoorUnlock_Squeak_2	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\DoorUnlock_Squeak_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door_Open\Door_Creaks\DoorUnlock_Squeak_2		553576
+	956033431	MS_Footstep_2	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_2		252192
+	1002065778	MS_Footsteos_Bathroom_1	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteos_Bathroom_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_1		227424
+	1009247771	MS_Footsteos_Bathroom_6	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteos_Bathroom_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_6		228960
+	1028470573	MS_Footsteps_Carpet_Mono	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteps_Carpet_Mono_B8F880CD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\MS_Footsteps_Carpet_Mono		21932
+	1046736714	MS_Footstep_Creak_1	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_Creak_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\MS_Footstep_Creak_1		278676
+	1056363622	MS_Footstep_5	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footstep_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_5		236064
+	1059218504	MS_Footsteps_Carpet_Mono_03	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\MS_Footsteps_Carpet_Mono_45E7445F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\MS_Footsteps_Carpet_Mono_03		44458
 
