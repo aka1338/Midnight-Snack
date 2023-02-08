@@ -123,6 +123,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="TV" ID="{AF032A17-96D8-4723-8B8C-F4D49C41BEC5}">
+							<ChildrenList>
+								<Action Name="" ID="{E8034474-85E0-47FC-A306-4B6C8ED184A9}" ShortID="790659729">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TV_MomsRoom" ID="{DB645CA7-824A-439F-8E85-2420EF503B26}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="MOM" ID="{68120470-F06A-4EE5-B31D-DF88FD308DC8}">

@@ -9,6 +9,7 @@
 						<ObjectRef Name="Window" ID="{A5F58A4B-62A3-457A-B8D1-36415CB0DB5F}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Bathroom" ID="{BB84EAB5-E495-45DF-AF37-98C7649043B9}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{C2013B83-8D46-4614-A1F9-4DC13024100D}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Wood_Creaks" ID="{BB303756-D55C-48B1-8EBE-05645137F9E6}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Toy" ID="{EEC81BD9-83B2-4D0E-9B9F-A33C305C0C41}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Kitchen" ID="{3F1D90B9-7473-4D1D-A5B5-C26BAE7E58FE}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
