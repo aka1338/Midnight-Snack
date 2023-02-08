@@ -6,16 +6,22 @@ using UnityEngine;
 public class ViewRadiusController : MonoBehaviour
 {
     private float timeInTrigger = 0f;
+
+    [Header("View Properties")]
     public bool isDark = true;
     bool isHiding = false;
 
     private CircleCollider2D darkViewRadius;
     private BoxCollider2D litViewRadius;
 
+    [Header("Colliders")]
     public BoxCollider2D playerCollider;
+
+    [Header("Sprites")]
     public SpriteMask playerDarkViewMask;
     public SpriteRenderer darkness;
 
+    [Header("Gameplay Elements (Detection)")]
     public float darkDetectionTime = 4f;
     public float litDetectionTime = 2f;
 
