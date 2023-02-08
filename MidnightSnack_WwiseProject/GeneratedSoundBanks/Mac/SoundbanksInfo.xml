@@ -31,7 +31,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7635560D-9625-00BB-14E6-1BD2D49CE729}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{CEA346EC-7599-2AD1-1309-91F611088F84}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -79,6 +79,10 @@
 					<ShortName>DoorUnlock_Squeak_1.wav</ShortName>
 					<CachePath>SFX/DoorUnlock_Squeak_1_10C4C929.wem</CachePath>
 				</File>
+				<File Id="444567866" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Kitchen_Ambience.wav</ShortName>
+					<CachePath>SFX/MS_Kitchen_Ambience_10C4C929.wem</CachePath>
+				</File>
 				<File Id="489675898" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Toy_Knockover.wav</ShortName>
 					<CachePath>SFX/Toy_Knockover_1C723C24.wem</CachePath>
@@ -86,6 +90,10 @@
 				<File Id="514119297" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
 					<CachePath>SFX/MS_Footsteps_Carpet_Mono_AFDD85A8.wem</CachePath>
+				</File>
+				<File Id="519280723" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Window_Ambience.wav</ShortName>
+					<CachePath>SFX/MS_Window_Ambience_10C4C929.wem</CachePath>
 				</File>
 				<File Id="560158159" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_5.wav</ShortName>
@@ -110,6 +118,18 @@
 				<File Id="773427032" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_1.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="774870520" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Frontdoor_Ambience.wav</ShortName>
+					<CachePath>SFX/MS_Frontdoor_Ambience_10C4C929.wem</CachePath>
+				</File>
+				<File Id="778452409" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Bathroom_Ambience_TapDrip.wav</ShortName>
+					<CachePath>SFX/MS_Bathroom_Ambience_TapDrip_10C4C929.wem</CachePath>
+				</File>
+				<File Id="797784940" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_MomBreathing.wav</ShortName>
+					<CachePath>SFX/MS_MomBreathing_10C4C929.wem</CachePath>
 				</File>
 				<File Id="805385492" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_4.wav</ShortName>
@@ -158,6 +178,11 @@
 				</Custom>
 			</Plugins>
 			<Events>
+				<Event Id="1831461191" Name="Bathroom" MaxAttenuation="15" DurationType="OneShot" DurationMin="9.49" DurationMax="9.49">
+					<MediaRefs>
+						<MediaRef Id="778452409"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="535830432" Name="Door_Open" DurationType="OneShot" DurationMin="2.7670217" DurationMax="3.5058966">
 					<MediaRefs>
 						<MediaRef Id="78706318"/>
@@ -204,6 +229,21 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2574270862" Name="Frontdoor" MaxAttenuation="15" DurationType="OneShot" DurationMin="22.79" DurationMax="22.79">
+					<MediaRefs>
+						<MediaRef Id="774870520"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1586158131" Name="Kitchen" MaxAttenuation="15" DurationType="OneShot" DurationMin="25" DurationMax="25">
+					<MediaRefs>
+						<MediaRef Id="444567866"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1082004790" Name="MOM" MaxAttenuation="15" DurationType="OneShot" DurationMin="29.648333" DurationMax="29.648333">
+					<MediaRefs>
+						<MediaRef Id="797784940"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1080872003" Name="Toy" DurationType="OneShot" DurationMin="0.7083333" DurationMax="0.7083333">
 					<MediaRefs>
 						<MediaRef Id="489675898"/>
@@ -220,6 +260,11 @@
 							<PluginRef Id="526444594"/>
 						</Custom>
 					</PluginRefs>
+				</Event>
+				<Event Id="2330457189" Name="Window" DurationType="OneShot" DurationMin="22.79" DurationMax="22.79">
+					<MediaRefs>
+						<MediaRef Id="519280723"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="3917875690" Name="Wood_Creaks" DurationType="OneShot" DurationMin="1.4509375" DurationMax="1.5">
 					<MediaRefs>
@@ -239,5 +284,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9CFE22C8-03EB-2772-C020-906E62484415}</FileHash>
+	<FileHash>{697261BB-EF37-5040-2B1A-C746AAB63355}</FileHash>
 </SoundBanksInfo>

@@ -26,6 +26,45 @@ public class GameEvents : MonoBehaviour
     // When the snack is obtained 
     public event Action onSnackObtained;
 
+    public event Action onPlayerEnterHidingSpot;
+    public event Action onPlayerExitHidingSpot;
+
+
+    public event Action<ROOM> onMamaTurnLightOn;
+    public event Action<ROOM> onMamaTurnLightOff;
+
+    public void MamaTurnLightOn(ROOM room)
+    {
+        if (onMamaTurnLightOn != null)
+        {
+            onMamaTurnLightOn(room);
+        }
+    }
+    public void MamaTurnLightOff(ROOM room)
+    {
+        if (onMamaTurnLightOff != null)
+        {
+            onMamaTurnLightOff(room);
+        }
+    }
+
+
+    public void PlayerEnterHidingSpot()
+    {
+        if (onPlayerEnterHidingSpot != null)
+        {
+            onPlayerEnterHidingSpot();
+        }
+    }
+
+    public void PlayerExitHidingSpot()
+    {
+        if (onPlayerExitHidingSpot != null)
+        {
+            onPlayerExitHidingSpot();
+        }
+    }
+
     public void NoiseEventTriggerEnter(ROOM roomID)
     {
         if (onNoiseEventTriggerEnter != null)
