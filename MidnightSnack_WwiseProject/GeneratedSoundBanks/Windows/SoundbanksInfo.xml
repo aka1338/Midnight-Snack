@@ -31,7 +31,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{3B567DFC-2FE0-1DE4-9400-7A2D80EDF78A}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{65D3893B-7002-0454-B649-C32E70B68E8E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -187,6 +187,10 @@
 					<ShortName>MS_Footsteos_Bathroom_1.wav</ShortName>
 					<CachePath>SFX/MS_Footsteos_Bathroom_1_10C4C929.wem</CachePath>
 				</File>
+				<File Id="1008861467" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_TV_Podcast.wav</ShortName>
+					<CachePath>SFX/MS_TV_Podcast_EE5A916F.wem</CachePath>
+				</File>
 				<File Id="1009247771" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_6.wav</ShortName>
 					<CachePath>SFX/MS_Footsteos_Bathroom_6_10C4C929.wem</CachePath>
@@ -194,6 +198,10 @@
 				<File Id="1028470573" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
 					<CachePath>SFX/MS_Footsteps_Carpet_Mono_B8F880CD.wem</CachePath>
+				</File>
+				<File Id="1035741978" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_ClothesKick.wav</ShortName>
+					<CachePath>SFX/MS_ClothesKick_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1046736714" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_Creak_1.wav</ShortName>
@@ -214,9 +222,14 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="1831461191" Name="Bathroom" MaxAttenuation="15" DurationType="OneShot" DurationMin="9.49" DurationMax="9.49">
+				<Event Id="1831461191" Name="Bathroom" MaxAttenuation="7" DurationType="OneShot" DurationMin="9.49" DurationMax="9.49">
 					<MediaRefs>
 						<MediaRef Id="778452409"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2231306511" Name="Clothes" DurationType="OneShot" DurationMin="1.25" DurationMax="1.25">
+					<MediaRefs>
+						<MediaRef Id="1035741978"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="535830432" Name="Door_Open" DurationType="OneShot" DurationMin="2.7670217" DurationMax="3.5058966">
@@ -226,7 +239,8 @@
 						<MediaRef Id="930616706"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2385628198" Name="Footsteps" DurationType="OneShot" DurationMin="0.22730817" DurationMax="1.37">
+				<Event Id="473332609" Name="Duvet_Awake" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2385628198" Name="Footsteps" MaxAttenuation="7" DurationType="OneShot" DurationMin="0.22730817" DurationMax="1.37">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="3316001432"/>
@@ -265,17 +279,17 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2574270862" Name="Frontdoor" MaxAttenuation="15" DurationType="OneShot" DurationMin="22.79" DurationMax="22.79">
+				<Event Id="2574270862" Name="Frontdoor" MaxAttenuation="7" DurationType="OneShot" DurationMin="22.79" DurationMax="22.79">
 					<MediaRefs>
 						<MediaRef Id="774870520"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1586158131" Name="Kitchen" MaxAttenuation="15" DurationType="OneShot" DurationMin="25" DurationMax="25">
+				<Event Id="1586158131" Name="Kitchen" MaxAttenuation="7" DurationType="OneShot" DurationMin="25" DurationMax="25">
 					<MediaRefs>
 						<MediaRef Id="444567866"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1082004790" Name="MOM" MaxAttenuation="15" DurationType="OneShot" DurationMin="29.648333" DurationMax="29.648333">
+				<Event Id="1082004790" Name="MOM" MaxAttenuation="7" DurationType="OneShot" DurationMin="29.648333" DurationMax="29.648333">
 					<MediaRefs>
 						<MediaRef Id="797784940"/>
 					</MediaRefs>
@@ -285,6 +299,8 @@
 						<MediaRef Id="758012510"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="186028105" Name="SnackObtained" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1887055498" Name="ThoughtBubble" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1080872003" Name="Toy" DurationType="OneShot" DurationMin="0.7083333" DurationMax="0.7083333">
 					<MediaRefs>
 						<MediaRef Id="489675898"/>
@@ -301,6 +317,7 @@
 						<MediaRef Id="575920840"/>
 						<MediaRef Id="598931479"/>
 						<MediaRef Id="964162494"/>
+						<MediaRef Id="1008861467"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3807673842" Name="Vase" DurationType="OneShot" DurationMin="4.3805847" DurationMax="4.3805847">
@@ -337,5 +354,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{451F0EBB-C72C-56D9-DBF9-442B9FD614D4}</FileHash>
+	<FileHash>{12E14755-E7B1-C509-4C95-EA5BF09ED868}</FileHash>
 </SoundBanksInfo>
