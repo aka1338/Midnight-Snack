@@ -68,6 +68,9 @@
 				</RandomSequenceContainer>
 				<SwitchContainer Name="Footsteps" ID="{D2BDA16F-BE99-479F-94BA-E3DC7048324B}" ShortID="969196706">
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Mom" ID="{B468644B-EDEC-413D-AD61-11D2E7639532}" WorkUnitID="{707360A6-12C7-4CA5-9C1B-B3CC2F350D79}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
 						</Reference>
@@ -646,116 +649,6 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
-				<RandomSequenceContainer Name="Door_Open" ID="{969A4DC4-A7A4-4AEF-A104-C1886CDFC707}" ShortID="881552662">
-					<PropertyList>
-						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="DoorUnlock" ID="{D25A0604-F220-470A-8B56-C5B21AF73D78}" ShortID="864978797">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="DoorUnlock" ID="{B223CC6B-A1E3-4446-98BE-1D0FB23C93B0}">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.227053140096618"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.623188405797101"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>DoorUnlock.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="78706318"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="DoorUnlock" ID="{B223CC6B-A1E3-4446-98BE-1D0FB23C93B0}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<RandomSequenceContainer Name="Door_Creaks" ID="{53D8BE48-774E-43C4-B65C-56A48211F2FF}" ShortID="1057062659">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="DoorUnlock_Squeak_1" ID="{BCBB8A3A-B49A-45F4-988E-D6AE7BC011F3}" ShortID="495023805">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="DoorUnlock_Squeak_1" ID="{4C6BF025-6AEF-4736-B4A4-00DE02F0D3CE}">
-											<Language>SFX</Language>
-											<AudioFile>DoorUnlock_Squeak_1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="299336329"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="DoorUnlock_Squeak_1" ID="{4C6BF025-6AEF-4736-B4A4-00DE02F0D3CE}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="DoorUnlock_Squeak_2" ID="{8E3FBAB2-B0C0-4E8A-B476-6DBCFB95F2EA}" ShortID="606349294">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="DoorUnlock_Squeak_2" ID="{4ACC1C4B-C74F-4CB5-A169-210F4831E2D6}">
-											<Language>SFX</Language>
-											<AudioFile>DoorUnlock_Squeak_2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="930616706"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="DoorUnlock_Squeak_2" ID="{4ACC1C4B-C74F-4CB5-A169-210F4831E2D6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-					</ChildrenList>
-					<Playlist>
-						<ItemRef Name="DoorUnlock" ID="{D25A0604-F220-470A-8B56-C5B21AF73D78}"/>
-						<ItemRef Name="Door_Creaks" ID="{53D8BE48-774E-43C4-B65C-56A48211F2FF}"/>
-					</Playlist>
-				</RandomSequenceContainer>
 				<Folder Name="Sound_Triggers" ID="{16A23710-C85C-41E9-9979-494C96B78E9A}" ShortID="761679275">
 					<ChildrenList>
 						<RandomSequenceContainer Name="Vase" ID="{75E11654-462C-46AC-8B10-1600FCC36E15}" ShortID="355774254">
@@ -940,6 +833,28 @@
 								<BlendTrack Name="New Blend Track" ID="{1FC221A1-C92B-402F-BB24-25370DD8AE3D}" ShortID="1031617118"/>
 							</BlendTrackList>
 						</BlendContainer>
+						<Sound Name="MS_ClothesKick" ID="{0DD8D79E-B636-41BB-8B65-6D0D3054D5C6}" ShortID="852846958">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_ClothesKick" ID="{4BA0142E-7E45-4FA7-BD23-3E604C893DE4}">
+									<Language>SFX</Language>
+									<AudioFile>MS_ClothesKick.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1035741978"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_ClothesKick" ID="{4BA0142E-7E45-4FA7-BD23-3E604C893DE4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambiences" ID="{8B07C71B-412F-4BD1-B66D-7BCAAA5C05A2}" ShortID="1019177221">
@@ -1156,6 +1071,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="TV" ID="{E129BF77-1904-40C9-BA3B-7C330A41FB5E}" ShortID="252396469">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
@@ -1395,6 +1313,33 @@
 										<ActiveSource Name="MS_TV_WouldntSteal" ID="{7F5EDF2E-1F76-425D-AE72-AE2E321342EE}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="MS_TV_Podcast" ID="{69096082-5E0B-4EA1-BD08-3C1644AF9546}" ShortID="876023618">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MS_TV_Podcast" ID="{324B4AE7-9027-4722-B542-F17277F8A21B}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="10.5083655083655"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MS_TV_Podcast.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1008861467"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MS_TV_Podcast" ID="{324B4AE7-9027-4722-B542-F17277F8A21B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<Sound Name="Archived, Test Tone, White Noise SND3563" ID="{1DECEF9D-5D92-4B2B-AFF2-64CD1A27BC46}" ShortID="864079333">
@@ -1430,6 +1375,217 @@
 						<ItemRef Name="Archived, Test Tone, White Noise SND3563" ID="{1DECEF9D-5D92-4B2B-AFF2-64CD1A27BC46}"/>
 					</Playlist>
 				</RandomSequenceContainer>
+				<Folder Name="Doors" ID="{8D067369-4ADB-4259-873F-2F84155D5153}" ShortID="299184920">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Door_Open" ID="{969A4DC4-A7A4-4AEF-A104-C1886CDFC707}" ShortID="881552662">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="DoorUnlock" ID="{D25A0604-F220-470A-8B56-C5B21AF73D78}" ShortID="864978797">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DoorUnlock" ID="{B223CC6B-A1E3-4446-98BE-1D0FB23C93B0}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.227053140096618"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.623188405797101"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>DoorUnlock.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="78706318"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="DoorUnlock" ID="{B223CC6B-A1E3-4446-98BE-1D0FB23C93B0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Door_Creaks" ID="{53D8BE48-774E-43C4-B65C-56A48211F2FF}" ShortID="1057062659">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="DoorUnlock_Squeak_1" ID="{BCBB8A3A-B49A-45F4-988E-D6AE7BC011F3}" ShortID="495023805">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DoorUnlock_Squeak_1" ID="{4C6BF025-6AEF-4736-B4A4-00DE02F0D3CE}">
+													<Language>SFX</Language>
+													<AudioFile>DoorUnlock_Squeak_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="299336329"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DoorUnlock_Squeak_1" ID="{4C6BF025-6AEF-4736-B4A4-00DE02F0D3CE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="DoorUnlock_Squeak_2" ID="{8E3FBAB2-B0C0-4E8A-B476-6DBCFB95F2EA}" ShortID="606349294">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DoorUnlock_Squeak_2" ID="{4ACC1C4B-C74F-4CB5-A169-210F4831E2D6}">
+													<Language>SFX</Language>
+													<AudioFile>DoorUnlock_Squeak_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="930616706"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DoorUnlock_Squeak_2" ID="{4ACC1C4B-C74F-4CB5-A169-210F4831E2D6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="DoorUnlock" ID="{D25A0604-F220-470A-8B56-C5B21AF73D78}"/>
+								<ItemRef Name="Door_Creaks" ID="{53D8BE48-774E-43C4-B65C-56A48211F2FF}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<Sound Name="MS_DoorClose" ID="{8CD211B0-435B-4501-8FE1-55E88004288C}" ShortID="309007661">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_DoorClose" ID="{27B6BACD-C7DA-4777-9B4C-D2F09F35BCD1}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.429325638138138"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.531851163663664"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MS_DoorClose.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="763339408"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_DoorClose" ID="{27B6BACD-C7DA-4777-9B4C-D2F09F35BCD1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Misc" ID="{DF153B29-0173-490E-BC9B-D6FA35AC7AAC}" ShortID="741636455">
+					<ChildrenList>
+						<Sound Name="MS_ThoughtBubble" ID="{5C4DADD4-72FC-42E8-BBFE-7988AE353664}" ShortID="699273957">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_ThoughtBubble" ID="{53813118-75E3-4D56-83C8-003401FF3494}">
+									<Language>SFX</Language>
+									<AudioFile>MS_ThoughtBubble.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="28530349"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_ThoughtBubble" ID="{53813118-75E3-4D56-83C8-003401FF3494}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_Duvet_OnAwake(OutOfBed)" ID="{5F313260-BCC2-4E24-936F-36A6B92AFE90}" ShortID="997952025">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_Duvet_OnAwake(OutOfBed)" ID="{5A86C07E-0758-42B0-BE2D-F65A7387DA80}">
+									<Language>SFX</Language>
+									<AudioFile>MS_Duvet_OnAwake(OutOfBed).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="945329967"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_Duvet_OnAwake(OutOfBed)" ID="{5A86C07E-0758-42B0-BE2D-F65A7387DA80}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_SnackObtained" ID="{2BD1A462-57F4-41E3-975A-0646C2704358}" ShortID="531390884">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_SnackObtained" ID="{1F7831C9-8880-4CF8-9279-848BED3D1CD8}">
+									<Language>SFX</Language>
+									<AudioFile>MS_SnackObtained.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="790648366"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_SnackObtained" ID="{1F7831C9-8880-4CF8-9279-848BED3D1CD8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

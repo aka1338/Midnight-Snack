@@ -49,6 +49,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Clothes" ID="{55AE4CB1-FEF3-4C5A-B116-0065D6BE6241}">
+							<ChildrenList>
+								<Action Name="" ID="{697F90B6-4B18-4203-944D-1826F92026F2}" ShortID="10436273">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_ClothesKick" ID="{0DD8D79E-B636-41BB-8B65-6D0D3054D5C6}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player" ID="{113FE7BA-AAD8-4D9F-B332-8CC8A3F974C5}" ShortID="927867976">
@@ -147,6 +158,13 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Misc" ID="{A2AAD936-0A79-4F96-928A-0369040F3B73}" ShortID="600542659">
+					<ChildrenList>
+						<Event Name="SnackObtained" ID="{CCBEC2F8-E90E-4BC6-9C4C-7141C49D72C0}"/>
+						<Event Name="Duvet_Awake" ID="{E83E7D00-D9BB-429F-881A-0386144E1301}"/>
+						<Event Name="ThoughtBubble" ID="{47BF3AC2-ED35-47EF-86D4-0EAA8125ADB6}"/>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
