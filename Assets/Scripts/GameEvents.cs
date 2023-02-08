@@ -14,6 +14,8 @@ public class GameEvents : MonoBehaviour
         current = this;
     }
 
+    public event Action onGameOver;
+
     public event Action<int> onDoorwayTriggerEnter;
     public event Action<int> onDoorwayTriggerExit;
 
@@ -33,6 +35,14 @@ public class GameEvents : MonoBehaviour
     public event Action<ROOM> onMamaTurnLightOn;
     public event Action<ROOM> onMamaTurnLightOff;
 
+    public void GameOver()
+    {
+        if (onGameOver != null)
+        {
+            onGameOver();
+        }
+    }
+
     public void MamaTurnLightOn(ROOM room)
     {
         if (onMamaTurnLightOn != null)
@@ -47,7 +57,6 @@ public class GameEvents : MonoBehaviour
             onMamaTurnLightOff(room);
         }
     }
-
 
     public void PlayerEnterHidingSpot()
     {

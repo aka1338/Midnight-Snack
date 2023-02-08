@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     {
         current = this;
         GameEvents.current.onSnackObtained += OnSnackObtained;
+        GameEvents.current.onGameOver += SetGameOver; 
     }
 
     private void OnDisable()
@@ -37,8 +38,12 @@ public class GameManager : MonoBehaviour
         playerHasSnack = true; 
     }
 
-    public void SetGameOver(bool state) {
-        isGameOver = state; 
+    public void SetGameOver() {
+        isGameOver = true;
+        Debug.Log("Game over!"); 
+        // Display a Game Over UI that allows the player to restart the game 
+        // Thanks for playing our game! Press UI button to restart. 
     }
+
 
 }

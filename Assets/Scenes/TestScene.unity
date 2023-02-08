@@ -4400,6 +4400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 240d31bc0231a0f4e98ef504452c2de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shakeIntensity: 0.01
+  shakeDuration: 0.5
   currentTerrain: 0
   currentRoom: 0
   spriteRenderer: {fileID: 1047849436}

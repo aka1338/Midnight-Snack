@@ -41,7 +41,6 @@ public class ViewRadiusController : MonoBehaviour
     private void EnableDarkRadius(ROOM room)
     {
         // If the player is in the same room this event triggered from, enable. 
-
         isDark = true;
         if (isHiding)
         {
@@ -59,11 +58,17 @@ public class ViewRadiusController : MonoBehaviour
 
     private void EnableLitRadius(ROOM obj)
     {
-
         isDark = false;
         darkViewRadius.enabled = false;
         darkness.enabled = false;
-
+        if (isHiding)
+        {
+            litViewRadius.enabled = false;  
+        }
+        else
+        {
+            litViewRadius.enabled = true;
+        }
     }
 
     private void PlayerExitedHidingSpot()
@@ -84,21 +89,30 @@ public class ViewRadiusController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Mama" && !isDark)
+        if (!GameManager.current.isGameOver)
         {
-            Debug.Log("Caught by mama!");
+            if (collision.gameObject.name == "Mama" && !isDark)
+            {
+                if (!isHiding)
+                {
+                    GameEvents.current.GameOver();
+                    Debug.Log("Caught by mama!");
+                }
+            }
         }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        timeInTrigger += Time.fixedDeltaTime;
-        if (timeInTrigger >= darkDetectionTime && collision.gameObject.name == "Mama")
+        if (!GameManager.current.isGameOver)
         {
-            // Game over! 
-            Debug.Log("Caught player while room was dark!");
+            timeInTrigger += Time.fixedDeltaTime;
+            if (timeInTrigger >= darkDetectionTime && collision.gameObject.name == "Mama" && !isHiding)
+            {
+                GameEvents.current.GameOver();
+                Debug.Log("Caught player while room was dark!");
+            }
         }
-
     }
 
     private void OnTriggerExit2D(Collider2D collision)
