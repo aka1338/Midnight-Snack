@@ -19,7 +19,9 @@ namespace AK
         static const AkUniqueID FRONTDOOR = 2574270862U;
         static const AkUniqueID KITCHEN = 1586158131U;
         static const AkUniqueID MOM = 1082004790U;
+        static const AkUniqueID SHADOWMONSTERS = 2413434828U;
         static const AkUniqueID TOY = 1080872003U;
+        static const AkUniqueID TV = 1568083719U;
         static const AkUniqueID VASE = 3807673842U;
         static const AkUniqueID WINDOW = 2330457189U;
         static const AkUniqueID WOOD_CREAKS = 3917875690U;

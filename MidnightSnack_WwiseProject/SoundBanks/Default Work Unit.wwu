@@ -9,10 +9,13 @@
 						<ObjectRef Name="Window" ID="{A5F58A4B-62A3-457A-B8D1-36415CB0DB5F}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Bathroom" ID="{BB84EAB5-E495-45DF-AF37-98C7649043B9}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{C2013B83-8D46-4614-A1F9-4DC13024100D}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TV" ID="{AF032A17-96D8-4723-8B8C-F4D49C41BEC5}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Wood_Creaks" ID="{BB303756-D55C-48B1-8EBE-05645137F9E6}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Toy" ID="{EEC81BD9-83B2-4D0E-9B9F-A33C305C0C41}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Kitchen" ID="{3F1D90B9-7473-4D1D-A5B5-C26BAE7E58FE}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Shadowmonsters" ID="{54D17A7B-7636-4D7B-9C58-C2FD470579A8}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MOM" ID="{68120470-F06A-4EE5-B31D-DF88FD308DC8}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Vase" ID="{D6667AF1-ED96-4F93-8690-2A5C4F97EB92}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Frontdoor" ID="{7D972C1F-931D-4FE1-9028-E95136BC6743}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
