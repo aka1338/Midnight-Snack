@@ -10,15 +10,21 @@ public class DoorController : MonoBehaviour
     public int openRotationDirection;
     public int closeRotationDirection;
 
+    [Header("Wwise")]
+    [SerializeField]
+    private AK.Wwise.Event doorOpenEvent;
+    [SerializeField]
+    private AK.Wwise.Event doorCloseEvent;
 
+    [Header("Door ID")]
     // If the DoorController and the TriggerArea id's match, that's what determines which door is interactable. 
     public int id; 
    
     // If Mama is the one at the DoorTrigger, the door will open automatically. 
     void Start()
     {
-        GameEvents.current.onDoorwayTriggerEnter += OnDoorwayOpen;
-        GameEvents.current.onDoorwayTriggerExit += OnDoorwayClose;
+        GameEvents.current.onDoorwayTriggerEnter += OnPlayerDoorwayOpen;
+        GameEvents.current.onDoorwayTriggerExit += OnPlayerDoorwayClose;
         GameEvents.current.onMamaDoorwayTriggerEnter += MamaOpenDoor;
         GameEvents.current.onMamaDoorwayTriggerExit += MamaCloseDoor;
 
@@ -26,13 +32,13 @@ public class DoorController : MonoBehaviour
 
     private void OnDestroy()
     {
-        GameEvents.current.onDoorwayTriggerEnter -= OnDoorwayOpen;
-        GameEvents.current.onDoorwayTriggerExit -= OnDoorwayClose;
+        GameEvents.current.onDoorwayTriggerEnter -= OnPlayerDoorwayOpen;
+        GameEvents.current.onDoorwayTriggerExit -= OnPlayerDoorwayClose;
         GameEvents.current.onMamaDoorwayTriggerEnter -= MamaOpenDoor;
         GameEvents.current.onMamaDoorwayTriggerExit -= MamaCloseDoor;
     }
 
-    private void OnDoorwayOpen(int id)
+    private void OnPlayerDoorwayOpen(int id)
     {
         if (triggerArea != null && id == this.id)
         {
@@ -41,17 +47,38 @@ public class DoorController : MonoBehaviour
                 Vector3 rotateVector = new Vector3(0, 0, openRotationDirection);
                 transform.DORotate(rotateVector, 1f);
                 triggerArea.isDoorClosed = false;
-
+                AkSoundEngine.PostEvent(doorOpenEvent.Id, this.gameObject);
+                GameEvents.current.NoiseEventTriggerEnter((ROOM)id);
                 // Not sure if I like this or not, still debating. 
                 DisableDoorCollider();  
             }
             else
             {
-                OnDoorwayClose(id);
+                OnPlayerDoorwayClose(id);
+            }
+        }
+    }
+    private void OnPlayerDoorwayClose(int id)
+    {
+        if (triggerArea != null && id == this.id)
+        {
+            if (triggerArea.playerInTriggerArea && !triggerArea.isDoorClosed)
+            {
+                // We should get the door open orientation from the door. 
+                Vector3 rotateVector = new Vector3(0, 0, closeRotationDirection);
+                transform.DORotate(rotateVector, 1f).onComplete = EnableDoorCollider;
+                GameEvents.current.NoiseEventTriggerEnter((ROOM)id);
+                triggerArea.isDoorClosed = true;
+            }
+            else
+            {
+                if (triggerArea.playerInTriggerArea)
+                    OnPlayerDoorwayOpen(id);
             }
         }
     }
 
+    // If the gameObject calling OnDoorwayOpen is Mama, the door should open automatically. 
     public void MamaOpenDoor(int id)
     {
         if (triggerArea != null && id == this.id)
@@ -61,8 +88,7 @@ public class DoorController : MonoBehaviour
                 Vector3 rotateVector = new Vector3(0, 0, openRotationDirection);
                 transform.DORotate(rotateVector, 1f);
                 triggerArea.isDoorClosed = false;
-
-                // Not sure if I like this or not, still debating. 
+                AkSoundEngine.PostEvent(doorOpenEvent.Id, this.gameObject);
                 DisableDoorCollider();
             }
         }
@@ -82,25 +108,6 @@ public class DoorController : MonoBehaviour
         }
     }
 
-    private void OnDoorwayClose(int id)
-    {
-        if(triggerArea != null && id == this.id)
-        {
-            if (triggerArea.playerInTriggerArea && !triggerArea.isDoorClosed)
-            {
-                // We should get the door open orientation from the door. 
-                Vector3 rotateVector = new Vector3(0, 0, closeRotationDirection);
-                transform.DORotate(rotateVector, 1f).onComplete = EnableDoorCollider;
-                triggerArea.isDoorClosed = true;
-            }
-            else
-            {
-                if (triggerArea.playerInTriggerArea)
-                    OnDoorwayOpen(id);
-            }
-        }
-        // If the gameObject calling OnDoorwayOpen is Mama, the door should open automatically. 
-    }
 
     private void DisableDoorCollider()
     {
