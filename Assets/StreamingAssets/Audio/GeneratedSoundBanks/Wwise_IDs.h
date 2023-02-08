@@ -13,7 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BATHROOM = 1831461191U;
+        static const AkUniqueID DOOR_OPEN = 535830432U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID FRONTDOOR = 2574270862U;
+        static const AkUniqueID KITCHEN = 1586158131U;
+        static const AkUniqueID MOM = 1082004790U;
+        static const AkUniqueID TOY = 1080872003U;
+        static const AkUniqueID VASE = 3807673842U;
+        static const AkUniqueID WINDOW = 2330457189U;
+        static const AkUniqueID WOOD_CREAKS = 3917875690U;
     } // namespace EVENTS
 
     namespace SWITCHES

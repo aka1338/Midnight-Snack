@@ -22,7 +22,6 @@ public class DoorTriggerArea : MonoBehaviour
         }
         if (collision.name.Contains("Mama"))
         {
-            Debug.Log("Mama collided with door trigger area."); 
             MamaController.current.SetDoorTriggerArea(id);
             GameEvents.current.MamaDoorwayTriggerEnter(id); 
         }
@@ -36,7 +35,6 @@ public class DoorTriggerArea : MonoBehaviour
         }
         if (collision.name.Contains("Mama"))
         {
-            Debug.Log("Mama exited door trigger area.");
             MamaController.current.SetDoorTriggerArea(id);
             GameEvents.current.MamaDoorwayTriggerExit(id);
         }

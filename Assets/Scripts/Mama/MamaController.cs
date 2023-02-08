@@ -243,8 +243,11 @@ public class MamaController : MonoBehaviour
     // AI Logic 
     IEnumerator PauseAtLightAndTrackPlayer()
     {
-        yield return new WaitForSecondsRealtime(1);
-        // Flip on the light of the room Mama is currently in/ 
+        yield return new WaitForSecondsRealtime(2);
+
+        // Flip on the light of the room Mama is currently in 
+        GameEvents.current.MamaTurnLightOn(currentRoom);
+
         mamaState = MAMA_STATE.SEEKING_PLAYER;
         GameManager.current.SetMamaState(mamaState);
         currentNavTarget = player;
@@ -318,7 +321,6 @@ public class MamaController : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         // Turn off the light in this room. 
-
     }
 
     void Update()
@@ -344,6 +346,7 @@ public class MamaController : MonoBehaviour
                 {
                     mamaState = MAMA_STATE.IDLE;
                     GameManager.current.SetMamaState(mamaState);
+                    GameEvents.current.MamaTurnLightOff(currentRoom);
                 }
 
             }
