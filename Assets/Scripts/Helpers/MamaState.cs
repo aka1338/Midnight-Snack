@@ -1,0 +1,8 @@
+public enum MAMA_STATE
+{
+    IDLE,
+    ALERTED,
+    SEEKING_PLAYER,
+    RETURNING_TO_BED
+};
+

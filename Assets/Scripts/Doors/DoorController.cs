@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    public TriggerArea triggerArea;
+    public DoorTriggerArea triggerArea;
     public BoxCollider2D doorCollider;
     public int openRotationDirection;
     public int closeRotationDirection;
@@ -19,12 +19,17 @@ public class DoorController : MonoBehaviour
     {
         GameEvents.current.onDoorwayTriggerEnter += OnDoorwayOpen;
         GameEvents.current.onDoorwayTriggerExit += OnDoorwayClose;
+        GameEvents.current.onMamaDoorwayTriggerEnter += MamaOpenDoor;
+        GameEvents.current.onMamaDoorwayTriggerExit += MamaCloseDoor;
+
     }
 
     private void OnDestroy()
     {
         GameEvents.current.onDoorwayTriggerEnter -= OnDoorwayOpen;
         GameEvents.current.onDoorwayTriggerExit -= OnDoorwayClose;
+        GameEvents.current.onMamaDoorwayTriggerEnter -= MamaOpenDoor;
+        GameEvents.current.onMamaDoorwayTriggerExit -= MamaCloseDoor;
     }
 
     private void OnDoorwayOpen(int id)
@@ -43,6 +48,36 @@ public class DoorController : MonoBehaviour
             else
             {
                 OnDoorwayClose(id);
+            }
+        }
+    }
+
+    public void MamaOpenDoor(int id)
+    {
+        if (triggerArea != null && id == this.id)
+        {
+            if (triggerArea.isDoorClosed) 
+            {
+                Vector3 rotateVector = new Vector3(0, 0, openRotationDirection);
+                transform.DORotate(rotateVector, 1f);
+                triggerArea.isDoorClosed = false;
+
+                // Not sure if I like this or not, still debating. 
+                DisableDoorCollider();
+            }
+        }
+    }
+
+    public void MamaCloseDoor(int id)
+    {
+        if (triggerArea != null && id == this.id)
+        {
+            if (!triggerArea.isDoorClosed)
+            {
+                // We should get the door open orientation from the door. 
+                Vector3 rotateVector = new Vector3(0, 0, closeRotationDirection);
+                transform.DORotate(rotateVector, 1f).onComplete = EnableDoorCollider;
+                triggerArea.isDoorClosed = true;
             }
         }
     }
