@@ -107,7 +107,7 @@ public class ViewRadiusController : MonoBehaviour
         if (!GameManager.current.isGameOver)
         {
             timeInTrigger += Time.fixedDeltaTime;
-            if (timeInTrigger >= darkDetectionTime && collision.gameObject.name == "Mama" && !isHiding)
+            if (timeInTrigger >= darkDetectionTime && collision.gameObject.name == "Mama" && !isHiding && PlayerController.current.currentRoom == MamaController.current.currentRoom)
             {
                 GameEvents.current.GameOver();
                 Debug.Log("Caught player while room was dark!");

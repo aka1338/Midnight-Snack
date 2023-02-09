@@ -250,7 +250,7 @@ public class MamaController : MonoBehaviour
 
         mamaState = MAMA_STATE.SEEKING_PLAYER;
         GameManager.current.SetMamaState(mamaState);
-        currentNavTarget = player;
+        currentNavTarget = PlayerController.current.gameObject;
         agent.SetDestination(currentNavTarget.transform.position);
     }
 
@@ -275,7 +275,7 @@ public class MamaController : MonoBehaviour
         GameManager.current.SetMamaState(mamaState);
 
         // Take the room and navigate to the lightswitch GameObject of the corresponding room. 
-        if (room == ROOM.BEDROOM_HALLWAY)
+        if (room == ROOM.BABY_BEDROOM)
         {
             FlipLightswitchOn(lightSwitches[0]);
         }
@@ -336,6 +336,8 @@ public class MamaController : MonoBehaviour
         {
             if (Vector2.Distance(transform.position, currentNavTarget.transform.position) < positionTolerance) // Mama Arrived at Target Location
             {
+                Debug.Log("Mama arrived to position.");
+
                 if (currentNavTarget.name.Contains("Lightswitch")) // Arrived at a lightswitch. Sound event goes here.
                 {
                     if (mamaState == MAMA_STATE.ALERTED)
