@@ -95,7 +95,7 @@ public class ViewRadiusController : MonoBehaviour
             {
                 if (!isHiding)
                 {
-                    GameEvents.current.GameOver(true);
+                    GameEvents.current.GameOver(false);
                     Debug.Log("Caught by mama!");
                 }
             }
@@ -109,7 +109,7 @@ public class ViewRadiusController : MonoBehaviour
             timeInTrigger += Time.fixedDeltaTime;
             if (timeInTrigger >= darkDetectionTime && collision.gameObject.name == "Mama" && !isHiding && PlayerController.current.currentRoom == MamaController.current.currentRoom)
             {
-                GameEvents.current.GameOver(true);
+                GameEvents.current.GameOver(false);
                 Debug.Log("Caught player while room was dark!");
             }
         }
