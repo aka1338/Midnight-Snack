@@ -10,6 +10,7 @@
 						<Switch Name="Tiles" ID="{4324C33E-ED6F-4E3E-9A3B-AB8AA59E95A3}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Snack" ID="{60C90DFD-EA9D-4BF3-AC48-2DFDB4599C2E}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

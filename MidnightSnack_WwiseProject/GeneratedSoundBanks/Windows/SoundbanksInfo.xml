@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{87C7EC9E-8DA4-C32E-47CA-258D55D21B6E}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1B197ED7-3132-166A-0680-16A6E4DB552B}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,6 +21,16 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<StateGroups>
+				<StateGroup Id="984691642" Name="InGame">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1082004790" Name="Mom"/>
+						<State Id="2909291642" Name="Stealth"/>
+						<State Id="3321796897" Name="Snack"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
@@ -28,6 +38,9 @@
 						<Switch Id="2412606308" Name="Carpet"/>
 						<Switch Id="3316001432" Name="Tiles"/>
 					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3321796897" Name="Snack">
+					<Switches/>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
@@ -353,6 +366,76 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{C1A41357-1E21-E6B0-396B-74A1C67352DE}">
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<Media>
+				<File Id="47777980" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>mom_layer_1.wav</ShortName>
+					<CachePath>SFX/mom_layer_1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="492664792" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>snack_layer.wav</ShortName>
+					<CachePath>SFX/snack_layer_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="824736224" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>subdued_layer.wav</ShortName>
+					<CachePath>SFX/subdued_layer_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3991942870" Name="Music" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="984691642" Id="2909291642"/>
+							<MediaRefs>
+								<MediaRef Id="824736224"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="984691642" Id="3321796897"/>
+							<MediaRefs>
+								<MediaRef Id="492664792"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="984691642" Id="1082004790"/>
+							<MediaRefs>
+								<MediaRef Id="47777980"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="984691642" Id="2909291642"/>
+							<MediaRefs>
+								<MediaRef Id="824736224"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="984691642" Id="3321796897"/>
+							<MediaRefs>
+								<MediaRef Id="492664792"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="984691642" Id="1082004790"/>
+							<MediaRefs>
+								<MediaRef Id="47777980"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="984691642" Name="InGame">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1082004790" Name="Mom"/>
+						<State Id="2909291642" Name="Stealth"/>
+						<State Id="3321796897" Name="Snack"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{12E14755-E7B1-C509-4C95-EA5BF09ED868}</FileHash>
+	<FileHash>{BD228DAE-4D9C-388C-130F-79C14A99A7E8}</FileHash>
 </SoundBanksInfo>
