@@ -44,7 +44,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{65D3893B-7002-0454-B649-C32E70B68E8E}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D616E9FD-9659-C2B5-AF67-CAD2B64DB355}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -202,7 +202,7 @@
 				</File>
 				<File Id="1008861467" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_TV_Podcast.wav</ShortName>
-					<CachePath>SFX/MS_TV_Podcast_EE5A916F.wem</CachePath>
+					<CachePath>SFX/MS_TV_Podcast_D9430248.wem</CachePath>
 				</File>
 				<File Id="1009247771" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_6.wav</ShortName>
@@ -366,7 +366,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{C1A41357-1E21-E6B0-396B-74A1C67352DE}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{F0DA221A-7B6E-CB4E-65CD-88E7B220D412}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -437,5 +437,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A967A080-F5F6-6B2F-81A1-C952B9A9BA9F}</FileHash>
+	<FileHash>{B5334606-FEA6-18D3-B49A-A1F7E0429EB9}</FileHash>
 </SoundBanksInfo>

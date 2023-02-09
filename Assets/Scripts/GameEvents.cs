@@ -14,7 +14,7 @@ public class GameEvents : MonoBehaviour
         current = this;
     }
 
-    public event Action onGameOver;
+    public event Action<bool> onGameOver;
 
     public event Action<int> onDoorwayTriggerEnter;
     public event Action<int> onDoorwayTriggerExit;
@@ -31,15 +31,14 @@ public class GameEvents : MonoBehaviour
     public event Action onPlayerEnterHidingSpot;
     public event Action onPlayerExitHidingSpot;
 
-
     public event Action<ROOM> onMamaTurnLightOn;
     public event Action<ROOM> onMamaTurnLightOff;
 
-    public void GameOver()
+    public void GameOver(bool state)
     {
         if (onGameOver != null)
         {
-            onGameOver();
+            onGameOver(state);
         }
     }
 

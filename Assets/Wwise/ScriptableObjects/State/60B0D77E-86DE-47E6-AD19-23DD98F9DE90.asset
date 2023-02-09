@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7110d95dc8f9b704e94428d56e0fc54d, type: 3}
+  m_Name: 60B0D77E-86DE-47E6-AD19-23DD98F9DE90
+  m_EditorClassIdentifier: 
+  objectName: Stealth
+  id: 2909291642
+  guid: 60B0D77E-86DE-47E6-AD19-23DD98F9DE90
+  WwiseStateGroupReference: {fileID: 11400000, guid: 43cec70b5d9b25447b3ae7cd5ac24616, type: 2}

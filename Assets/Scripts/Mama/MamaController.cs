@@ -250,14 +250,13 @@ public class MamaController : MonoBehaviour
 
         mamaState = MAMA_STATE.SEEKING_PLAYER;
         GameManager.current.SetMamaState(mamaState);
-        currentNavTarget = player;
+        currentNavTarget = PlayerController.current.gameObject;
         agent.SetDestination(currentNavTarget.transform.position);
     }
 
     IEnumerator WaitAndReturnToBed()
     {
         yield return new WaitForSecondsRealtime(5);
-        // Check for currently flipped on lights. 
         mamaState = MAMA_STATE.RETURNING_TO_BED;
         GameManager.current.SetMamaState(mamaState);
         currentNavTarget = mamaBed;
@@ -276,31 +275,35 @@ public class MamaController : MonoBehaviour
         GameManager.current.SetMamaState(mamaState);
 
         // Take the room and navigate to the lightswitch GameObject of the corresponding room. 
-        if (room == ROOM.BEDROOM_HALLWAY)
+        if (room == ROOM.BABY_BEDROOM)
         {
             FlipLightswitchOn(lightSwitches[0]);
         }
-        if (room == ROOM.BABY_BEDROOM)
+        if (room == ROOM.MAMA_BEDROOM)
         {
             FlipLightswitchOn(lightSwitches[1]);
         }
-        if (room == ROOM.MAMA_BEDROOM)
+        if (room == ROOM.BATHROOM)
         {
             FlipLightswitchOn(lightSwitches[2]);
         }
-        if (room == ROOM.BATHROOM)
+        if (room == ROOM.LAUNDRY_ROOM)
         {
             FlipLightswitchOn(lightSwitches[3]);
         }
-        if (room == ROOM.LAUNDRY_ROOM)
+        if (room == ROOM.ENTRANCE_HALLWAY)
         {
             FlipLightswitchOn(lightSwitches[4]);
         }
-        if (room == ROOM.KITCHEN)
+        if (room == ROOM.OFFICE)
         {
             FlipLightswitchOn(lightSwitches[5]);
         }
         if (room == ROOM.LIVINGROOM)
+        {
+            FlipLightswitchOn(lightSwitches[6]);
+        }
+        if (room == ROOM.KITCHEN)
         {
             FlipLightswitchOn(lightSwitches[6]);
         }
@@ -333,11 +336,12 @@ public class MamaController : MonoBehaviour
         {
             if (Vector2.Distance(transform.position, currentNavTarget.transform.position) < positionTolerance) // Mama Arrived at Target Location
             {
+                Debug.Log("Mama arrived to position.");
+
                 if (currentNavTarget.name.Contains("Lightswitch")) // Arrived at a lightswitch. Sound event goes here.
                 {
                     if (mamaState == MAMA_STATE.ALERTED)
                     {
-                        // Turn on the light in this room. 
                         StartCoroutine(PauseAtLightAndTrackPlayer());
                     }
                 }

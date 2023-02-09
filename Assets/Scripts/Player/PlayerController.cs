@@ -105,6 +105,10 @@ public class PlayerController : MonoBehaviour
         {
             GameEvents.current.PlayerEnterHidingSpot(); 
         }
+        if(collider.gameObject.name == "Baby Bed" && GameManager.current.playerHasSnack)
+        {
+            GameEvents.current.GameOver(true); 
+        }
     }
     private void OnTriggerExit2D(Collider2D collider)
     {

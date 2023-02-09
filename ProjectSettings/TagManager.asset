@@ -12,6 +12,7 @@ TagManager:
   - LaundryRoom
   - Livingroom
   - Kitchen
+  - Office
   layers:
   - Default
   - TransparentFX
