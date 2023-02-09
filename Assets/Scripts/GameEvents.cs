@@ -31,7 +31,6 @@ public class GameEvents : MonoBehaviour
     public event Action onPlayerEnterHidingSpot;
     public event Action onPlayerExitHidingSpot;
 
-
     public event Action<ROOM> onMamaTurnLightOn;
     public event Action<ROOM> onMamaTurnLightOff;
 

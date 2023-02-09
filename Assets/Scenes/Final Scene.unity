@@ -391,6 +391,7 @@ GameObject:
   - component: {fileID: 35498951}
   - component: {fileID: 35498953}
   - component: {fileID: 35498952}
+  - component: {fileID: 35498954}
   m_Layer: 0
   m_Name: Bookcase1
   m_TagString: Untagged
@@ -491,6 +492,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &35498954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35498950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &45546779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,6 +1097,7 @@ GameObject:
   - component: {fileID: 104916376}
   - component: {fileID: 104916378}
   - component: {fileID: 104916377}
+  - component: {fileID: 104916379}
   m_Layer: 0
   m_Name: Cabinet Hiding Spot
   m_TagString: Untagged
@@ -1180,6 +1198,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &104916379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104916375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &126087571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,6 +1261,8 @@ GameObject:
   - component: {fileID: 134735019}
   - component: {fileID: 134735021}
   - component: {fileID: 134735020}
+  - component: {fileID: 134735022}
+  - component: {fileID: 134735023}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -1298,6 +1334,52 @@ MonoBehaviour:
   spatialAudioPoolSize: 0
   maxSoundPropagationDepth: 0
   engineLogging: 0
+--- !u!114 &134735022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134735018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf23563ff848f6e4fa71173ccca91726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 088858dbd61b1d74bae721267d82ab55, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &134735023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134735018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6aeba918078548459c17eaaba4a1963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &141207152
 GameObject:
   m_ObjectHideFlags: 0
@@ -2632,6 +2714,7 @@ GameObject:
   - component: {fileID: 341135552}
   - component: {fileID: 341135554}
   - component: {fileID: 341135553}
+  - component: {fileID: 341135555}
   m_Layer: 0
   m_Name: Trash
   m_TagString: Untagged
@@ -2732,6 +2815,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &341135555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341135551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &348202586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2920,9 +3019,9 @@ GameObject:
   m_Component:
   - component: {fileID: 363127405}
   - component: {fileID: 363127406}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Kitchen Floor
-  m_TagString: BabyBedroom
+  m_TagString: Kitchen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3238,6 +3337,7 @@ GameObject:
   - component: {fileID: 404417216}
   - component: {fileID: 404417215}
   - component: {fileID: 404417214}
+  - component: {fileID: 404417217}
   m_Layer: 0
   m_Name: Kitchen Counter
   m_TagString: Untagged
@@ -3364,6 +3464,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &404417217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404417212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &422555920
 GameObject:
   m_ObjectHideFlags: 0
@@ -3495,9 +3611,9 @@ GameObject:
   m_Component:
   - component: {fileID: 426020156}
   - component: {fileID: 426020157}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hallway Floor 2
-  m_TagString: Untagged
+  m_TagString: BedroomHallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3586,6 +3702,7 @@ GameObject:
   - component: {fileID: 473402859}
   - component: {fileID: 473402858}
   - component: {fileID: 473402857}
+  - component: {fileID: 473402860}
   m_Layer: 0
   m_Name: Office Table Hiding Spot
   m_TagString: Untagged
@@ -3712,6 +3829,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &473402860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473402855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &474427533
 GameObject:
   m_ObjectHideFlags: 0
@@ -3867,6 +4000,7 @@ GameObject:
   - component: {fileID: 496778168}
   - component: {fileID: 496778170}
   - component: {fileID: 496778169}
+  - component: {fileID: 496778171}
   m_Layer: 0
   m_Name: Sink
   m_TagString: Untagged
@@ -3967,6 +4101,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &496778171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496778167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &529801675
 GameObject:
   m_ObjectHideFlags: 0
@@ -4363,6 +4513,7 @@ GameObject:
   - component: {fileID: 588485088}
   - component: {fileID: 588485090}
   - component: {fileID: 588485089}
+  - component: {fileID: 588485091}
   m_Layer: 0
   m_Name: side bookcase
   m_TagString: Untagged
@@ -4463,6 +4614,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &588485091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588485087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &589019257
 GameObject:
   m_ObjectHideFlags: 0
@@ -4549,6 +4716,7 @@ GameObject:
   - component: {fileID: 597495397}
   - component: {fileID: 597495399}
   - component: {fileID: 597495398}
+  - component: {fileID: 597495400}
   m_Layer: 0
   m_Name: Mirror
   m_TagString: Untagged
@@ -4649,6 +4817,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &597495400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597495396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &601175180
 GameObject:
   m_ObjectHideFlags: 0
@@ -4815,6 +4999,7 @@ GameObject:
   - component: {fileID: 629643097}
   - component: {fileID: 629643099}
   - component: {fileID: 629643098}
+  - component: {fileID: 629643100}
   m_Layer: 0
   m_Name: reading chair
   m_TagString: Untagged
@@ -4915,6 +5100,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &629643100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629643096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &632548110
 GameObject:
   m_ObjectHideFlags: 0
@@ -5569,9 +5770,9 @@ GameObject:
   m_Component:
   - component: {fileID: 727825402}
   - component: {fileID: 727825403}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hallway Floor
-  m_TagString: Untagged
+  m_TagString: BedroomHallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6872,6 +7073,7 @@ GameObject:
   - component: {fileID: 933758793}
   - component: {fileID: 933758795}
   - component: {fileID: 933758794}
+  - component: {fileID: 933758796}
   m_Layer: 0
   m_Name: side table 1
   m_TagString: Untagged
@@ -6972,6 +7174,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &933758796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933758792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &934304776
 GameObject:
   m_ObjectHideFlags: 0
@@ -7559,6 +7777,7 @@ GameObject:
   - component: {fileID: 1008178616}
   - component: {fileID: 1008178618}
   - component: {fileID: 1008178617}
+  - component: {fileID: 1008178619}
   m_Layer: 0
   m_Name: side table 2
   m_TagString: Untagged
@@ -7659,6 +7878,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1008178619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008178615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1016509611
 GameObject:
   m_ObjectHideFlags: 0
@@ -7709,6 +7944,7 @@ GameObject:
   - component: {fileID: 1022612560}
   - component: {fileID: 1022612562}
   - component: {fileID: 1022612561}
+  - component: {fileID: 1022612563}
   m_Layer: 0
   m_Name: Bookcase 2
   m_TagString: Untagged
@@ -7809,6 +8045,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1022612563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022612559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1046125346
 GameObject:
   m_ObjectHideFlags: 0
@@ -8182,6 +8434,7 @@ GameObject:
   - component: {fileID: 1146212945}
   - component: {fileID: 1146212947}
   - component: {fileID: 1146212946}
+  - component: {fileID: 1146212948}
   m_Layer: 0
   m_Name: Toliet
   m_TagString: Untagged
@@ -8282,6 +8535,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1146212948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146212944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1148122377
 GameObject:
   m_ObjectHideFlags: 0
@@ -9177,6 +9446,7 @@ GameObject:
   - component: {fileID: 1233757414}
   - component: {fileID: 1233757416}
   - component: {fileID: 1233757415}
+  - component: {fileID: 1233757417}
   m_Layer: 0
   m_Name: couch
   m_TagString: Untagged
@@ -9212,7 +9482,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008600712, y: 0.1507281}
+  m_Offset: {x: -0.008600712, y: 0.8229086}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9223,7 +9493,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.350914, y: 2.421456}
+  m_Size: {x: 6.350914, y: 1.0770952}
   m_EdgeRadius: 0
 --- !u!212 &1233757416
 SpriteRenderer:
@@ -9277,6 +9547,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1233757417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233757413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1240639982
 GameObject:
   m_ObjectHideFlags: 0
@@ -9466,6 +9752,7 @@ GameObject:
   - component: {fileID: 1245018292}
   - component: {fileID: 1245018294}
   - component: {fileID: 1245018293}
+  - component: {fileID: 1245018295}
   m_Layer: 0
   m_Name: Coffee table
   m_TagString: Untagged
@@ -9501,7 +9788,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.14710847}
+  m_Offset: {x: 0, y: -0.024111807}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9512,7 +9799,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.6616063, y: 2.1442173}
+  m_Size: {x: 3.6616063, y: 1.8017768}
   m_EdgeRadius: 0
 --- !u!212 &1245018294
 SpriteRenderer:
@@ -9566,6 +9853,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1245018295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245018291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1247282355
 GameObject:
   m_ObjectHideFlags: 0
@@ -9766,9 +10069,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1265303273}
   - component: {fileID: 1265303274}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Laundry Room Floor
-  m_TagString: BabyBedroom
+  m_TagString: LaundryRoom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10383,6 +10686,7 @@ GameObject:
   - component: {fileID: 1341041753}
   - component: {fileID: 1341041755}
   - component: {fileID: 1341041754}
+  - component: {fileID: 1341041756}
   m_Layer: 0
   m_Name: Display case
   m_TagString: Untagged
@@ -10483,6 +10787,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1341041756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341041752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1349385654
 GameObject:
   m_ObjectHideFlags: 0
@@ -10600,6 +10920,7 @@ GameObject:
   - component: {fileID: 1383469938}
   - component: {fileID: 1383469940}
   - component: {fileID: 1383469939}
+  - component: {fileID: 1383469941}
   m_Layer: 0
   m_Name: Washer and dryer
   m_TagString: Untagged
@@ -10700,6 +11021,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1383469941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383469937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1410849967
 GameObject:
   m_ObjectHideFlags: 0
@@ -11242,6 +11579,7 @@ GameObject:
   - component: {fileID: 1469425927}
   - component: {fileID: 1469425929}
   - component: {fileID: 1469425928}
+  - component: {fileID: 1469425930}
   m_Layer: 0
   m_Name: Tub
   m_TagString: Untagged
@@ -11342,6 +11680,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1469425930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469425926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1480312634
 GameObject:
   m_ObjectHideFlags: 0
@@ -11352,9 +11706,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1480312635}
   - component: {fileID: 1480312636}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Livingroom Floor
-  m_TagString: BabyBedroom
+  m_TagString: Livingroom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11411,6 +11765,7 @@ GameObject:
   - component: {fileID: 1496990173}
   - component: {fileID: 1496990175}
   - component: {fileID: 1496990174}
+  - component: {fileID: 1496990176}
   m_Layer: 0
   m_Name: trashcan
   m_TagString: Untagged
@@ -11511,6 +11866,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1496990176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496990172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1497974925
 GameObject:
   m_ObjectHideFlags: 0
@@ -12445,6 +12816,7 @@ GameObject:
   - component: {fileID: 1606743476}
   - component: {fileID: 1606743478}
   - component: {fileID: 1606743477}
+  - component: {fileID: 1606743479}
   m_Layer: 0
   m_Name: Table Hiding Spot
   m_TagString: Untagged
@@ -12545,6 +12917,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1606743479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606743475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1611849071
 GameObject:
   m_ObjectHideFlags: 0
@@ -12556,6 +12944,7 @@ GameObject:
   - component: {fileID: 1611849072}
   - component: {fileID: 1611849074}
   - component: {fileID: 1611849073}
+  - component: {fileID: 1611849075}
   m_Layer: 0
   m_Name: Couch
   m_TagString: Untagged
@@ -12656,6 +13045,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1611849075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611849071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1629712706
 GameObject:
   m_ObjectHideFlags: 0
@@ -12902,6 +13307,7 @@ GameObject:
   - component: {fileID: 1689001236}
   - component: {fileID: 1689001238}
   - component: {fileID: 1689001237}
+  - component: {fileID: 1689001239}
   m_Layer: 0
   m_Name: Toybox Hiding Spot
   m_TagString: Untagged
@@ -13002,6 +13408,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1689001239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689001235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1700644374
 GameObject:
   m_ObjectHideFlags: 0
@@ -13780,7 +14202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1743989513}
   - component: {fileID: 1743989514}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Baby Bedroom Floor
   m_TagString: BabyBedroom
   m_Icon: {fileID: 0}
@@ -14176,9 +14598,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1833624675}
   - component: {fileID: 1833624676}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mama Bedroom Floor
-  m_TagString: BabyBedroom
+  m_TagString: MamaBedroom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14234,9 +14656,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1836198416}
   - component: {fileID: 1836198417}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bathroom Floor
-  m_TagString: BabyBedroom
+  m_TagString: Bathroom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14820,7 +15242,7 @@ GameObject:
   - component: {fileID: 1916086829}
   m_Layer: 0
   m_Name: Entryway Floor
-  m_TagString: BabyBedroom
+  m_TagString: EntranceHallway
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14877,6 +15299,7 @@ GameObject:
   - component: {fileID: 1924859839}
   - component: {fileID: 1924859841}
   - component: {fileID: 1924859840}
+  - component: {fileID: 1924859842}
   m_Layer: 0
   m_Name: trashcan
   m_TagString: Untagged
@@ -14977,6 +15400,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1924859842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924859838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1941225754
 GameObject:
   m_ObjectHideFlags: 0
@@ -15001,7 +15440,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941225754}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 79.6, y: 11.3, z: 0}
+  m_LocalPosition: {x: 79.6, y: 12.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15102,9 +15541,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1985656910}
   - component: {fileID: 1985656911}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Office Floor
-  m_TagString: BabyBedroom
+  m_TagString: Office
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15193,7 +15632,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6cc26c229c7c91d4e875e7772bf5f308, type: 2}
+    WwiseObjectReference: {fileID: 0}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -15403,7 +15842,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 193556807, guid: 03dfd616bc24fef419b5a80c536f517f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15424,7 +15863,7 @@ Transform:
   m_GameObject: {fileID: 1994837482}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 25.25, y: 15.33, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -15506,6 +15945,7 @@ GameObject:
   - component: {fileID: 2005357289}
   - component: {fileID: 2005357291}
   - component: {fileID: 2005357290}
+  - component: {fileID: 2005357292}
   m_Layer: 0
   m_Name: Game Station
   m_TagString: Untagged
@@ -15606,6 +16046,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2005357292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005357288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &2008165960
 GameObject:
   m_ObjectHideFlags: 0
@@ -15617,6 +16073,7 @@ GameObject:
   - component: {fileID: 2008165961}
   - component: {fileID: 2008165962}
   - component: {fileID: 2008165963}
+  - component: {fileID: 2008165964}
   m_Layer: 0
   m_Name: Clothes Hiding Spot
   m_TagString: Untagged
@@ -15717,6 +16174,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.445015, y: 1.5229006}
   m_EdgeRadius: 0
+--- !u!114 &2008165964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008165960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &2029194604
 GameObject:
   m_ObjectHideFlags: 0
@@ -15839,6 +16312,7 @@ GameObject:
   - component: {fileID: 2030822863}
   - component: {fileID: 2030822865}
   - component: {fileID: 2030822864}
+  - component: {fileID: 2030822866}
   m_Layer: 0
   m_Name: Left side chairs
   m_TagString: Untagged
@@ -15939,6 +16413,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2030822866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030822862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &2033507021
 GameObject:
   m_ObjectHideFlags: 0
@@ -16075,6 +16565,7 @@ GameObject:
   - component: {fileID: 2056335432}
   - component: {fileID: 2056335434}
   - component: {fileID: 2056335433}
+  - component: {fileID: 2056335435}
   m_Layer: 0
   m_Name: Metal Cabinet Hiding Spot
   m_TagString: Untagged
@@ -16175,6 +16666,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2056335435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056335431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &2074190842
 GameObject:
   m_ObjectHideFlags: 0
@@ -16227,6 +16734,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2077205325}
   - component: {fileID: 2077205326}
+  - component: {fileID: 2077205328}
+  - component: {fileID: 2077205327}
   m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
@@ -16301,6 +16810,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2077205327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077205324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!61 &2077205328
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077205324}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.4924097, y: 2.6399999}
+    newSize: {x: 5.4924097, y: 2.6399999}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.4924097, y: 2.6399999}
+  m_EdgeRadius: 0
 --- !u!1 &2089669111
 GameObject:
   m_ObjectHideFlags: 0
@@ -16551,6 +17102,7 @@ GameObject:
   - component: {fileID: 2119298692}
   - component: {fileID: 2119298694}
   - component: {fileID: 2119298693}
+  - component: {fileID: 2119298695}
   m_Layer: 0
   m_Name: Basket Hiding Spot
   m_TagString: Untagged
@@ -16651,6 +17203,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2119298695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119298691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &2129083118
 GameObject:
   m_ObjectHideFlags: 0
@@ -16662,6 +17230,7 @@ GameObject:
   - component: {fileID: 2129083119}
   - component: {fileID: 2129083121}
   - component: {fileID: 2129083120}
+  - component: {fileID: 2129083122}
   m_Layer: 0
   m_Name: Stool
   m_TagString: Untagged
@@ -16762,6 +17331,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2129083122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129083118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &2129622489
 GameObject:
   m_ObjectHideFlags: 0
@@ -16897,7 +17482,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142949232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.1, y: 12.2, z: 0}
+  m_LocalPosition: {x: 52.13, y: 12.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16915,6 +17500,7 @@ GameObject:
   - component: {fileID: 2144922811}
   - component: {fileID: 2144922813}
   - component: {fileID: 2144922812}
+  - component: {fileID: 2144922814}
   m_Layer: 0
   m_Name: Right side chairs
   m_TagString: Untagged
@@ -17015,3 +17601,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2144922814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144922810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

@@ -11,7 +11,7 @@ State	ID	Name	State Group			Notes
 	3321796897	Snack	InGame			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	47777980	mom_layer_1	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\mom_layer_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\mom_layer_1\mom_layer_1		21512676
-	492664792	snack_layer	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\snack_layer_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\snack_layer\snack_layer		21169524
-	824736224	subdued_layer	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\subdued_layer_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\subdued_layer\subdued_layer		21545752
+	47777980	mom_layer_1	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\mom_layer_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\mom_layer_1\mom_layer_1		21512676
+	492664792	snack_layer	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\snack_layer_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\snack_layer\snack_layer		21169524
+	824736224	subdued_layer	E:\Programming\Unity\Projects\Midnight Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\subdued_layer_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\subdued_layer\subdued_layer		21545752
 

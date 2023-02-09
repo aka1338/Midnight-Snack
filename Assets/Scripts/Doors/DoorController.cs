@@ -55,7 +55,10 @@ public class DoorController : MonoBehaviour
                 Vector3 rotateVector = new Vector3(openRotationDirectionX, openRotationDirectionY, openRotationDirectionZ);
                 transform.DORotate(rotateVector, 1f);
                 triggerArea.isDoorClosed = false;
+
+                // Sound FX
                 AkSoundEngine.PostEvent(doorOpenEvent.Id, this.gameObject);
+
                 GameEvents.current.NoiseEventTriggerEnter((ROOM)id);
                 // Not sure if I like this or not, still debating. 
                 DisableDoorCollider();  
