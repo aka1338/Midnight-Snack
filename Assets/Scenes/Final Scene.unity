@@ -1108,11 +1108,15 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
-  snackObtainedEvent:
+  snackObtainedMusicEvent:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
-  gameOverState:
+  gameWinMusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  gameLossMusicEvent:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
@@ -1407,6 +1411,7 @@ GameObject:
   - component: {fileID: 104916378}
   - component: {fileID: 104916377}
   - component: {fileID: 104916379}
+  - component: {fileID: 104916380}
   m_Layer: 0
   m_Name: Cabinet Hiding Spot
   m_TagString: Untagged
@@ -1523,6 +1528,26 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &104916380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104916375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56ab1170e99f34488478ba4b1ff438c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hidingSpotEnteredSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  hidingSpotExitedSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &113447711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,7 +1631,7 @@ Transform:
   m_Children:
   - {fileID: 135757848}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &126087571
 GameObject:
@@ -1947,7 +1972,7 @@ Transform:
   m_Children:
   - {fileID: 1734024674}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148350715
 GameObject:
@@ -2253,6 +2278,10 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 06e88fee5ad1822499db3666d06fbb03, type: 2}
+  snackObtainedSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!61 &169835431
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2875,7 +2904,7 @@ Transform:
   - {fileID: 645778248}
   - {fileID: 96018954}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &275157772
 GameObject:
@@ -3468,7 +3497,7 @@ Transform:
   m_Children:
   - {fileID: 655496520}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!331 &348202588
 SpriteMask:
@@ -3852,7 +3881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 385804066}
   - component: {fileID: 385804065}
-  - component: {fileID: 385804064}
+  - component: {fileID: 385804067}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3860,26 +3889,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &385804064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 385804063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!114 &385804065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3908,8 +3917,38 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &385804067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385804063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!1 &390546712
 GameObject:
   m_ObjectHideFlags: 0
@@ -4482,6 +4521,7 @@ GameObject:
   - component: {fileID: 473402859}
   - component: {fileID: 473402860}
   - component: {fileID: 473402861}
+  - component: {fileID: 473402862}
   m_Layer: 0
   m_Name: Office Table Hiding Spot
   m_TagString: Untagged
@@ -4606,6 +4646,26 @@ PolygonCollider2D:
       - {x: 0.38858426, y: 1.5575953}
       - {x: 0.4099715, y: 0.33063614}
       - {x: -1.3514799, y: 0.28335166}
+--- !u!114 &473402862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473402855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56ab1170e99f34488478ba4b1ff438c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hidingSpotEnteredSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  hidingSpotExitedSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &474427533
 GameObject:
   m_ObjectHideFlags: 0
@@ -4637,7 +4697,7 @@ Transform:
   - {fileID: 537466430}
   - {fileID: 543493843}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &481348566
 GameObject:
@@ -6716,6 +6776,16 @@ MonoBehaviour:
   isGameOver: 0
   playerHasSnack: 0
   gameOverCanvas: {fileID: 135757851}
+  snackLocation: {fileID: 1541216168}
+  player: {fileID: 1734024667}
+  UIButtonClick:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  UIButtonHover:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &655496519
 GameObject:
   m_ObjectHideFlags: 0
@@ -6810,6 +6880,14 @@ MonoBehaviour:
   darkness: {fileID: 945877516}
   darkDetectionTime: 4
   litDetectionTime: 2
+  playerSpottedSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playerCaughtSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &679795926
 GameObject:
   m_ObjectHideFlags: 0
@@ -6937,6 +7015,18 @@ MonoBehaviour:
       - m_Target: {fileID: 645778249}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 645778249}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: UIButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7167,6 +7257,14 @@ MonoBehaviour:
   darkness: {fileID: 945877516}
   darkDetectionTime: 4
   litDetectionTime: 2
+  playerSpottedSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playerCaughtSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &754763825
 GameObject:
   m_ObjectHideFlags: 0
@@ -8012,6 +8110,18 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 06e88fee5ad1822499db3666d06fbb03, type: 2}
+  lightSwitchFlipOnEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  lightSwitchFlipOffEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  mamaGetInBedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!195 &844533587
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8791,7 +8901,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &945877516
 SpriteRenderer:
@@ -9671,7 +9781,7 @@ Transform:
   - {fileID: 641206286}
   - {fileID: 679795927}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1099778530
 GameObject:
@@ -13365,6 +13475,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 645778249}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: UIButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1472479847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14765,6 +14887,7 @@ GameObject:
   - component: {fileID: 1606743478}
   - component: {fileID: 1606743477}
   - component: {fileID: 1606743479}
+  - component: {fileID: 1606743480}
   m_Layer: 0
   m_Name: Table Hiding Spot
   m_TagString: Untagged
@@ -14881,6 +15004,26 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &1606743480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606743475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56ab1170e99f34488478ba4b1ff438c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hidingSpotEnteredSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  hidingSpotExitedSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1611849071
 GameObject:
   m_ObjectHideFlags: 0
@@ -15256,6 +15399,7 @@ GameObject:
   - component: {fileID: 1689001238}
   - component: {fileID: 1689001237}
   - component: {fileID: 1689001239}
+  - component: {fileID: 1689001240}
   m_Layer: 0
   m_Name: Toybox Hiding Spot
   m_TagString: Untagged
@@ -15372,6 +15516,26 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &1689001240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689001235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56ab1170e99f34488478ba4b1ff438c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hidingSpotEnteredSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  hidingSpotExitedSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1700644374
 GameObject:
   m_ObjectHideFlags: 0
@@ -16024,6 +16188,10 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 06e88fee5ad1822499db3666d06fbb03, type: 2}
+  snackObtainedSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!61 &1734024671
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17811,6 +17979,18 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 06e88fee5ad1822499db3666d06fbb03, type: 2}
+  lightSwitchFlipOnEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  lightSwitchFlipOffEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  mamaGetInBedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!195 &1994837488
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17898,7 +18078,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1998177517
 GameObject:
@@ -18105,6 +18285,7 @@ GameObject:
   - component: {fileID: 2008165962}
   - component: {fileID: 2008165963}
   - component: {fileID: 2008165964}
+  - component: {fileID: 2008165965}
   m_Layer: 0
   m_Name: Clothes Hiding Spot
   m_TagString: Untagged
@@ -18221,6 +18402,26 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &2008165965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008165960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56ab1170e99f34488478ba4b1ff438c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hidingSpotEnteredSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  hidingSpotExitedSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &2029194604
 GameObject:
   m_ObjectHideFlags: 0
@@ -18597,6 +18798,7 @@ GameObject:
   - component: {fileID: 2056335434}
   - component: {fileID: 2056335433}
   - component: {fileID: 2056335435}
+  - component: {fileID: 2056335436}
   m_Layer: 0
   m_Name: Metal Cabinet Hiding Spot
   m_TagString: Untagged
@@ -18713,6 +18915,26 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &2056335436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056335431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56ab1170e99f34488478ba4b1ff438c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hidingSpotEnteredSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  hidingSpotExitedSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &2074190842
 GameObject:
   m_ObjectHideFlags: 0
@@ -19240,6 +19462,7 @@ GameObject:
   - component: {fileID: 2119298694}
   - component: {fileID: 2119298693}
   - component: {fileID: 2119298695}
+  - component: {fileID: 2119298696}
   m_Layer: 0
   m_Name: Basket Hiding Spot
   m_TagString: Untagged
@@ -19356,6 +19579,26 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &2119298696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119298691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56ab1170e99f34488478ba4b1ff438c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hidingSpotEnteredSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  hidingSpotExitedSFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &2129083118
 GameObject:
   m_ObjectHideFlags: 0

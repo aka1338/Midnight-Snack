@@ -46,8 +46,13 @@ public class MamaController : MonoBehaviour
     private AK.Wwise.Event footstepsEvent;
     [SerializeField]
     private AK.Wwise.Switch[] terrainSwitch;
+    [SerializeField]
+    private AK.Wwise.Event lightSwitchFlipOnEvent;
+    [SerializeField]
+    private AK.Wwise.Event lightSwitchFlipOffEvent;
+    [SerializeField]
+    private AK.Wwise.Event mamaGetInBedEvent;
 
-  
     private void Start()
     {
         GameEvents.current.onNoiseEventTriggerEnter += FlipLightOnInAlertedRoom;
@@ -66,6 +71,51 @@ public class MamaController : MonoBehaviour
         current = this;
     }
 
+    void Update()
+    {
+        HandleMamaWalkingAnimation();
+
+        // When Mom gets a noise event, she will come into the room the player is on and flip the light on.
+        // She first navigates to the light and flips the light on or off. 
+        if (agent.hasPath)
+        {
+            if (Vector2.Distance(transform.position, currentNavTarget.transform.position) < positionTolerance) // Mama Arrived at Target Location
+            {
+                Debug.Log("Mama arrived to position.");
+
+                if (currentNavTarget.name.Contains("Lightswitch")) // Arrived at a lightswitch. Sound event goes here.
+                {
+                    if (mamaState == MAMA_STATE.ALERTED)
+                    {
+                        StartCoroutine(PauseAtLightAndTrackPlayer());
+                    }
+                }
+
+                if (currentNavTarget.name.Contains("Bed")) // Arrived to bed.
+                {
+                    mamaState = MAMA_STATE.IDLE;
+                    GameManager.current.SetMamaState(mamaState);
+                    GameEvents.current.MamaTurnLightOff(currentRoom);
+                    AkSoundEngine.PostEvent(mamaGetInBedEvent.Id, this.gameObject);
+                    AkSoundEngine.PostEvent(lightSwitchFlipOffEvent.Id, this.gameObject);
+                }
+
+            }
+        }
+        else
+        {
+            if (currentNavTarget != null)
+            {
+                if (currentNavTarget.name.Contains("Player"))
+                {
+                    StartCoroutine(WaitAndReturnToBed());
+                }
+            }
+        }
+
+        // Animation 
+
+    }
     internal void SetDoorTriggerArea(int id)
     {
         currentDoorTrigger = id;
@@ -247,6 +297,7 @@ public class MamaController : MonoBehaviour
 
         // Flip on the light of the room Mama is currently in 
         GameEvents.current.MamaTurnLightOn(currentRoom);
+        AkSoundEngine.PostEvent(lightSwitchFlipOnEvent.Id, this.gameObject);
 
         mamaState = MAMA_STATE.SEEKING_PLAYER;
         GameManager.current.SetMamaState(mamaState);
@@ -324,50 +375,6 @@ public class MamaController : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         // Turn off the light in this room. 
-    }
-
-    void Update()
-    {
-        HandleMamaWalkingAnimation();
-
-        // When Mom gets a noise event, she will come into the room the player is on and flip the light on.
-        // She first navigates to the light and flips the light on or off. 
-        if (agent.hasPath)
-        {
-            if (Vector2.Distance(transform.position, currentNavTarget.transform.position) < positionTolerance) // Mama Arrived at Target Location
-            {
-                Debug.Log("Mama arrived to position.");
-
-                if (currentNavTarget.name.Contains("Lightswitch")) // Arrived at a lightswitch. Sound event goes here.
-                {
-                    if (mamaState == MAMA_STATE.ALERTED)
-                    {
-                        StartCoroutine(PauseAtLightAndTrackPlayer());
-                    }
-                }
-
-                if (currentNavTarget.name.Contains("Bed")) // Arrived to bed.
-                {
-                    mamaState = MAMA_STATE.IDLE;
-                    GameManager.current.SetMamaState(mamaState);
-                    GameEvents.current.MamaTurnLightOff(currentRoom);
-                }
-
-            }
-        }
-        else
-        {
-            if (currentNavTarget != null)
-            {
-                if (currentNavTarget.name.Contains("Player"))
-                {
-                    StartCoroutine(WaitAndReturnToBed());
-                }
-            }
-        }
-
-        // Animation 
-
     }
 
 }

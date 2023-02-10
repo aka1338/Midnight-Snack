@@ -25,6 +25,13 @@ public class ViewRadiusController : MonoBehaviour
     public float darkDetectionTime = 4f;
     public float litDetectionTime = 2f;
 
+    [Header("Wwise")]
+    [SerializeField]
+    private AK.Wwise.Event playerSpottedSFXEvent;
+    [SerializeField]
+    private AK.Wwise.Event playerCaughtSFXEvent;
+
+
     // Have an event that listens for the light to turn on, and if the player is hiding or not. 
 
     private void Start()
@@ -101,7 +108,6 @@ public class ViewRadiusController : MonoBehaviour
             }
         }
     }
-
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (!GameManager.current.isGameOver)
