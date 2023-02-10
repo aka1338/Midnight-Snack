@@ -58,6 +58,8 @@ public class PlayerController : MonoBehaviour
     private AK.Wwise.Event footstepsEvent;
     [SerializeField]
     private AK.Wwise.Switch[] terrainSwitch;
+    [SerializeField]
+    private AK.Wwise.Event snackObtainedSFXEvent;
 
 
     private void Awake()
@@ -98,10 +100,11 @@ public class PlayerController : MonoBehaviour
         if(collider.gameObject.name == "Snack")
         {
             Debug.Log("Snack obtained!");
-            GameEvents.current.SnackObtained(); 
+            GameEvents.current.SnackObtained();
+            AkSoundEngine.PostEvent(snackObtainedSFXEvent.Id, this.gameObject);
         }
 
-        if(collider.gameObject.name.Contains("Hiding"))
+        if (collider.gameObject.name.Contains("Hiding"))
         {
             GameEvents.current.PlayerEnterHidingSpot(); 
         }

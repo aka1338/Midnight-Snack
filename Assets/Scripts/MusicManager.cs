@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
+    [Header("Wwise")]
     [Header("Mama States")]
     public AK.Wwise.Event idleStateEvent;
     public AK.Wwise.Event alertedStateEvent;
@@ -11,8 +12,12 @@ public class MusicManager : MonoBehaviour
     public AK.Wwise.Event returningToBedEvent;
 
     [Header("Game States")]
-    public AK.Wwise.Event snackObtainedEvent;
-    public AK.Wwise.Event gameOverState;
+    public AK.Wwise.Event snackObtainedMusicEvent;
+    [SerializeField]
+    private AK.Wwise.Event gameWinMusicEvent;
+    [SerializeField]
+    private AK.Wwise.Event gameLossMusicEvent;
+
 
     private void Start()
     {

@@ -9,6 +9,13 @@ public class GameManager : MonoBehaviour
     public Canvas gameOverCanvas; 
 
     public static GameManager current;
+    public GameObject snackLocation;
+    public GameObject player;
+
+    [SerializeField]
+    private AK.Wwise.Event UIButtonClick;
+    [SerializeField]
+    private AK.Wwise.Event UIButtonHover;
 
     private void Awake()
     {
@@ -33,12 +40,13 @@ public class GameManager : MonoBehaviour
 
     private void OnDisable()
     {
+
         GameEvents.current.onSnackObtained -= OnSnackObtained; 
     }
 
     void OnSnackObtained()
     {
-        playerHasSnack = true; 
+        playerHasSnack = true;
     }
 
     public void SetGameOver(bool state) {
@@ -49,7 +57,8 @@ public class GameManager : MonoBehaviour
         if (state)
         {
             Debug.Log("You won!");
-        } else
+        }
+        else
         {
             Debug.Log("You lost!");
         }
@@ -58,9 +67,15 @@ public class GameManager : MonoBehaviour
     public void RestartGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
     public void QuitGame()
     {
         Application.Quit();
     }
-}   
+
+    public void UIButtonClicked()
+    {
+        AkSoundEngine.PostEvent(UIButtonClick.Id, player); 
+    }
+
+
+}
