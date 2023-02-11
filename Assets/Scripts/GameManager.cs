@@ -9,10 +9,16 @@ public class GameManager : MonoBehaviour
     // gameFirstBooted
     public bool isGameOver = false; 
     public bool playerHasSnack = false;
-    public CanvasGroup gameLostCanvas;
-    public CanvasGroup gameWonCanvas;
-    public CanvasGroup gameStartCanvas;
 
+    [Header("Canvas Groups")]
+    public CanvasGroup gameLostCanvasGroup;
+    public CanvasGroup gameWonCanvasGroup;
+    public CanvasGroup gameStartCanvasGroup;
+
+    [Header("Canvas")]
+    public Canvas gameLostCanvas;
+    public Canvas gameWonCanvas;
+    public Canvas gameStartCanvas;
 
     public static GameManager current;
     public GameObject snackLocation;
@@ -29,14 +35,14 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        gameLostCanvas.alpha = 0;
-        gameLostCanvas.interactable = false;
+        gameLostCanvasGroup.alpha = 0;
+        gameLostCanvas.gameObject.SetActive(false); 
 
-        gameWonCanvas.alpha = 0;
-        gameWonCanvas.interactable = false;
+        gameWonCanvasGroup.alpha = 0;
+        gameWonCanvas.gameObject.SetActive(false);
 
-        gameStartCanvas.alpha = 1;
-        gameStartCanvas.interactable = true;
+        gameStartCanvasGroup.alpha = 1;
+        gameStartCanvas.gameObject.SetActive(true);
 
         current = this;
 
@@ -51,13 +57,11 @@ public class GameManager : MonoBehaviour
         mamaState = state;
     }
 
-   
-
     public void CloseOpeningScreen()
     {
         Debug.Log("Trying to close window here!"); 
-        gameStartCanvas.DOFade(0, 1f).SetEase(Ease.InOutQuad);
-        gameStartCanvas.interactable = false;
+        gameStartCanvasGroup.DOFade(0, 1f).SetEase(Ease.InOutQuad);
+        gameStartCanvasGroup.interactable = false;
     }
 
     private void OnDisable()
@@ -78,16 +82,16 @@ public class GameManager : MonoBehaviour
         if (state)
         {
             Debug.Log("You won!");
-            gameWonCanvas.DOFade(1, 1f).SetEase(Ease.InOutQuad);
-            gameWonCanvas.interactable = true;
-
+            gameWonCanvasGroup.interactable = true;
+            gameWonCanvas.gameObject.SetActive(true);
+            gameWonCanvasGroup.DOFade(1, 1f).SetEase(Ease.InOutQuad);
         }
         else
         {
             Debug.Log("You lost!");
-            gameLostCanvas.DOFade(1, 1f).SetEase(Ease.InOutQuad);
-            gameLostCanvas.interactable = true;
-
+            gameLostCanvasGroup.interactable = true;
+            gameLostCanvas.gameObject.SetActive(true);
+            gameLostCanvasGroup.DOFade(1, 1f).SetEase(Ease.InOutQuad);
         }
         // Display a Game Over UI that allows the player to restart the game 
     }
