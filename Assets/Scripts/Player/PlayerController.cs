@@ -55,11 +55,12 @@ public class PlayerController : MonoBehaviour
     // Footsteps 
     [Header("Wwise")]
     [SerializeField]
+    private AK.Wwise.Event snackObtainedSFXEvent;
+    [SerializeField]
     private AK.Wwise.Event footstepsEvent;
     [SerializeField]
     private AK.Wwise.Switch[] terrainSwitch;
-    [SerializeField]
-    private AK.Wwise.Event snackObtainedSFXEvent;
+   
 
 
     private void Awake()

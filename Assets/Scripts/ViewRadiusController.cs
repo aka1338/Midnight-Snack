@@ -19,7 +19,7 @@ public class ViewRadiusController : MonoBehaviour
 
     [Header("Sprites")]
     public SpriteMask playerDarkViewMask;
-    public SpriteRenderer darkness;
+    public GameObject darkness;
 
     [Header("Gameplay Elements (Detection)")]
     public float darkDetectionTime = 4f;
@@ -60,14 +60,14 @@ public class ViewRadiusController : MonoBehaviour
         }
 
         litViewRadius.enabled = false;
-        darkness.enabled = true;
+        darkness.SetActive(true);
     }
 
     private void EnableLitRadius(ROOM obj)
     {
         isDark = false;
         darkViewRadius.enabled = false;
-        darkness.enabled = false;
+        darkness.SetActive(false);
         if (isHiding)
         {
             litViewRadius.enabled = false;  
