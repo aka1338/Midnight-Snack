@@ -1593,8 +1593,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 135757848}
   - {fileID: 1220913992}
+  - {fileID: 135757848}
   - {fileID: 327868158}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1801,7 +1801,7 @@ RectTransform:
   - {fileID: 681981877}
   - {fileID: 1472479845}
   m_Father: {fileID: 113447713}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1867,7 +1867,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!225 &135757852
 CanvasGroup:
@@ -3410,7 +3410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!225 &327868154
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7244,9 +7244,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGameOver: 0
   playerHasSnack: 0
-  gameLostCanvas: {fileID: 1220913996}
-  gameWonCanvas: {fileID: 135757852}
-  gameStartCanvas: {fileID: 327868154}
+  gameLostCanvasGroup: {fileID: 1220913996}
+  gameWonCanvasGroup: {fileID: 135757852}
+  gameStartCanvasGroup: {fileID: 327868154}
+  gameLostCanvas: {fileID: 1220913995}
+  gameWonCanvas: {fileID: 135757851}
+  gameStartCanvas: {fileID: 327868157}
   snackLocation: {fileID: 1541216168}
   player: {fileID: 1734024667}
   UIButtonClick:
@@ -12112,7 +12115,7 @@ RectTransform:
   - {fileID: 862420073}
   - {fileID: 489321410}
   m_Father: {fileID: 113447713}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
