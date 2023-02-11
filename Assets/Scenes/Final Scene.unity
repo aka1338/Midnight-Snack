@@ -1196,19 +1196,19 @@ MonoBehaviour:
   idleStateEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 39e01ac7b6c9dc04d880f5be113432f2, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 5777bfc0060d5b94a912d21881ae8794, type: 2}
   alertedStateEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2999f1a876992c2448517fa10b146862, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: e59e341920547bb4d899f68b78f9565f, type: 2}
   seekingPlayerEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2999f1a876992c2448517fa10b146862, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 3595f4b688b86c544b8ee9fbf72b07bb, type: 2}
   returningToBedEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 873722a8f2f4d794a980052c3290eeb3, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: ffa05453ade7a854ab02448d9c0a3a4d, type: 2}
   snackObtainedMusicEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -1216,7 +1216,7 @@ MonoBehaviour:
   gameWinMusicEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c416aa15eabb1154db88722fa4ce5c6c, type: 2}
   gameLossMusicEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -5830,6 +5830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 492987124}
   - component: {fileID: 492987125}
+  - component: {fileID: 492987126}
   m_Layer: 0
   m_Name: 'Sparkle '
   m_TagString: Untagged
@@ -5904,6 +5905,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &492987126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492987123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b36bd1f93e72c24eb259010c752f7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparkleSprites:
+  - {fileID: -1040842763, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 910494721, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 613164763, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -985237016, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 1141603106, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  spriteRender: {fileID: 0}
 --- !u!1 &496778167
 GameObject:
   m_ObjectHideFlags: 0
@@ -9389,6 +9411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 849137916}
   - component: {fileID: 849137917}
+  - component: {fileID: 849137918}
   m_Layer: 0
   m_Name: Sparkle
   m_TagString: Untagged
@@ -9463,6 +9486,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &849137918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849137915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b36bd1f93e72c24eb259010c752f7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparkleSprites:
+  - {fileID: -1040842763, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 910494721, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 613164763, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -985237016, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 1141603106, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  spriteRender: {fileID: 0}
 --- !u!1 &862420072
 GameObject:
   m_ObjectHideFlags: 0
@@ -9782,6 +9826,7 @@ GameObject:
   m_Component:
   - component: {fileID: 899050321}
   - component: {fileID: 899050322}
+  - component: {fileID: 899050323}
   m_Layer: 0
   m_Name: 'Sparkle '
   m_TagString: Untagged
@@ -9856,6 +9901,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &899050323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899050320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b36bd1f93e72c24eb259010c752f7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparkleSprites:
+  - {fileID: -1040842763, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 910494721, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 613164763, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -985237016, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 1141603106, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  spriteRender: {fileID: 0}
 --- !u!1 &901113129
 GameObject:
   m_ObjectHideFlags: 0
@@ -11038,6 +11104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 997057333}
   - component: {fileID: 997057334}
+  - component: {fileID: 997057335}
   m_Layer: 0
   m_Name: 'Sparkle '
   m_TagString: Untagged
@@ -11112,6 +11179,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &997057335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997057332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b36bd1f93e72c24eb259010c752f7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparkleSprites:
+  - {fileID: -1040842763, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 910494721, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 613164763, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -985237016, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 1141603106, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  spriteRender: {fileID: 0}
 --- !u!1 &1008178615
 GameObject:
   m_ObjectHideFlags: 0
@@ -12235,6 +12323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1145596090}
   - component: {fileID: 1145596091}
+  - component: {fileID: 1145596092}
   m_Layer: 0
   m_Name: 'Sparkle '
   m_TagString: Untagged
@@ -12309,6 +12398,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1145596092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145596089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b36bd1f93e72c24eb259010c752f7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparkleSprites:
+  - {fileID: -1040842763, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 910494721, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 613164763, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -985237016, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 1141603106, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  spriteRender: {fileID: 0}
 --- !u!1 &1146212944
 GameObject:
   m_ObjectHideFlags: 0
@@ -17922,6 +18032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1602209416}
   - component: {fileID: 1602209417}
+  - component: {fileID: 1602209418}
   m_Layer: 0
   m_Name: 'Sparkle '
   m_TagString: Untagged
@@ -17996,6 +18107,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1602209418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602209415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b36bd1f93e72c24eb259010c752f7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparkleSprites:
+  - {fileID: -1040842763, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 910494721, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 613164763, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -985237016, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 1141603106, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  spriteRender: {fileID: 0}
 --- !u!1 &1602631159
 GameObject:
   m_ObjectHideFlags: 0
@@ -22254,6 +22386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2008180885}
   - component: {fileID: 2008180886}
+  - component: {fileID: 2008180887}
   m_Layer: 0
   m_Name: 'Sparkle '
   m_TagString: Untagged
@@ -22328,6 +22461,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2008180887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008180884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b36bd1f93e72c24eb259010c752f7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparkleSprites:
+  - {fileID: -1040842763, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 910494721, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 613164763, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -985237016, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  - {fileID: 1141603106, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
+  spriteRender: {fileID: 0}
 --- !u!1 &2029194604
 GameObject:
   m_ObjectHideFlags: 0
