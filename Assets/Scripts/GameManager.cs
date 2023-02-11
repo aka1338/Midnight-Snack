@@ -75,8 +75,8 @@ public class GameManager : MonoBehaviour
         playerHasSnack = true;
     }
 
-    public void SetGameOver(bool state) {
-
+    public void SetGameOver(bool state)
+    {
         isGameOver = true;
 
         if (state)
@@ -89,12 +89,13 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.Log("You lost!");
+            StartCoroutine(PanCameraToMomAndShake());
             gameLostCanvasGroup.interactable = true;
             gameLostCanvas.gameObject.SetActive(true);
             gameLostCanvasGroup.DOFade(1, 1f).SetEase(Ease.InOutQuad);
         }
-        // Display a Game Over UI that allows the player to restart the game 
     }
+
     public void RestartGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -108,5 +109,10 @@ public class GameManager : MonoBehaviour
         AkSoundEngine.PostEvent(UIButtonClick.Id, player); 
     }
 
+    IEnumerator PanCameraToMomAndShake()
+    {
+        Debug.Log("waiting"); 
+        yield return new WaitForSecondsRealtime(5f); 
+    }
 
 }

@@ -14,6 +14,10 @@ public class FollowPlayer : MonoBehaviour
     public float bobbingFrequency = .1f;
     private float startTime;
 
+
+    // If it can follow the player, it needs to be visible inside the sprite mask.
+    // Otherwise if it cannot follow the player, it needs to be invisible. 
+
     private void Start()
     {
         startTime = Time.time;
@@ -35,7 +39,6 @@ public class FollowPlayer : MonoBehaviour
             Vector3 newPosition = new Vector3(transform.position.x, transform.position.y + bobbingY, transform.position.z);
             transform.position = newPosition;
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -82,13 +82,11 @@ public class MamaController : MonoBehaviour
         {
             if (Vector2.Distance(transform.position, currentNavTarget.transform.position) < positionTolerance) // Mama Arrived at Target Location
             {
-                Debug.Log("Mama arrived to position.");
 
                 if (currentNavTarget.name.Contains("Lightswitch")) // Arrived at a lightswitch. Sound event goes here.
                 {
                     if (mamaState == MAMA_STATE.ALERTED && !mamaFlippedLight)
                     {
-                        Debug.Log("Mama arrived to light!"); 
                         StartCoroutine(PauseAtLightAndTrackPlayer());
                         mamaFlippedLight = true; 
                     }
@@ -96,7 +94,6 @@ public class MamaController : MonoBehaviour
 
                 if (currentNavTarget.name.Contains("Bed") && mamaFlippedLight) // Arrived to bed.
                 {
-                    Debug.Log("Flipping off the light!"); 
                     mamaState = MAMA_STATE.IDLE;
                     GameManager.current.SetMamaState(mamaState);
                     GameEvents.current.MamaTurnLightOff(currentRoom);
