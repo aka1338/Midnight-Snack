@@ -44,7 +44,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8D9DE9F2-BFB2-2B2E-C2B8-F070AB88E694}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{14CCA2A4-B3FE-C655-000F-3A8AA330049E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -55,6 +55,10 @@
 				<File Id="78706318" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DoorUnlock.wav</ShortName>
 					<CachePath>SFX/DoorUnlock_25941C73.wem</CachePath>
+				</File>
+				<File Id="92310259" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_AmbientImBehindYouGirl.wav</ShortName>
+					<CachePath>SFX/MS_AmbientImBehindYouGirl_887F6AC3.wem</CachePath>
 				</File>
 				<File Id="95118756" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_3.wav</ShortName>
@@ -112,6 +116,10 @@
 					<ShortName>Archived, Test Tone, White Noise SND3563.wav</ShortName>
 					<CachePath>SFX/Archived, Test Tone, White Noise SND3563_54E5B797.wem</CachePath>
 				</File>
+				<File Id="379979995" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_AmbientHummingGirl.wav</ShortName>
+					<CachePath>SFX/MS_AmbientHummingGirl_71F13137.wem</CachePath>
+				</File>
 				<File Id="417798216" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_TV_New03.wav</ShortName>
 					<CachePath>SFX/MS_TV_New03_10C4C929.wem</CachePath>
@@ -156,6 +164,10 @@
 					<ShortName>MS_Footstep_7.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_7_10C4C929.wem</CachePath>
 				</File>
+				<File Id="740686913" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_AmbientTalkingGirl.wav</ShortName>
+					<CachePath>SFX/MS_AmbientTalkingGirl_0B6F7218.wem</CachePath>
+				</File>
 				<File Id="746213757" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_TV_New04.wav</ShortName>
 					<CachePath>SFX/MS_TV_New04_10C4C929.wem</CachePath>
@@ -171,6 +183,10 @@
 				<File Id="773427032" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_1.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="773510629" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_AmbientLaughingGirl.wav</ShortName>
+					<CachePath>SFX/MS_AmbientLaughingGirl_10C4C929.wem</CachePath>
 				</File>
 				<File Id="774870520" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Frontdoor_Ambience.wav</ShortName>
@@ -192,9 +208,17 @@
 					<ShortName>MS_Footstep_3.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_3_10C4C929.wem</CachePath>
 				</File>
+				<File Id="864389558" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_AmbientTalkingGirl.wav</ShortName>
+					<CachePath>SFX/MS_AmbientTalkingGirl_B719C6C9.wem</CachePath>
+				</File>
 				<File Id="873639416" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Caught.wav</ShortName>
 					<CachePath>SFX/MS_Caught_10C4C929.wem</CachePath>
+				</File>
+				<File Id="903373721" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_AmbientTalkingGirl.wav</ShortName>
+					<CachePath>SFX/MS_AmbientTalkingGirl_8BC08AE5.wem</CachePath>
 				</File>
 				<File Id="929243871" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_LightSwitches.wav</ShortName>
@@ -211,6 +235,10 @@
 				<File Id="964162494" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Voices, Futzed, Broadcast, Radio Voice, Male, News, JFK Dead Announcement SND52761.wav</ShortName>
 					<CachePath>SFX/Voices, Futzed, Broadcast, Radio Voice, Male, News, JFK Dead Announcement SND52761_13BADDD1.wem</CachePath>
+				</File>
+				<File Id="984617489" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_AmbientHummingGirl.wav</ShortName>
+					<CachePath>SFX/MS_AmbientHummingGirl_E0C4F371.wem</CachePath>
 				</File>
 				<File Id="1002065778" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_1.wav</ShortName>
@@ -247,6 +275,7 @@
 			</Media>
 			<Plugins>
 				<Custom>
+					<Plugin Id="260123732" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="526444594" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
 			</Plugins>
@@ -322,6 +351,22 @@
 					<MediaRefs>
 						<MediaRef Id="774870520"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="1465331116" Name="Global" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="92310259"/>
+						<MediaRef Id="379979995"/>
+						<MediaRef Id="740686913"/>
+						<MediaRef Id="773510629"/>
+						<MediaRef Id="864389558"/>
+						<MediaRef Id="903373721"/>
+						<MediaRef Id="984617489"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="260123732"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 				<Event Id="1586158131" Name="Kitchen" MaxAttenuation="235" DurationType="OneShot" DurationMin="25" DurationMax="25">
 					<MediaRefs>
@@ -438,5 +483,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{12C945E4-62F3-DBD3-F648-CC1ED117B509}</FileHash>
+	<FileHash>{7C9DF8C3-D2F7-9AE6-3334-2BAC384BA237}</FileHash>
 </SoundBanksInfo>

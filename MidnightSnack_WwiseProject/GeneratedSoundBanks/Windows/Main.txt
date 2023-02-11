@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	535830432	Door_Open			\Default Work Unit\Door_Open	
 	816373421	Caught			\Default Work Unit\Misc\Caught	
 	1080872003	Toy			\Default Work Unit\Sound_Triggers\Toy	
+	1465331116	Global			\Default Work Unit\Ambient\Global	
 	1568083719	TV			\Default Work Unit\Ambient\TV	
 	1586158131	Kitchen			\Default Work Unit\Ambient\Kitchen	
 	1831461191	Bathroom			\Default Work Unit\Ambient\Bathroom	
@@ -29,11 +30,13 @@ Switch	ID	Name	Switch Group			Notes
 	3316001432	Tiles	Footsteps			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	260123732	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Global\New Sound SFX\Silence	
 	526444594	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Sound_Triggers\Vase\Silence\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1525529	MS_Footstep_Creak_2	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Footstep_Creak_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\MS_Footstep_Creak_2		288096
 	78706318	DoorUnlock	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\DoorUnlock_25941C73.wem		\Actor-Mixer Hierarchy\Default Work Unit\Doors\Door_Open\DoorUnlock		119748
+	92310259	MS_AmbientImBehindYouGirl	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_AmbientImBehindYouGirl_887F6AC3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Global\MS_AmbientImBehindYouGirl		823552
 	95118756	MS_Footsteos_Bathroom_3	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Footsteos_Bathroom_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_3		214176
 	109493106	MS_Footsteps_Carpet_Mono_05	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Footsteps_Carpet_Mono_29591BC8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\MS_Footsteps_Carpet_Mono_05		23692
 	117554140	TV_01	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\Voices, Futzed, Broadcast, Radio Voice, Male, News, Distorted SND52765_D7172C4C.wem		\Actor-Mixer Hierarchy\Default Work Unit\TV_MomsRoom\TV\TV_01		862644
@@ -48,6 +51,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	297618981	MS_Footstep_8	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Footstep_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_8		246816
 	299336329	DoorUnlock_Squeak_1	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\DoorUnlock_Squeak_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Doors\Door_Open\Door_Creaks\DoorUnlock_Squeak_1		411712
 	333460188	Archived, Test Tone, White Noise SND3563	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\Archived, Test Tone, White Noise SND3563_54E5B797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TV_MomsRoom\Archived, Test Tone, White Noise SND3563		115516
+	379979995	MS_AmbientHummingGirl	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_AmbientHummingGirl_71F13137.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Global\MS_AmbientHummingGirl		1318436
 	417798216	MS_TV_New03	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_TV_New03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TV_MomsRoom\TV\MS_TV_New03		1536096
 	444567866	MS_Kitchen_Ambience	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Kitchen_Ambience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\MS_Kitchen_Ambience		4800096
 	489675898	Toy_Knockover	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\Toy_Knockover_1C723C24.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound_Triggers\Toy\Toy_Knockover		136096
@@ -59,20 +63,25 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	603231246	MS_Footstep_6	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Footstep_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_6		238176
 	672131314	MS_Footstep_4	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Footstep_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_4		250080
 	721017236	MS_Footstep_7	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Footstep_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_7		239328
+	740686913	MS_AmbientTalkingGirl_01	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_AmbientTalkingGirl_0B6F7218.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Global\MS_AmbientTalkingGirl_01		492492
 	746213757	MS_TV_New04	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_TV_New04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TV_MomsRoom\TV\MS_TV_New04		1920096
 	758012510	MS_ShadowMonster_Snarl	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_ShadowMonster_Snarl_FC5119F0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\ShadowMonsters\MS_ShadowMonster_Snarl		295548
 	763339408	MS_DoorClose	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_DoorClose_754E57F0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Doors\MS_DoorClose		102212
 	773427032	MS_Footstep_1	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Footstep_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_1		263136
+	773510629	MS_AmbientLaughingGirl	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_AmbientLaughingGirl_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Global\MS_AmbientLaughingGirl		960096
 	774870520	MS_Frontdoor_Ambience	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Frontdoor_Ambience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\MS_Frontdoor_Ambience		4375776
 	778452409	MS_Bathroom_Ambience_TapDrip	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Bathroom_Ambience_TapDrip_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\MS_Bathroom_Ambience_TapDrip		1822176
 	797784940	MS_MomBreathing	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_MomBreathing_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Mum\MS_MomBreathing		5692576
 	805385492	MS_Footsteos_Bathroom_4	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Footsteos_Bathroom_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_4		214176
 	829762603	MS_Footstep_3	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Footstep_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_3		243552
+	864389558	MS_AmbientTalkingGirl	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_AmbientTalkingGirl_B719C6C9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Global\MS_AmbientTalkingGirl		518180
 	873639416	MS_Caught	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Caught_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Misc\MS_Caught		720096
+	903373721	MS_AmbientTalkingGirl_02	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_AmbientTalkingGirl_8BC08AE5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Global\MS_AmbientTalkingGirl_02		488208
 	929243871	MS_LightSwitchOn	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_LightSwitches_2CDCBD34.wem		\Actor-Mixer Hierarchy\Default Work Unit\Misc\MS_LightSwitchOn		84180
 	930616706	DoorUnlock_Squeak_2	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\DoorUnlock_Squeak_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Doors\Door_Open\Door_Creaks\DoorUnlock_Squeak_2		553576
 	956033431	MS_Footstep_2	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Footstep_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\MS_Footstep_2		252192
 	964162494	JFK	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\Voices, Futzed, Broadcast, Radio Voice, Male, News, JFK Dead Announcement SND52761_13BADDD1.wem		\Actor-Mixer Hierarchy\Default Work Unit\TV_MomsRoom\TV\JFK		1219728
+	984617489	MS_AmbientHummingGirl_01	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_AmbientHummingGirl_E0C4F371.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Global\MS_AmbientHummingGirl_01		4006672
 	1002065778	MS_Footsteos_Bathroom_1	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Footsteos_Bathroom_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_1		227424
 	1008861467	MS_TV_Podcast	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_TV_Podcast_D9430248.wem		\Actor-Mixer Hierarchy\Default Work Unit\TV_MomsRoom\TV\MS_TV_Podcast		2017704
 	1009247771	MS_Footsteos_Bathroom_6	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Windows\SFX\MS_Footsteos_Bathroom_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Tiles\MS_Footsteos_Bathroom_6		228960

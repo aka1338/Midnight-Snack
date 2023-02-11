@@ -145,6 +145,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Global" ID="{837D0EDB-B8DB-4C2F-B733-890E93B949E4}">
+							<ChildrenList>
+								<Action Name="" ID="{97D11E79-8B18-4D5E-A6D8-3238BB896BCA}" ShortID="209588703">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Global" ID="{731DDB86-8ECD-4375-895E-0BA16B7A6356}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Mama" ID="{68120470-F06A-4EE5-B31D-DF88FD308DC8}">
