@@ -1046,7 +1046,7 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 2
 --- !u!1 &96018953
 GameObject:
@@ -3655,7 +3655,7 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 5
 --- !u!1 &363127404
 GameObject:
@@ -6798,6 +6798,7 @@ GameObject:
   - component: {fileID: 655496523}
   - component: {fileID: 655496522}
   - component: {fileID: 655496521}
+  - component: {fileID: 655496525}
   m_Layer: 0
   m_Name: ViewRadiusCollider
   m_TagString: Untagged
@@ -6887,7 +6888,29 @@ MonoBehaviour:
   playerCaughtSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a8d4005c677bf6448a02c0167a2bc6f6, type: 2}
+--- !u!114 &655496525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655496519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6aeba918078548459c17eaaba4a1963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &679795926
 GameObject:
   m_ObjectHideFlags: 0
@@ -11612,7 +11635,7 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 1
 --- !u!1 &1262372743
 GameObject:
@@ -14926,7 +14949,7 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 0
 --- !u!1 &1606743475
 GameObject:
@@ -15438,7 +15461,7 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 3
 --- !u!1 &1689001235
 GameObject:
@@ -17175,7 +17198,7 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 6
 --- !u!1 &1856478687
 GameObject:
@@ -18040,7 +18063,7 @@ MonoBehaviour:
   lightSwitchFlipOffEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 65913215c959007419facd8c944c729c, type: 2}
   mamaGetInBedEvent:
     idInternal: 0
     valueGuidInternal: 
