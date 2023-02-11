@@ -27,7 +27,21 @@ public class GameManager : MonoBehaviour
     {
         current = this;
     }
+    private void Start()
+    {
+        gameLostCanvas.alpha = 0;
+        gameLostCanvas.interactable = false;
 
+        gameWonCanvas.alpha = 0;
+        gameWonCanvas.interactable = false;
+
+        gameStartCanvas.alpha = 1;
+        gameStartCanvas.interactable = true;
+
+        current = this;
+        GameEvents.current.onSnackObtained += OnSnackObtained;
+        GameEvents.current.onGameOver += SetGameOver;
+    }
     // Should track mama's state here. 
     private MAMA_STATE mamaState = MAMA_STATE.IDLE; 
 
@@ -36,17 +50,7 @@ public class GameManager : MonoBehaviour
         mamaState = state;
     }
 
-    private void Start()
-    {
-        gameLostCanvas.alpha = 0;
-        gameWonCanvas.alpha = 0;
-        gameStartCanvas.alpha = 1; 
-
-        current = this;
-        GameEvents.current.onSnackObtained += OnSnackObtained;
-        GameEvents.current.onGameOver += SetGameOver; 
-    }
-
+   
 
     public void CloseOpeningScreen()
     {
