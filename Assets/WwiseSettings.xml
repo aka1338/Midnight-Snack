@@ -11,7 +11,7 @@
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac />
   <WwiseInstallationPathWindows>E:\Programming\Wwise</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../MidnightSnack_WwiseProject/Midnight Snack_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../../Midnight Snack/MidnightSnack_WwiseProject/MidnightSnack_WwiseProject.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>

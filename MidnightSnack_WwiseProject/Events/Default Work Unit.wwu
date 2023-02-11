@@ -145,9 +145,31 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Global" ID="{837D0EDB-B8DB-4C2F-B733-890E93B949E4}">
+							<ChildrenList>
+								<Action Name="" ID="{97D11E79-8B18-4D5E-A6D8-3238BB896BCA}" ShortID="209588703">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Global" ID="{731DDB86-8ECD-4375-895E-0BA16B7A6356}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="LaundryRoom" ID="{37263AAD-2A00-4A8B-86EC-522A4FE70FA2}">
+							<ChildrenList>
+								<Action Name="" ID="{DC460285-9788-47F4-AED6-A123A31198F4}" ShortID="277121839">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_LaundryRoom" ID="{222B641B-C738-420A-AB79-B3E20873273E}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="MOM" ID="{68120470-F06A-4EE5-B31D-DF88FD308DC8}">
+				<Event Name="Mama" ID="{68120470-F06A-4EE5-B31D-DF88FD308DC8}">
 					<ChildrenList>
 						<Action Name="" ID="{F1F92544-2999-4088-8996-580AD14E35AA}" ShortID="473610475">
 							<ReferenceList>
@@ -160,11 +182,100 @@
 				</Event>
 				<Folder Name="Misc" ID="{A2AAD936-0A79-4F96-928A-0369040F3B73}" ShortID="600542659">
 					<ChildrenList>
-						<Event Name="SnackObtained" ID="{CCBEC2F8-E90E-4BC6-9C4C-7141C49D72C0}"/>
-						<Event Name="Duvet_Awake" ID="{E83E7D00-D9BB-429F-881A-0386144E1301}"/>
-						<Event Name="ThoughtBubble" ID="{47BF3AC2-ED35-47EF-86D4-0EAA8125ADB6}"/>
+						<Event Name="Snack" ID="{CCBEC2F8-E90E-4BC6-9C4C-7141C49D72C0}">
+							<ChildrenList>
+								<Action Name="" ID="{C21E18BA-FC02-4C6A-A13F-61CA64D5D3E8}" ShortID="396476019">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_SnackObtained" ID="{9599AE7B-1546-4442-805A-1238B21FC80D}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Duvet_Awake" ID="{E83E7D00-D9BB-429F-881A-0386144E1301}">
+							<ChildrenList>
+								<Action Name="" ID="{EDD06D7B-C10A-4B82-97E4-C82B7F5F3DAB}" ShortID="103276103">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_Duvet_OnAwake(OutOfBed)" ID="{5F313260-BCC2-4E24-936F-36A6B92AFE90}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ThoughtBubble" ID="{47BF3AC2-ED35-47EF-86D4-0EAA8125ADB6}">
+							<ChildrenList>
+								<Action Name="" ID="{3BBE0220-850A-476C-B8A8-4FDA807CCB4E}" ShortID="25185785">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_ThoughtBubble" ID="{5C4DADD4-72FC-42E8-BBFE-7988AE353664}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="LightSwitch" ID="{C1FE3CA4-BE67-44F4-8398-C2158812EABF}" ShortID="554322579">
+							<ChildrenList>
+								<Event Name="LightOn" ID="{6C9D645A-B8FA-4929-90FA-1F77DB264FD2}">
+									<ChildrenList>
+										<Action Name="" ID="{ECF22611-3A0A-4AB2-BCEC-DCA0B0DA4D1A}" ShortID="392053302">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MS_LightSwitchOn" ID="{902B501D-80A7-4393-81A8-EEFFD421C7C3}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="LightOff" ID="{FD79C535-83A2-4A1C-B3B0-87D5B0740F50}">
+									<ChildrenList>
+										<Action Name="" ID="{8F5204B3-1E1F-4A63-B15B-2B0A149C5B00}" ShortID="534929775">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MS_LightSwitchOff" ID="{34C1A48B-B9EE-4AA7-939C-15D9D6D908EC}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="Caught" ID="{BBF3BDB8-3849-4638-ADB8-C3D5C117B814}">
+							<ChildrenList>
+								<Action Name="" ID="{C13A1CCA-D8D6-4183-B3E0-3393C512945F}" ShortID="611378046">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_Caught" ID="{BA54E012-8495-4EC2-82BD-D1C1E2523F35}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Door_Close" ID="{4AEABCAA-2C40-42B7-883F-7AC731081F22}">
+					<ChildrenList>
+						<Action Name="" ID="{96CA0D07-881A-4444-9B42-64A3EC452469}" ShortID="454361476">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door_Close" ID="{845E5604-93A8-4E9D-873C-7E8A9C9E89DC}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ShadowMonster" ID="{43DEA525-0282-4B37-B82B-4176C345B23C}">
+					<ChildrenList>
+						<Action Name="" ID="{5FF27142-3C85-46EC-BA14-BC253BC6AF48}" ShortID="866474707">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MS_ShadowMonster_Snarl" ID="{24DB5BE4-5EA7-4616-9D19-B19CC48A0C1F}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

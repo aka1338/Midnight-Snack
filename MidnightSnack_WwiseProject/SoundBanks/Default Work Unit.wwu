@@ -7,22 +7,30 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Door_Open" ID="{F7C29F0F-A571-421B-B746-35E39F6E1C22}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Duvet_Awake" ID="{E83E7D00-D9BB-429F-881A-0386144E1301}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Door_Close" ID="{4AEABCAA-2C40-42B7-883F-7AC731081F22}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LightSwitch" ID="{C1FE3CA4-BE67-44F4-8398-C2158812EABF}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Window" ID="{A5F58A4B-62A3-457A-B8D1-36415CB0DB5F}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Bathroom" ID="{BB84EAB5-E495-45DF-AF37-98C7649043B9}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{C2013B83-8D46-4614-A1F9-4DC13024100D}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Caught" ID="{BBF3BDB8-3849-4638-ADB8-C3D5C117B814}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TV" ID="{AF032A17-96D8-4723-8B8C-F4D49C41BEC5}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ThoughtBubble" ID="{47BF3AC2-ED35-47EF-86D4-0EAA8125ADB6}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Wood_Creaks" ID="{BB303756-D55C-48B1-8EBE-05645137F9E6}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LightOn" ID="{6C9D645A-B8FA-4929-90FA-1F77DB264FD2}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LightOff" ID="{FD79C535-83A2-4A1C-B3B0-87D5B0740F50}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LaundryRoom" ID="{37263AAD-2A00-4A8B-86EC-522A4FE70FA2}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambient" ID="{0B982BE1-63F6-4AC6-ADED-8AA42E842ED1}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Sound_Triggers" ID="{ABCF726A-BC8E-4ACD-834E-C1DE779775B0}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="SnackObtained" ID="{CCBEC2F8-E90E-4BC6-9C4C-7141C49D72C0}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ShadowMonster" ID="{43DEA525-0282-4B37-B82B-4176C345B23C}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Snack" ID="{CCBEC2F8-E90E-4BC6-9C4C-7141C49D72C0}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Global" ID="{837D0EDB-B8DB-4C2F-B733-890E93B949E4}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Clothes" ID="{55AE4CB1-FEF3-4C5A-B116-0065D6BE6241}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Toy" ID="{EEC81BD9-83B2-4D0E-9B9F-A33C305C0C41}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Kitchen" ID="{3F1D90B9-7473-4D1D-A5B5-C26BAE7E58FE}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Shadowmonsters" ID="{54D17A7B-7636-4D7B-9C58-C2FD470579A8}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player" ID="{113FE7BA-AAD8-4D9F-B332-8CC8A3F974C5}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="MOM" ID="{68120470-F06A-4EE5-B31D-DF88FD308DC8}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Mama" ID="{68120470-F06A-4EE5-B31D-DF88FD308DC8}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Vase" ID="{D6667AF1-ED96-4F93-8690-2A5C4F97EB92}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Misc" ID="{A2AAD936-0A79-4F96-928A-0369040F3B73}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Frontdoor" ID="{7D972C1F-931D-4FE1-9028-E95136BC6743}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
@@ -32,8 +40,9 @@
 				</SoundBank>
 				<SoundBank Name="Music" ID="{F70ECE28-25F2-4B06-895D-8006259FC8A8}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Interactive Music Hierarchy" ID="{49FED366-B530-42A8-993B-924873AAB707}" WorkUnitID="{49FED366-B530-42A8-993B-924873AAB707}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Music" ID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" WorkUnitID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Idle" ID="{67531647-289E-4327-B2A5-750E19CE7A8A}" WorkUnitID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Alert" ID="{6B340627-FD3F-48FB-BFA8-0617F90E8270}" WorkUnitID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Snack_Music" ID="{143AF3F6-BE56-497E-BA85-14BF5474D306}" WorkUnitID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

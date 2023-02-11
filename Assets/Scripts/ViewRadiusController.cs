@@ -25,6 +25,13 @@ public class ViewRadiusController : MonoBehaviour
     public float darkDetectionTime = 4f;
     public float litDetectionTime = 2f;
 
+    [Header("Wwise")]
+    [SerializeField]
+    private AK.Wwise.Event playerSpottedSFXEvent;
+    [SerializeField]
+    private AK.Wwise.Event playerCaughtSFXEvent;
+
+
     // Have an event that listens for the light to turn on, and if the player is hiding or not. 
 
     private void Start()
@@ -95,13 +102,13 @@ public class ViewRadiusController : MonoBehaviour
             {
                 if (!isHiding)
                 {
+                    AkSoundEngine.PostEvent(playerCaughtSFXEvent.Id, this.gameObject);
                     GameEvents.current.GameOver(false);
                     Debug.Log("Caught by mama!");
                 }
             }
         }
     }
-
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (!GameManager.current.isGameOver)
@@ -110,6 +117,7 @@ public class ViewRadiusController : MonoBehaviour
             if (timeInTrigger >= darkDetectionTime && collision.gameObject.name == "Mama" && !isHiding && PlayerController.current.currentRoom == MamaController.current.currentRoom)
             {
                 GameEvents.current.GameOver(false);
+                AkSoundEngine.PostEvent(playerCaughtSFXEvent.Id, this.gameObject);
                 Debug.Log("Caught player while room was dark!");
             }
         }

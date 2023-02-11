@@ -13,17 +13,23 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ALERT = 721787521U;
         static const AkUniqueID BATHROOM = 1831461191U;
+        static const AkUniqueID CAUGHT = 816373421U;
         static const AkUniqueID CLOTHES = 2231306511U;
+        static const AkUniqueID DOOR_CLOSE = 128625444U;
         static const AkUniqueID DOOR_OPEN = 535830432U;
         static const AkUniqueID DUVET_AWAKE = 473332609U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID FRONTDOOR = 2574270862U;
+        static const AkUniqueID IDLE = 1874288895U;
         static const AkUniqueID KITCHEN = 1586158131U;
-        static const AkUniqueID MOM = 1082004790U;
-        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID LIGHTOFF = 2994412618U;
+        static const AkUniqueID LIGHTON = 181780140U;
+        static const AkUniqueID MAMA = 3094798569U;
         static const AkUniqueID SHADOWMONSTERS = 2413434828U;
-        static const AkUniqueID SNACKOBTAINED = 186028105U;
+        static const AkUniqueID SNACK = 3321796897U;
+        static const AkUniqueID SNACK_MUSIC = 3547389861U;
         static const AkUniqueID THOUGHTBUBBLE = 1887055498U;
         static const AkUniqueID TOY = 1080872003U;
         static const AkUniqueID TV = 1568083719U;
