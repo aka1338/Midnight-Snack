@@ -10,8 +10,8 @@ public class FollowPlayer : MonoBehaviour
 
     public Transform player;
     public float speed = 1f;
-    public float bobbingAmplitude = 1f;
-    public float bobbingFrequency = 1f;
+    public float bobbingAmplitude = .2f;
+    public float bobbingFrequency = .1f;
     private float startTime;
 
     private void Start()
