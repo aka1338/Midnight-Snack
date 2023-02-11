@@ -40,9 +40,12 @@
 				</SoundBank>
 				<SoundBank Name="Music" ID="{F70ECE28-25F2-4B06-895D-8006259FC8A8}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Idle" ID="{67531647-289E-4327-B2A5-750E19CE7A8A}" WorkUnitID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Alert" ID="{6B340627-FD3F-48FB-BFA8-0617F90E8270}" WorkUnitID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Snack_Music" ID="{143AF3F6-BE56-497E-BA85-14BF5474D306}" WorkUnitID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="VictoryMusic" ID="{70C5D71E-D4F9-4013-BD4D-6F9488FDBCC2}" WorkUnitID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="CaughtMusic" ID="{213E8C29-8041-4062-AAD0-81AD84FD0CD7}" WorkUnitID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SnackMusic" ID="{02213366-92BB-413E-A6D8-B194489F7727}" WorkUnitID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SearchingMusic" ID="{28968C08-24EC-4574-8858-317610AB288D}" WorkUnitID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AlertMusic" ID="{83DD2EAE-BC4C-45FC-A384-2CD2985DB620}" WorkUnitID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SubduedMusic" ID="{DC3FC7EF-3B62-4CF5-8535-44F2E34CFDFA}" WorkUnitID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
