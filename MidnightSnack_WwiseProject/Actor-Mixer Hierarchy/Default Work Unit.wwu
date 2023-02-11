@@ -67,6 +67,13 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<SwitchContainer Name="Footsteps" ID="{D2BDA16F-BE99-479F-94BA-E3DC7048324B}" ShortID="969196706">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<ObjectRef Name="Mom" ID="{B468644B-EDEC-413D-AD61-11D2E7639532}" WorkUnitID="{707360A6-12C7-4CA5-9C1B-B3CC2F350D79}"/>
@@ -861,9 +868,10 @@
 					<ChildrenList>
 						<Sound Name="MS_Bathroom_Ambience_TapDrip" ID="{7107093B-0A2E-4A4A-A4D3-169A2690B484}" ShortID="811282434">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -893,15 +901,16 @@
 						</Sound>
 						<Sound Name="MS_Frontdoor_Ambience" ID="{039C65D7-2080-40B7-9767-B6813E355A47}" ShortID="1037915010">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>4</Value>
+										<Value>8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="Mom" ID="{B468644B-EDEC-413D-AD61-11D2E7639532}" WorkUnitID="{707360A6-12C7-4CA5-9C1B-B3CC2F350D79}"/>
+									<ObjectRef Name="Window+FrontDoor" ID="{10E2DE4B-39EE-4513-95B5-2DD2B3EE1CF7}" WorkUnitID="{707360A6-12C7-4CA5-9C1B-B3CC2F350D79}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
@@ -927,13 +936,13 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="Mom" ID="{B468644B-EDEC-413D-AD61-11D2E7639532}" WorkUnitID="{707360A6-12C7-4CA5-9C1B-B3CC2F350D79}"/>
+									<ObjectRef Name="Kitchen" ID="{75B11FC6-3E01-40F6-AFEF-BF7AF880D354}" WorkUnitID="{707360A6-12C7-4CA5-9C1B-B3CC2F350D79}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
@@ -956,7 +965,18 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="MS_Window_Ambience" ID="{28921109-B0E3-4A52-9567-A3A701C5F278}" ShortID="755489615">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Window+FrontDoor" ID="{10E2DE4B-39EE-4513-95B5-2DD2B3EE1CF7}" WorkUnitID="{707360A6-12C7-4CA5-9C1B-B3CC2F350D79}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
 								</Reference>
@@ -986,9 +1006,10 @@
 								<Sound Name="MS_MomBreathing" ID="{5B15A7E3-41E8-4A97-A05C-B36A5D25FC12}" ShortID="909640288">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>3</Value>
+												<Value>12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1054,9 +1075,15 @@
 				</Folder>
 				<RandomSequenceContainer Name="TV_MomsRoom" ID="{DB645CA7-824A-439F-8E85-2420EF503B26}" ShortID="488947863">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -1181,7 +1208,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1379,10 +1406,19 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Door_Open" ID="{969A4DC4-A7A4-4AEF-A104-C1886CDFC707}" ShortID="881552662">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Doors" ID="{16CBD474-E0FE-4C16-95FD-942DB8DA53F6}" WorkUnitID="{707360A6-12C7-4CA5-9C1B-B3CC2F350D79}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
 								</Reference>
@@ -1488,7 +1524,13 @@
 							</Playlist>
 						</RandomSequenceContainer>
 						<Sound Name="MS_DoorClose" ID="{8CD211B0-435B-4501-8FE1-55E88004288C}" ShortID="309007661">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Doors" ID="{16CBD474-E0FE-4C16-95FD-942DB8DA53F6}" WorkUnitID="{707360A6-12C7-4CA5-9C1B-B3CC2F350D79}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
 								</Reference>
@@ -1582,6 +1624,84 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="MS_SnackObtained" ID="{1F7831C9-8880-4CF8-9279-848BED3D1CD8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_LightSwitchOn" ID="{902B501D-80A7-4393-81A8-EEFFD421C7C3}" ShortID="459465808">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_LightSwitches" ID="{2F12AC5E-472C-4BC2-A24E-2C6F77BB8CD6}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.265641025641026"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0574358974358974"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.495384615384615"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MS_LightSwitches.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="929243871"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_LightSwitches" ID="{2F12AC5E-472C-4BC2-A24E-2C6F77BB8CD6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_LightSwitchOff" ID="{34C1A48B-B9EE-4AA7-939C-15D9D6D908EC}" ShortID="543631873">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_LightSwitches" ID="{DD8AE845-659A-4FE6-896C-024FB1221F76}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.420657276995305"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.26197183098592"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.23474178403755"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MS_LightSwitches.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="277262667"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_LightSwitches" ID="{DD8AE845-659A-4FE6-896C-024FB1221F76}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_Caught" ID="{BA54E012-8495-4EC2-82BD-D1C1E2523F35}" ShortID="912736388">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_Caught" ID="{10F7695D-66E4-4162-B527-8FF1CFF3826B}">
+									<Language>SFX</Language>
+									<AudioFile>MS_Caught.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="873639416"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_Caught" ID="{10F7695D-66E4-4162-B527-8FF1CFF3826B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

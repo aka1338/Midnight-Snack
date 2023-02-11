@@ -3,12 +3,34 @@
 	<Events>
 		<WorkUnit Name="Music" ID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Music" ID="{126D0FF1-4C16-4F1E-A0BB-10B3E7446504}">
+				<Event Name="Idle" ID="{67531647-289E-4327-B2A5-750E19CE7A8A}">
 					<ChildrenList>
-						<Action Name="" ID="{AA8F7376-5555-4E68-98AB-0B6FD0BF2139}" ShortID="926618439">
+						<Action Name="" ID="{467CA8A0-6A22-4BB2-923F-368B4A0551B0}" ShortID="851293156">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Game" ID="{5D62DF19-13CA-41BC-BBBA-1FC71FF28460}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
+									<ObjectRef Name="subdued_layer" ID="{0AB907C7-8E26-4F11-8452-9B6CE883257D}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Alert" ID="{6B340627-FD3F-48FB-BFA8-0617F90E8270}">
+					<ChildrenList>
+						<Action Name="" ID="{262BE094-B182-4A2F-AD9C-98459388A8D5}" ShortID="899970802">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mom_layer_1" ID="{AE6B1637-A2CA-4657-AFB9-4442B1D47FA3}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Snack_Music" ID="{143AF3F6-BE56-497E-BA85-14BF5474D306}">
+					<ChildrenList>
+						<Action Name="" ID="{CB4F387E-65B8-41FB-A225-199F7A0726E3}" ShortID="924716887">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="snack_layer" ID="{1978969E-D2B5-40B6-8CBA-BAE17D810C63}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
