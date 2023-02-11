@@ -44,7 +44,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D7C0F950-1425-A694-3242-D8FB6A5A8F52}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A39A7D79-188E-4C79-9F08-4B2C7BD36E96}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -308,7 +308,7 @@
 						<MediaRef Id="1035741978"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="128625444" Name="Door_Close" DurationType="OneShot" DurationMin="2.3225417" DurationMax="2.3225417">
+				<Event Id="128625444" Name="Door_Close" MaxAttenuation="20" DurationType="OneShot" DurationMin="2.3225417" DurationMax="2.3225417">
 					<MediaRefs>
 						<MediaRef Id="763339408"/>
 					</MediaRefs>
@@ -318,7 +318,7 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="535830432" Name="Door_Open" MaxAttenuation="12" DurationType="OneShot" DurationMin="1.6196179" DurationMax="2.3487532">
+				<Event Id="535830432" Name="Door_Open" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.6196179" DurationMax="2.3487532">
 					<MediaRefs>
 						<MediaRef Id="78706318"/>
 						<MediaRef Id="299336329"/>
@@ -523,5 +523,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0DE54EE6-AF2C-71B5-37AB-610BC2232096}</FileHash>
+	<FileHash>{E4C0A0FF-C587-5FC5-6F08-0958879DA18D}</FileHash>
 </SoundBanksInfo>

@@ -367,7 +367,7 @@
 				</Attenuation>
 				<Attenuation Name="Doors" ID="{16CBD474-E0FE-4C16-95FD-942DB8DA53F6}" ShortID="512609235">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="12"/>
+						<Property Name="RadiusMax" Type="Real64" Value="20"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -381,11 +381,10 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12</XPos>
-											<YPos>-200</YPos>
+											<XPos>20</XPos>
+											<YPos>-20.27872</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>

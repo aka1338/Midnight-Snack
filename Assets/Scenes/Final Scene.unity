@@ -996,6 +996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 85156976}
   - component: {fileID: 85156977}
+  - component: {fileID: 85156978}
   m_Layer: 0
   m_Name: Bathroom Door Hinge
   m_TagString: Untagged
@@ -1048,6 +1049,22 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 2
+--- !u!58 &85156978
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85156975}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &96018953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,7 +1581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &113447712
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3605,6 +3622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 357565293}
   - component: {fileID: 357565294}
+  - component: {fileID: 357565295}
   m_Layer: 0
   m_Name: 'Office Door Hinge '
   m_TagString: Untagged
@@ -3657,6 +3675,22 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 5
+--- !u!58 &357565295
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357565292}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &363127404
 GameObject:
   m_ObjectHideFlags: 0
@@ -11585,6 +11619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1247282356}
   - component: {fileID: 1247282357}
+  - component: {fileID: 1247282358}
   m_Layer: 0
   m_Name: Mama Bedroom Door Hinge
   m_TagString: Untagged
@@ -11637,6 +11672,22 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 1
+--- !u!58 &1247282358
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247282355}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1262372743
 GameObject:
   m_ObjectHideFlags: 0
@@ -14899,6 +14950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1602631160}
   - component: {fileID: 1602631161}
+  - component: {fileID: 1602631162}
   m_Layer: 0
   m_Name: Baby Bedroom Door Hinge
   m_TagString: Untagged
@@ -14951,6 +15003,22 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 0
+--- !u!58 &1602631162
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602631159}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1606743475
 GameObject:
   m_ObjectHideFlags: 0
@@ -15411,6 +15479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1679029832}
   - component: {fileID: 1679029833}
+  - component: {fileID: 1679029834}
   m_Layer: 0
   m_Name: Laundry Room Door Hinge
   m_TagString: Untagged
@@ -15463,6 +15532,22 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 3
+--- !u!58 &1679029834
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679029831}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1689001235
 GameObject:
   m_ObjectHideFlags: 0
@@ -17148,6 +17233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1852577382}
   - component: {fileID: 1852577383}
+  - component: {fileID: 1852577384}
   m_Layer: 0
   m_Name: Laundry Office Connector Door Hinge
   m_TagString: Untagged
@@ -17200,6 +17286,22 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 6
+--- !u!58 &1852577384
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852577381}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1856478687
 GameObject:
   m_ObjectHideFlags: 0
