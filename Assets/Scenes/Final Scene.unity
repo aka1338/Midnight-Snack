@@ -3402,7 +3402,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270302681}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d91fd5d29e62759439f1ad70d9366a3e, type: 3}
   m_Name: 
@@ -6972,14 +6972,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592446653}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d91fd5d29e62759439f1ad70d9366a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 141657223}
-  speed: 1
-  bobbingAmplitude: 1
+  speed: 0.05
+  bobbingAmplitude: 0.002
   bobbingFrequency: 1
 --- !u!114 &592446658
 MonoBehaviour:
@@ -9910,14 +9910,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889164063}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d91fd5d29e62759439f1ad70d9366a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 141657223}
-  speed: 1
-  bobbingAmplitude: 1
+  speed: 0.002
+  bobbingAmplitude: 0.05
   bobbingFrequency: 1
 --- !u!114 &889164068
 MonoBehaviour:
@@ -18738,14 +18738,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706708509}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d91fd5d29e62759439f1ad70d9366a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 141657223}
-  speed: 1
-  bobbingAmplitude: 1
+  speed: 0.002
+  bobbingAmplitude: 0.05
   bobbingFrequency: 1
 --- !u!114 &1706708514
 MonoBehaviour:
@@ -21206,14 +21206,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950039543}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d91fd5d29e62759439f1ad70d9366a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 141657223}
-  speed: 1
-  bobbingAmplitude: 1
+  speed: 0.002
+  bobbingAmplitude: 0.05
   bobbingFrequency: 1
 --- !u!114 &1950039548
 MonoBehaviour:
