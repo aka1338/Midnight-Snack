@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
         gameStartCanvas.interactable = true;
 
         current = this;
+
         GameEvents.current.onSnackObtained += OnSnackObtained;
         GameEvents.current.onGameOver += SetGameOver;
     }
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Trying to close window here!"); 
         gameStartCanvas.DOFade(0, 1f).SetEase(Ease.InOutQuad);
+        gameStartCanvas.interactable = false;
     }
 
     private void OnDisable()
@@ -77,11 +79,15 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("You won!");
             gameWonCanvas.DOFade(1, 1f).SetEase(Ease.InOutQuad);
+            gameWonCanvas.interactable = true;
+
         }
         else
         {
             Debug.Log("You lost!");
             gameLostCanvas.DOFade(1, 1f).SetEase(Ease.InOutQuad);
+            gameLostCanvas.interactable = true;
+
         }
         // Display a Game Over UI that allows the player to restart the game 
     }
