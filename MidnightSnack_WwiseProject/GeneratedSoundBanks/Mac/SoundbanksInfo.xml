@@ -44,14 +44,10 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{139207D3-5B8F-0EF9-B6DC-CAF0291D1639}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8D9DE9F2-BFB2-2B2E-C2B8-F070AB88E694}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
-				<File Id="751507" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MS_TV_WouldntSteal.wav</ShortName>
-					<CachePath>SFX/MS_TV_WouldntSteal_1B5FE3AE.wem</CachePath>
-				</File>
 				<File Id="1525529" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_Creak_2.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_Creak_2_10C4C929.wem</CachePath>
@@ -84,6 +80,14 @@
 					<ShortName>Vase_Smash.wav</ShortName>
 					<CachePath>SFX/Vase_Smash_10C4C929.wem</CachePath>
 				</File>
+				<File Id="199548176" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_TV_New02.wav</ShortName>
+					<CachePath>SFX/MS_TV_New02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="210327146" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_TV_New01.wav</ShortName>
+					<CachePath>SFX/MS_TV_New01_10C4C929.wem</CachePath>
+				</File>
 				<File Id="273609102" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_2.wav</ShortName>
 					<CachePath>SFX/MS_Footsteos_Bathroom_2_10C4C929.wem</CachePath>
@@ -104,17 +108,13 @@
 					<ShortName>DoorUnlock_Squeak_1.wav</ShortName>
 					<CachePath>SFX/DoorUnlock_Squeak_1_10C4C929.wem</CachePath>
 				</File>
-				<File Id="325173757" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MS_TV_CokeAdv.wav</ShortName>
-					<CachePath>SFX/MS_TV_CokeAdv_FA7B30B0.wem</CachePath>
-				</File>
 				<File Id="333460188" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Archived, Test Tone, White Noise SND3563.wav</ShortName>
 					<CachePath>SFX/Archived, Test Tone, White Noise SND3563_54E5B797.wem</CachePath>
 				</File>
-				<File Id="354319249" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MS_TV_Friends.wav</ShortName>
-					<CachePath>SFX/MS_TV_Friends_B02106F3.wem</CachePath>
+				<File Id="417798216" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_TV_New03.wav</ShortName>
+					<CachePath>SFX/MS_TV_New03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="444567866" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Kitchen_Ambience.wav</ShortName>
@@ -144,10 +144,6 @@
 					<ShortName>Toy_Hit_Knockover.wav</ShortName>
 					<CachePath>SFX/Toy_Hit_Knockover_ED03813F.wem</CachePath>
 				</File>
-				<File Id="598931479" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MS_TV_SongFIM.wav</ShortName>
-					<CachePath>SFX/MS_TV_SongFIM_CCFF8277.wem</CachePath>
-				</File>
 				<File Id="603231246" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_6.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_6_10C4C929.wem</CachePath>
@@ -159,6 +155,10 @@
 				<File Id="721017236" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_7.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_7_10C4C929.wem</CachePath>
+				</File>
+				<File Id="746213757" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_TV_New04.wav</ShortName>
+					<CachePath>SFX/MS_TV_New04_10C4C929.wem</CachePath>
 				</File>
 				<File Id="758012510" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_ShadowMonster_Snarl.wav</ShortName>
@@ -358,13 +358,13 @@
 				</Event>
 				<Event Id="1568083719" Name="TV" MaxAttenuation="16" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="751507"/>
 						<MediaRef Id="117554140"/>
-						<MediaRef Id="325173757"/>
+						<MediaRef Id="199548176"/>
+						<MediaRef Id="210327146"/>
 						<MediaRef Id="333460188"/>
-						<MediaRef Id="354319249"/>
+						<MediaRef Id="417798216"/>
 						<MediaRef Id="575920840"/>
-						<MediaRef Id="598931479"/>
+						<MediaRef Id="746213757"/>
 						<MediaRef Id="964162494"/>
 						<MediaRef Id="1008861467"/>
 					</MediaRefs>
@@ -438,5 +438,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FD63A418-BA33-24C5-4201-23695E773241}</FileHash>
+	<FileHash>{B0313373-A9F4-CE35-06DE-F345D71A964C}</FileHash>
 </SoundBanksInfo>

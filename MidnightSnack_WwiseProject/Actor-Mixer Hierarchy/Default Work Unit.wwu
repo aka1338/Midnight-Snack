@@ -997,6 +997,293 @@
 								<ActiveSource Name="MS_Window_Ambience" ID="{88A53CE4-508D-4BE1-8E89-FBAB8ADFC55A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="Global" ID="{731DDB86-8ECD-4375-895E-0BA16B7A6356}" ShortID="781082661">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MS_AmbientHummingGirl" ID="{349ED160-3575-4E51-8A82-6433BA949A05}" ShortID="669833422">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MS_AmbientHummingGirl" ID="{F768D682-47DD-4538-9CCC-CEFBEE6FE4AA}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.86635695876289"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MS_AmbientHummingGirl.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="379979995"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MS_AmbientHummingGirl" ID="{F768D682-47DD-4538-9CCC-CEFBEE6FE4AA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MS_AmbientImBehindYouGirl" ID="{C37366EA-3F67-4320-94DF-9138DB0E0C5D}" ShortID="954783649">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MS_AmbientImBehindYouGirl" ID="{CD045893-D77C-4512-BD44-CD91E96B4E11}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.33240223463687"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.28882681564246"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MS_AmbientImBehindYouGirl.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="92310259"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MS_AmbientImBehindYouGirl" ID="{CD045893-D77C-4512-BD44-CD91E96B4E11}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MS_AmbientLaughingGirl" ID="{CB87F343-8239-477F-98BD-6579A8D48BEF}" ShortID="526340905">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MS_AmbientLaughingGirl" ID="{D5CB2358-6965-4ED0-9653-D3E6A925E454}">
+											<Language>SFX</Language>
+											<AudioFile>MS_AmbientLaughingGirl.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="773510629"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MS_AmbientLaughingGirl" ID="{D5CB2358-6965-4ED0-9653-D3E6A925E454}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MS_AmbientTalkingGirl" ID="{18E8F52D-8E71-47A5-9AD1-DE44B2BA57EF}" ShortID="728433131">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MS_AmbientTalkingGirl" ID="{24787971-C127-4D0E-86BC-13BBDE75D967}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.646713615023474"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.69131455399061"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.38967136150236"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MS_AmbientTalkingGirl.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="864389558"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MS_AmbientTalkingGirl" ID="{24787971-C127-4D0E-86BC-13BBDE75D967}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MS_AmbientHummingGirl_01" ID="{04BA7000-F5F5-4A31-9BD4-A98E1BBA7FF0}" ShortID="619433026">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MS_AmbientHummingGirl" ID="{88B51658-71CC-46BE-A7A8-E23D2E115389}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="4.87166108247423"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="8.89941237113402"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MS_AmbientHummingGirl.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="984617489"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MS_AmbientHummingGirl" ID="{88B51658-71CC-46BE-A7A8-E23D2E115389}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="New Sound SFX" ID="{CC8C8CA1-6F41-468A-8662-3BEEB4445D51}" ShortID="919078279">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>79</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{F121929C-862C-4EB3-892E-4485792D4B7A}" ShortID="260123732" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="10"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{F121929C-862C-4EB3-892E-4485792D4B7A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MS_AmbientTalkingGirl_01" ID="{3FEBE0BE-F730-4114-A6F9-C8A2DE51878D}" ShortID="396376125">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MS_AmbientTalkingGirl" ID="{2763A53D-0D66-4793-B85C-B4BDE5F8C993}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.24882629107981"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.7018779342723"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.26643192488263"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MS_AmbientTalkingGirl.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="740686913"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MS_AmbientTalkingGirl" ID="{2763A53D-0D66-4793-B85C-B4BDE5F8C993}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MS_AmbientTalkingGirl_02" ID="{D5671E47-E56A-47E9-95FA-434F63A7C2CC}" ShortID="60044271">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MS_AmbientTalkingGirl" ID="{468E20A5-5329-4247-AB2A-393AFFB68102}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.869718309859155"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.62323943661971"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.16549295774648"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>MS_AmbientTalkingGirl.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="903373721"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MS_AmbientTalkingGirl" ID="{468E20A5-5329-4247-AB2A-393AFFB68102}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemies" ID="{CB81D4DD-B861-4CF9-BF58-62B799654E57}" ShortID="641350361">
@@ -1009,7 +1296,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>12</Value>
+												<Value>15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1111,6 +1398,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="JFK" ID="{DB5837A4-3605-4545-B342-76C480B582CE}" ShortID="854320489">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
@@ -1141,7 +1435,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1171,78 +1465,11 @@
 										<ActiveSource Name="Voices, Futzed, Broadcast, Radio Voice, Male, News, Distorted SND52765" ID="{6D20B758-A1A3-4AB3-B192-9C7E47382EDA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="MS_TV_CokeAdv" ID="{542C0C85-E65D-497B-AE5F-005C26D22C0D}" ShortID="1029617493">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MS_TV_CokeAdv" ID="{19D04F0C-1727-4C60-B842-A22A9F778ADF}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="12.4774774774775"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>MS_TV_CokeAdv.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="325173757"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MS_TV_CokeAdv" ID="{19D04F0C-1727-4C60-B842-A22A9F778ADF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="MS_TV_Friends" ID="{AE7B3B60-2936-40F3-8577-20032DD67368}" ShortID="901831341">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MS_TV_Friends" ID="{CB2480C8-B320-4272-9F29-67ABA4676FDE}">
-											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="10.8607299442299"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>MS_TV_Friends.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="354319249"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MS_TV_Friends" ID="{CB2480C8-B320-4272-9F29-67ABA4676FDE}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="MS_TV_Queen" ID="{D1FDA637-5A31-4F75-BABF-F81FA18C56C7}" ShortID="758734576">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1272,75 +1499,14 @@
 										<ActiveSource Name="MS_TV_Queen" ID="{E0CFDE34-7CCE-4E17-AA24-509FCE447C78}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="MS_TV_SongFIM" ID="{15BBD7C6-10EA-453C-A0CA-9FE6CED0F092}" ShortID="1055586845">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-7</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MS_TV_SongFIM" ID="{AC3E5135-20CF-4201-9A0D-5456D641390A}">
-											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="10.6004504504505"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>MS_TV_SongFIM.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="598931479"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MS_TV_SongFIM" ID="{AC3E5135-20CF-4201-9A0D-5456D641390A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="MS_TV_WouldntSteal" ID="{8180A567-86E6-490B-A3EC-DD9B7EB0EE00}" ShortID="702884572">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MS_TV_WouldntSteal" ID="{7F5EDF2E-1F76-425D-AE72-AE2E321342EE}">
-											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="9.40768983268983"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>MS_TV_WouldntSteal.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="751507"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MS_TV_WouldntSteal" ID="{7F5EDF2E-1F76-425D-AE72-AE2E321342EE}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="MS_TV_Podcast" ID="{69096082-5E0B-4EA1-BD08-3C1644AF9546}" ShortID="876023618">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
@@ -1365,6 +1531,122 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="MS_TV_Podcast" ID="{324B4AE7-9027-4722-B542-F17277F8A21B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MS_TV_New01" ID="{3024CBA4-2584-43B3-83E9-6C032A77E485}" ShortID="471318852">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MS_TV_New01" ID="{55B42E49-7F48-4A2B-A2B5-79B30098908C}">
+											<Language>SFX</Language>
+											<AudioFile>MS_TV_New01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="210327146"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MS_TV_New01" ID="{55B42E49-7F48-4A2B-A2B5-79B30098908C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MS_TV_New02" ID="{377F6546-5BE1-40CF-B120-7548BB68BD02}" ShortID="572451126">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MS_TV_New02" ID="{3F417276-8109-4811-B770-7438FD66D0B1}">
+											<Language>SFX</Language>
+											<AudioFile>MS_TV_New02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="199548176"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MS_TV_New02" ID="{3F417276-8109-4811-B770-7438FD66D0B1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MS_TV_New03" ID="{8E632806-0531-4EF1-B700-CE216CDAC405}" ShortID="814269105">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MS_TV_New03" ID="{9B1A8FD0-39E5-45B7-92F6-304F559DFFE8}">
+											<Language>SFX</Language>
+											<AudioFile>MS_TV_New03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="417798216"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MS_TV_New03" ID="{9B1A8FD0-39E5-45B7-92F6-304F559DFFE8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MS_TV_New04" ID="{2B70712D-6906-4D47-A7E6-609545D3CE5D}" ShortID="1011873995">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MS_TV_New04" ID="{CABB76F5-B166-4CC6-B703-10B780AD3AB3}">
+											<Language>SFX</Language>
+											<AudioFile>MS_TV_New04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="746213757"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MS_TV_New04" ID="{CABB76F5-B166-4CC6-B703-10B780AD3AB3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
