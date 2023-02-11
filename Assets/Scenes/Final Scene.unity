@@ -1046,7 +1046,7 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 2
 --- !u!1 &96018953
 GameObject:
@@ -1095,23 +1095,23 @@ MonoBehaviour:
   idleStateEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 39e01ac7b6c9dc04d880f5be113432f2, type: 2}
   alertedStateEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 2999f1a876992c2448517fa10b146862, type: 2}
   seekingPlayerEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 2999f1a876992c2448517fa10b146862, type: 2}
   returningToBedEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 873722a8f2f4d794a980052c3290eeb3, type: 2}
   snackObtainedMusicEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 873722a8f2f4d794a980052c3290eeb3, type: 2}
   gameWinMusicEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -1337,7 +1337,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2933,7 +2933,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275157772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.2, y: -17.3, z: 0}
+  m_LocalPosition: {x: -60, y: -23.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2950,12 +2950,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 16
 --- !u!114 &275157775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2976,7 +2976,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 60324d0c05af1c34899b2e19409bbb93, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -3491,8 +3491,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348202586}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.34, y: 3.23, z: 1}
-  m_LocalScale: {x: 13, y: 13, z: 1}
+  m_LocalPosition: {x: -5.34, y: 3.1002, z: 1}
+  m_LocalScale: {x: 13, y: 12.74, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 655496520}
@@ -3655,7 +3655,7 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 5
 --- !u!1 &363127404
 GameObject:
@@ -3976,7 +3976,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390546712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.5, y: -18.3, z: 0}
+  m_LocalPosition: {x: 42, y: -19.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3993,12 +3993,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 18
 --- !u!114 &390546715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4019,7 +4019,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: f41e30bff8b870d41ad7abc6cd22293d, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -5291,7 +5291,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5425,7 +5425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583783745}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.8, y: 11.5, z: 0}
+  m_LocalPosition: {x: 44, y: 11.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5442,12 +5442,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 18
 --- !u!114 &583783748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6798,6 +6798,7 @@ GameObject:
   - component: {fileID: 655496523}
   - component: {fileID: 655496522}
   - component: {fileID: 655496521}
+  - component: {fileID: 655496525}
   m_Layer: 0
   m_Name: ViewRadiusCollider
   m_TagString: Untagged
@@ -6883,11 +6884,33 @@ MonoBehaviour:
   playerSpottedSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a8d4005c677bf6448a02c0167a2bc6f6, type: 2}
   playerCaughtSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a8d4005c677bf6448a02c0167a2bc6f6, type: 2}
+--- !u!114 &655496525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655496519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6aeba918078548459c17eaaba4a1963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &679795926
 GameObject:
   m_ObjectHideFlags: 0
@@ -9558,7 +9581,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041613889}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.1, y: 18.6, z: 0}
+  m_LocalPosition: {x: -1, y: 25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9575,12 +9598,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -2, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 16
 --- !u!114 &1041613892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9601,7 +9624,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 27534ddcaf9264e44bf288abb6cedad8, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -10942,7 +10965,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11612,7 +11635,7 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 1
 --- !u!1 &1262372743
 GameObject:
@@ -14126,6 +14149,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1541216169}
   - component: {fileID: 1541216170}
+  - component: {fileID: 1541216172}
+  - component: {fileID: 1541216171}
   m_Layer: 0
   m_Name: Snack
   m_TagString: Untagged
@@ -14174,6 +14199,57 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.3532243, y: 2.692669}
   m_EdgeRadius: 0
+--- !u!114 &1541216171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541216168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86703fff8b9e7e1499d21ecbfd847815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f2d9e0ecf7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 1541216168}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1541216172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541216168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6aeba918078548459c17eaaba4a1963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &1547774024
 GameObject:
   m_ObjectHideFlags: 0
@@ -14245,7 +14321,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550319050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28, y: 19, z: 0}
+  m_LocalPosition: {x: -28, y: 12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14262,12 +14338,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 16
 --- !u!114 &1550319053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14288,7 +14364,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 069ed4c0fe8aa9a4884cb57b68297b76, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -14873,7 +14949,7 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 0
 --- !u!1 &1606743475
 GameObject:
@@ -15385,7 +15461,7 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 3
 --- !u!1 &1689001235
 GameObject:
@@ -16191,7 +16267,7 @@ MonoBehaviour:
   snackObtainedSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 4779400558b7a454b9360a66b0b2c7b8, type: 2}
 --- !u!61 &1734024671
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16299,8 +16375,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734024667}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.183527, y: -4.522235, z: -0.089714885}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -14.3349, y: -4.6087, z: -0.089714885}
+  m_LocalScale: {x: 0.8198, y: 0.9324, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1229278101}
@@ -17122,7 +17198,7 @@ MonoBehaviour:
   doorCloseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 6
 --- !u!1 &1856478687
 GameObject:
@@ -17804,6 +17880,7 @@ GameObject:
   - component: {fileID: 1994837485}
   - component: {fileID: 1994837484}
   - component: {fileID: 1994837483}
+  - component: {fileID: 1994837491}
   m_Layer: 0
   m_Name: Mama
   m_TagString: Untagged
@@ -17831,7 +17908,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 6cc26c229c7c91d4e875e7772bf5f308, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -17982,15 +18059,15 @@ MonoBehaviour:
   lightSwitchFlipOnEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 62896b932ee791044a18b5f228c7cece, type: 2}
   lightSwitchFlipOffEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 65913215c959007419facd8c944c729c, type: 2}
   mamaGetInBedEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 35c3f2b9b7aaec14987d02059413ab75, type: 2}
 --- !u!195 &1994837488
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -18073,13 +18150,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994837482}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.25, y: 15.33, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 0}
+  m_LocalPosition: {x: 27.21, y: 15.99, z: 0}
+  m_LocalScale: {x: 5.2371, y: 4.7742, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1994837491
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994837482}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 8
 --- !u!1 &1998177517
 GameObject:
   m_ObjectHideFlags: 0
@@ -19388,7 +19481,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
