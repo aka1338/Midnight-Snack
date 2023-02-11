@@ -1,12 +1,15 @@
+using Cinemachine;
 using DG.Tweening;
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    // gameFirstBooted
+
+    public CinemachineVirtualCamera[] cameras;
+    private int currentCameraIndex = 0;
+
     public bool isGameOver = false; 
     public bool playerHasSnack = false;
 
@@ -35,6 +38,9 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        cameras[0].gameObject.SetActive(true);
+        cameras[0].Priority = 11;
+
         gameLostCanvasGroup.alpha = 0;
         gameLostCanvas.gameObject.SetActive(false); 
 
@@ -89,7 +95,6 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("You lost!");
             StartCoroutine(PanCameraToMomAndShake());
-        
         }
     }
 
@@ -108,11 +113,14 @@ public class GameManager : MonoBehaviour
 
     IEnumerator PanCameraToMomAndShake()
     {
-
-        yield return new WaitForSecondsRealtime(3f);
+        cameras[0].gameObject.SetActive(false);
+        cameras[1].gameObject.SetActive(true);
+        cameras[1].Priority = 11;
+        yield return new WaitForSecondsRealtime(6f);
+        GameEvents.current.MamaTurnLightOn(PlayerController.current.currentRoom);
+        // Disable player controls 
         gameLostCanvasGroup.interactable = true;
         gameLostCanvas.gameObject.SetActive(true);
-        GameEvents.current.MamaTurnLightOn(PlayerController.current.currentRoom);
         gameLostCanvasGroup.DOFade(1, 1f).SetEase(Ease.InOutQuad);
     }
 

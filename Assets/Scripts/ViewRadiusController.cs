@@ -116,8 +116,8 @@ public class ViewRadiusController : MonoBehaviour
             timeInTrigger += Time.fixedDeltaTime;
             if (timeInTrigger >= darkDetectionTime && collision.gameObject.name == "Mama" && !isHiding && PlayerController.current.currentRoom == MamaController.current.currentRoom)
             {
-                GameEvents.current.GameOver(false);
                 AkSoundEngine.PostEvent(playerCaughtSFXEvent.Id, this.gameObject);
+                GameEvents.current.GameOver(false);
                 Debug.Log("Caught player while room was dark!");
             }
         }
