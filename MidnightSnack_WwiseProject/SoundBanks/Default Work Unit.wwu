@@ -19,9 +19,12 @@
 						<ObjectRef Name="Wood_Creaks" ID="{BB303756-D55C-48B1-8EBE-05645137F9E6}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="LightOn" ID="{6C9D645A-B8FA-4929-90FA-1F77DB264FD2}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="LightOff" ID="{FD79C535-83A2-4A1C-B3B0-87D5B0740F50}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LaundryRoom" ID="{37263AAD-2A00-4A8B-86EC-522A4FE70FA2}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambient" ID="{0B982BE1-63F6-4AC6-ADED-8AA42E842ED1}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Sound_Triggers" ID="{ABCF726A-BC8E-4ACD-834E-C1DE779775B0}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ShadowMonster" ID="{43DEA525-0282-4B37-B82B-4176C345B23C}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Snack" ID="{CCBEC2F8-E90E-4BC6-9C4C-7141C49D72C0}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Global" ID="{837D0EDB-B8DB-4C2F-B733-890E93B949E4}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Clothes" ID="{55AE4CB1-FEF3-4C5A-B116-0065D6BE6241}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Toy" ID="{EEC81BD9-83B2-4D0E-9B9F-A33C305C0C41}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Kitchen" ID="{3F1D90B9-7473-4D1D-A5B5-C26BAE7E58FE}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>

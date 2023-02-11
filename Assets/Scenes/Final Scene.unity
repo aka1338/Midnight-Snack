@@ -1320,7 +1320,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101829863}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.5, y: 17.7, z: 0}
+  m_LocalPosition: {x: 16, y: 23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1342,7 +1342,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 18
 --- !u!114 &101829866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1363,7 +1363,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 60324d0c05af1c34899b2e19409bbb93, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -3976,7 +3976,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390546712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 42, y: -19.3, z: 0}
+  m_LocalPosition: {x: 42, y: -23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3998,7 +3998,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 18
+  m_Radius: 24
 --- !u!114 &390546715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5447,7 +5447,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 18
+  m_Radius: 24
 --- !u!114 &583783748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5468,7 +5468,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 31cbadee036c31a41ac2701ca41b3d06, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -9581,7 +9581,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041613889}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 25, z: 0}
+  m_LocalPosition: {x: -4, y: 18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9603,7 +9603,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -2, y: 0}
   serializedVersion: 2
-  m_Radius: 16
+  m_Radius: 20
 --- !u!114 &1041613892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19486,7 +19486,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 65
 --- !u!114 &2116257402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19507,7 +19507,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 4e022d4d0f0f3444ea550ef297d568cc, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0

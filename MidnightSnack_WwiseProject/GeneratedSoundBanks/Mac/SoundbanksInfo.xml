@@ -44,7 +44,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{14CCA2A4-B3FE-C655-000F-3A8AA330049E}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D7C0F950-1425-A694-3242-D8FB6A5A8F52}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -52,13 +52,17 @@
 					<ShortName>MS_Footstep_Creak_2.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_Creak_2_10C4C929.wem</CachePath>
 				</File>
+				<File Id="28530349" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_ThoughtBubble.wav</ShortName>
+					<CachePath>SFX/MS_ThoughtBubble_10C4C929.wem</CachePath>
+				</File>
 				<File Id="78706318" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DoorUnlock.wav</ShortName>
 					<CachePath>SFX/DoorUnlock_25941C73.wem</CachePath>
 				</File>
 				<File Id="92310259" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_AmbientImBehindYouGirl.wav</ShortName>
-					<CachePath>SFX/MS_AmbientImBehindYouGirl_887F6AC3.wem</CachePath>
+					<CachePath>SFX/MS_AmbientImBehindYouGirl_5CC69249.wem</CachePath>
 				</File>
 				<File Id="95118756" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_3.wav</ShortName>
@@ -110,7 +114,7 @@
 				</File>
 				<File Id="299336329" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DoorUnlock_Squeak_1.wav</ShortName>
-					<CachePath>SFX/DoorUnlock_Squeak_1_10C4C929.wem</CachePath>
+					<CachePath>SFX/DoorUnlock_Squeak_1_60E343D3.wem</CachePath>
 				</File>
 				<File Id="333460188" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Archived, Test Tone, White Noise SND3563.wav</ShortName>
@@ -118,7 +122,7 @@
 				</File>
 				<File Id="379979995" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_AmbientHummingGirl.wav</ShortName>
-					<CachePath>SFX/MS_AmbientHummingGirl_71F13137.wem</CachePath>
+					<CachePath>SFX/MS_AmbientHummingGirl_5D842C64.wem</CachePath>
 				</File>
 				<File Id="417798216" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_TV_New03.wav</ShortName>
@@ -126,7 +130,7 @@
 				</File>
 				<File Id="444567866" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Kitchen_Ambience.wav</ShortName>
-					<CachePath>SFX/MS_Kitchen_Ambience_10C4C929.wem</CachePath>
+					<CachePath>SFX/MS_Kitchen_Ambience_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="489675898" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Toy_Knockover.wav</ShortName>
@@ -138,7 +142,7 @@
 				</File>
 				<File Id="519280723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Window_Ambience.wav</ShortName>
-					<CachePath>SFX/MS_Window_Ambience_10C4C929.wem</CachePath>
+					<CachePath>SFX/MS_Window_Ambience_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="560158159" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_5.wav</ShortName>
@@ -166,7 +170,7 @@
 				</File>
 				<File Id="740686913" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_AmbientTalkingGirl.wav</ShortName>
-					<CachePath>SFX/MS_AmbientTalkingGirl_0B6F7218.wem</CachePath>
+					<CachePath>SFX/MS_AmbientTalkingGirl_BF2C45C9.wem</CachePath>
 				</File>
 				<File Id="746213757" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_TV_New04.wav</ShortName>
@@ -178,7 +182,7 @@
 				</File>
 				<File Id="763339408" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_DoorClose.wav</ShortName>
-					<CachePath>SFX/MS_DoorClose_754E57F0.wem</CachePath>
+					<CachePath>SFX/MS_DoorClose_10C4C929.wem</CachePath>
 				</File>
 				<File Id="773427032" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_1.wav</ShortName>
@@ -190,11 +194,11 @@
 				</File>
 				<File Id="774870520" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Frontdoor_Ambience.wav</ShortName>
-					<CachePath>SFX/MS_Frontdoor_Ambience_10C4C929.wem</CachePath>
+					<CachePath>SFX/MS_Frontdoor_Ambience_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="778452409" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Bathroom_Ambience_TapDrip.wav</ShortName>
-					<CachePath>SFX/MS_Bathroom_Ambience_TapDrip_10C4C929.wem</CachePath>
+					<CachePath>SFX/MS_Bathroom_Ambience_TapDrip_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="797784940" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_MomBreathing.wav</ShortName>
@@ -210,15 +214,15 @@
 				</File>
 				<File Id="864389558" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_AmbientTalkingGirl.wav</ShortName>
-					<CachePath>SFX/MS_AmbientTalkingGirl_B719C6C9.wem</CachePath>
+					<CachePath>SFX/MS_AmbientTalkingGirl_786CDD27.wem</CachePath>
 				</File>
 				<File Id="873639416" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Caught.wav</ShortName>
-					<CachePath>SFX/MS_Caught_10C4C929.wem</CachePath>
+					<CachePath>SFX/MS_Caught_354DFA44.wem</CachePath>
 				</File>
 				<File Id="903373721" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_AmbientTalkingGirl.wav</ShortName>
-					<CachePath>SFX/MS_AmbientTalkingGirl_8BC08AE5.wem</CachePath>
+					<CachePath>SFX/MS_AmbientTalkingGirl_275686CC.wem</CachePath>
 				</File>
 				<File Id="929243871" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_LightSwitches.wav</ShortName>
@@ -226,7 +230,11 @@
 				</File>
 				<File Id="930616706" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DoorUnlock_Squeak_2.wav</ShortName>
-					<CachePath>SFX/DoorUnlock_Squeak_2_10C4C929.wem</CachePath>
+					<CachePath>SFX/DoorUnlock_Squeak_2_E50D8E40.wem</CachePath>
+				</File>
+				<File Id="945329967" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Duvet_OnAwake(OutOfBed).wav</ShortName>
+					<CachePath>SFX/MS_Duvet_OnAwake(OutOfBed)_10C4C929.wem</CachePath>
 				</File>
 				<File Id="956033431" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_2.wav</ShortName>
@@ -238,7 +246,7 @@
 				</File>
 				<File Id="984617489" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_AmbientHummingGirl.wav</ShortName>
-					<CachePath>SFX/MS_AmbientHummingGirl_E0C4F371.wem</CachePath>
+					<CachePath>SFX/MS_AmbientHummingGirl_895995FA.wem</CachePath>
 				</File>
 				<File Id="1002065778" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteos_Bathroom_1.wav</ShortName>
@@ -264,6 +272,10 @@
 					<ShortName>MS_Footstep_Creak_1.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_Creak_1_10C4C929.wem</CachePath>
 				</File>
+				<File Id="1048791942" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>User Interface, Click, Button Press Click, Tap, Video Game, Main Menu, Select, Positive 03 SND86792.wav</ShortName>
+					<CachePath>SFX/User Interface, Click, Button Press Click, Tap, Video Game, Main Menu, Select, Positive 03 SND86792_10C4C929.wem</CachePath>
+				</File>
 				<File Id="1056363622" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_5.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_5_10C4C929.wem</CachePath>
@@ -277,10 +289,11 @@
 				<Custom>
 					<Plugin Id="260123732" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="526444594" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="842960711" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="1831461191" Name="Bathroom" MaxAttenuation="16" DurationType="OneShot" DurationMin="9.49" DurationMax="9.49">
+				<Event Id="1831461191" Name="Bathroom" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="778452409"/>
 					</MediaRefs>
@@ -295,19 +308,28 @@
 						<MediaRef Id="1035741978"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="128625444" Name="Door_Close" MaxAttenuation="12" DurationType="OneShot" DurationMin="0.5318512" DurationMax="0.5318512">
+				<Event Id="128625444" Name="Door_Close" DurationType="OneShot" DurationMin="2.3225417" DurationMax="2.3225417">
 					<MediaRefs>
 						<MediaRef Id="763339408"/>
 					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="842960711"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
-				<Event Id="535830432" Name="Door_Open" MaxAttenuation="12" DurationType="OneShot" DurationMin="2.7670217" DurationMax="3.5058966">
+				<Event Id="535830432" Name="Door_Open" MaxAttenuation="12" DurationType="OneShot" DurationMin="1.6196179" DurationMax="2.3487532">
 					<MediaRefs>
 						<MediaRef Id="78706318"/>
 						<MediaRef Id="299336329"/>
 						<MediaRef Id="930616706"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="473332609" Name="Duvet_Awake" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="473332609" Name="Duvet_Awake" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="945329967"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2385628198" Name="Footsteps" MaxAttenuation="16" DurationType="OneShot" DurationMin="0.22730817" DurationMax="1.37">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -347,7 +369,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2574270862" Name="Frontdoor" MaxAttenuation="22" DurationType="OneShot" DurationMin="22.79" DurationMax="22.79">
+				<Event Id="2574270862" Name="Frontdoor" MaxAttenuation="24" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="774870520"/>
 					</MediaRefs>
@@ -368,7 +390,12 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="1586158131" Name="Kitchen" MaxAttenuation="235" DurationType="OneShot" DurationMin="25" DurationMax="25">
+				<Event Id="1586158131" Name="Kitchen" MaxAttenuation="24" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="444567866"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1640835197" Name="LaundryRoom" MaxAttenuation="18" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="444567866"/>
 					</MediaRefs>
@@ -388,13 +415,26 @@
 						<MediaRef Id="797784940"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2413434828" Name="Shadowmonsters" DurationType="OneShot" DurationMin="1.5388172" DurationMax="1.5388172">
+				<Event Id="180296869" Name="ShadowMonster" MaxAttenuation="16" DurationType="OneShot" DurationMin="1.5388172" DurationMax="1.5388172">
 					<MediaRefs>
 						<MediaRef Id="758012510"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3321796897" Name="Snack" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1887055498" Name="ThoughtBubble" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2413434828" Name="Shadowmonsters" MaxAttenuation="16" DurationType="OneShot" DurationMin="1.5388172" DurationMax="1.5388172">
+					<MediaRefs>
+						<MediaRef Id="758012510"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3321796897" Name="Snack" DurationType="OneShot" DurationMin="0.284625" DurationMax="0.284625">
+					<MediaRefs>
+						<MediaRef Id="1048791942"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1887055498" Name="ThoughtBubble" DurationType="OneShot" DurationMin="1.5" DurationMax="1.5">
+					<MediaRefs>
+						<MediaRef Id="28530349"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1080872003" Name="Toy" DurationType="OneShot" DurationMin="0.7083333" DurationMax="0.7083333">
 					<MediaRefs>
 						<MediaRef Id="489675898"/>
@@ -425,7 +465,7 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="2330457189" Name="Window" MaxAttenuation="22" DurationType="OneShot" DurationMin="22.79" DurationMax="22.79">
+				<Event Id="2330457189" Name="Window" MaxAttenuation="24" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="519280723"/>
 					</MediaRefs>
@@ -447,7 +487,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{60F1E8A9-C044-089E-D4A1-0FF89E609797}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{A2F9C956-1E84-6D08-CFAB-9D24E24E8EB1}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -483,5 +523,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{ABB431DB-4C26-2FBC-A124-993A66376DE5}</FileHash>
+	<FileHash>{0DE54EE6-AF2C-71B5-37AB-610BC2232096}</FileHash>
 </SoundBanksInfo>
