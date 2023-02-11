@@ -996,6 +996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 85156976}
   - component: {fileID: 85156977}
+  - component: {fileID: 85156978}
   m_Layer: 0
   m_Name: Bathroom Door Hinge
   m_TagString: Untagged
@@ -1048,6 +1049,22 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 2
+--- !u!58 &85156978
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85156975}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &96018953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,7 +1337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101829863}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.5, y: 17.7, z: 0}
+  m_LocalPosition: {x: 16, y: 23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1342,7 +1359,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 18
 --- !u!114 &101829866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1363,7 +1380,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 60324d0c05af1c34899b2e19409bbb93, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -3618,6 +3635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 357565293}
   - component: {fileID: 357565294}
+  - component: {fileID: 357565295}
   m_Layer: 0
   m_Name: 'Office Door Hinge '
   m_TagString: Untagged
@@ -3670,6 +3688,22 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 5
+--- !u!58 &357565295
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357565292}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &363127404
 GameObject:
   m_ObjectHideFlags: 0
@@ -3989,7 +4023,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390546712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 42, y: -19.3, z: 0}
+  m_LocalPosition: {x: 42, y: -23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4011,7 +4045,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 18
+  m_Radius: 24
 --- !u!114 &390546715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5460,7 +5494,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 18
+  m_Radius: 24
 --- !u!114 &583783748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5481,7 +5515,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 31cbadee036c31a41ac2701ca41b3d06, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -8982,7 +9016,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.8}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.84313726}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9595,7 +9629,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041613889}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 25, z: 0}
+  m_LocalPosition: {x: -4, y: 18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9617,7 +9651,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -2, y: 0}
   serializedVersion: 2
-  m_Radius: 16
+  m_Radius: 20
 --- !u!114 &1041613892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11719,6 +11753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1247282356}
   - component: {fileID: 1247282357}
+  - component: {fileID: 1247282358}
   m_Layer: 0
   m_Name: Mama Bedroom Door Hinge
   m_TagString: Untagged
@@ -11771,6 +11806,22 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 1
+--- !u!58 &1247282358
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247282355}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1262372743
 GameObject:
   m_ObjectHideFlags: 0
@@ -14345,7 +14396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86703fff8b9e7e1499d21ecbfd847815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f2d9e0ecf7e1664c
+  triggerList: f2d9e0ec
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
@@ -14353,7 +14404,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 4779400558b7a454b9360a66b0b2c7b8, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -15033,6 +15084,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1602631160}
   - component: {fileID: 1602631161}
+  - component: {fileID: 1602631162}
   m_Layer: 0
   m_Name: Baby Bedroom Door Hinge
   m_TagString: Untagged
@@ -15085,6 +15137,22 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 0
+--- !u!58 &1602631162
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602631159}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1606743475
 GameObject:
   m_ObjectHideFlags: 0
@@ -15545,6 +15613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1679029832}
   - component: {fileID: 1679029833}
+  - component: {fileID: 1679029834}
   m_Layer: 0
   m_Name: Laundry Room Door Hinge
   m_TagString: Untagged
@@ -15597,6 +15666,22 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 3
+--- !u!58 &1679029834
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679029831}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1689001235
 GameObject:
   m_ObjectHideFlags: 0
@@ -17282,6 +17367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1852577382}
   - component: {fileID: 1852577383}
+  - component: {fileID: 1852577384}
   m_Layer: 0
   m_Name: Laundry Office Connector Door Hinge
   m_TagString: Untagged
@@ -17334,6 +17420,22 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bd72a7b49b7d05146861d3038b7e0e84, type: 2}
   id: 6
+--- !u!58 &1852577384
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852577381}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1856478687
 GameObject:
   m_ObjectHideFlags: 0
@@ -19569,7 +19671,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 65
 --- !u!114 &2116257402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19590,7 +19692,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 4e022d4d0f0f3444ea550ef297d568cc, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
