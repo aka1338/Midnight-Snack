@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     // gameFirstBooted
     public bool isGameOver = false; 
     public bool playerHasSnack = false;
-    public Canvas gameOverCanvas; 
+    public CanvasGroup gameOverCanvas; 
 
     public static GameManager current;
     public GameObject snackLocation;
@@ -32,8 +32,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        gameOverCanvas.alpha = 0; 
         current = this;
-        gameOverCanvas.gameObject.SetActive(false); 
         GameEvents.current.onSnackObtained += OnSnackObtained;
         GameEvents.current.onGameOver += SetGameOver; 
     }
@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
     public void SetGameOver(bool state) {
 
         isGameOver = true;
-        gameOverCanvas.gameObject.SetActive(true);
+        gameOverCanvas.alpha = 1; 
 
         if (state)
         {
