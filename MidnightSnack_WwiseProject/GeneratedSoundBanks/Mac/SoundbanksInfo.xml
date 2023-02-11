@@ -44,7 +44,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A39A7D79-188E-4C79-9F08-4B2C7BD36E96}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EEBB57AA-7755-43A6-4250-727A82FCD99F}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -114,7 +114,7 @@
 				</File>
 				<File Id="299336329" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DoorUnlock_Squeak_1.wav</ShortName>
-					<CachePath>SFX/DoorUnlock_Squeak_1_60E343D3.wem</CachePath>
+					<CachePath>SFX/DoorUnlock_Squeak_1_04F63583.wem</CachePath>
 				</File>
 				<File Id="333460188" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Archived, Test Tone, White Noise SND3563.wav</ShortName>
@@ -218,7 +218,7 @@
 				</File>
 				<File Id="873639416" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Caught.wav</ShortName>
-					<CachePath>SFX/MS_Caught_354DFA44.wem</CachePath>
+					<CachePath>SFX/MS_Caught_AC4438F6.wem</CachePath>
 				</File>
 				<File Id="903373721" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_AmbientTalkingGirl.wav</ShortName>
@@ -230,7 +230,7 @@
 				</File>
 				<File Id="930616706" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DoorUnlock_Squeak_2.wav</ShortName>
-					<CachePath>SFX/DoorUnlock_Squeak_2_E50D8E40.wem</CachePath>
+					<CachePath>SFX/DoorUnlock_Squeak_2_B22520AD.wem</CachePath>
 				</File>
 				<File Id="945329967" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Duvet_OnAwake(OutOfBed).wav</ShortName>
@@ -523,5 +523,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E4C0A0FF-C587-5FC5-6F08-0958879DA18D}</FileHash>
+	<FileHash>{43FD3391-9580-C36C-E020-0D430C888FB5}</FileHash>
 </SoundBanksInfo>
