@@ -1,7 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
-	721787521	Alert			\Music\Alert	
-	1874288895	Idle			\Music\Idle	
-	3547389861	Snack_Music			\Music\Snack_Music	
+	854666810	AlertMusic			\Music\AlertMusic	
+	2159309914	SnackMusic			\Music\SnackMusic	
+	2304891232	SearchingMusic			\Music\SearchingMusic	
+	2539955706	VictoryMusic			\Music\VictoryMusic	
+	3473112984	SubduedMusic			\Music\SubduedMusic	
+	3847764686	CaughtMusic			\Music\CaughtMusic	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	984691642	InGame			\Default Work Unit\InGame	
@@ -13,7 +16,10 @@ State	ID	Name	State Group			Notes
 	3321796897	Snack	InGame			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	47777980	mom_layer_1	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\mom_layer_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\mom_layer_1\mom_layer_1		21512676
-	492664792	snack_layer	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\snack_layer_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\snack_layer\snack_layer		21169524
-	824736224	subdued_layer	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\subdued_layer_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\subdued_layer\subdued_layer		21545752
+	126817503	victory_music	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\victory_music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\victory_music\victory_music		1768280
+	231372323	final_searching_layer	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\final_searching_layer_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\final_searching_layer\final_searching_layer		21632572
+	288979830	caught_music	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\caught_music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\caught_music\caught_music		4702656
+	411574856	final_subdued_layer	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\final_subdued_layer_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\final_subdued_layer\final_subdued_layer		21544372
+	677905948	final_alerted_layer	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\final_alerted_layer_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\final_alerted_layer\final_alerted_layer		21611900
+	974892283	final_snack_layer	C:\Users\Connor\Documents\GitHub\Midnight-Snack\MidnightSnack_WwiseProject\.cache\Mac\SFX\final_snack_layer_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game\final_snack_layer\final_snack_layer		21538860
 

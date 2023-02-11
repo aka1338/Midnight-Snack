@@ -3,34 +3,104 @@
 	<Events>
 		<WorkUnit Name="Music" ID="{F4A7BA5A-4C89-48B9-B42F-3B8551CB6954}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Idle" ID="{67531647-289E-4327-B2A5-750E19CE7A8A}">
+				<Folder Name="Old Music" ID="{1D23E2D2-8520-49C2-A18B-FECFB9B3169D}" ShortID="542653184">
 					<ChildrenList>
-						<Action Name="" ID="{467CA8A0-6A22-4BB2-923F-368B4A0551B0}" ShortID="851293156">
+						<Event Name="Snack_Music" ID="{143AF3F6-BE56-497E-BA85-14BF5474D306}">
+							<ChildrenList>
+								<Action Name="" ID="{CB4F387E-65B8-41FB-A225-199F7A0726E3}" ShortID="924716887">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="snack_layer" ID="{1978969E-D2B5-40B6-8CBA-BAE17D810C63}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Alert" ID="{6B340627-FD3F-48FB-BFA8-0617F90E8270}">
+							<ChildrenList>
+								<Action Name="" ID="{262BE094-B182-4A2F-AD9C-98459388A8D5}" ShortID="899970802">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mom_layer_1" ID="{AE6B1637-A2CA-4657-AFB9-4442B1D47FA3}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Idle" ID="{67531647-289E-4327-B2A5-750E19CE7A8A}">
+							<ChildrenList>
+								<Action Name="" ID="{467CA8A0-6A22-4BB2-923F-368B4A0551B0}" ShortID="851293156">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="subdued_layer" ID="{0AB907C7-8E26-4F11-8452-9B6CE883257D}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="CaughtMusic" ID="{213E8C29-8041-4062-AAD0-81AD84FD0CD7}">
+					<ChildrenList>
+						<Action Name="" ID="{E27EE92E-9B34-4EAC-9F8C-95CAA31FDBF2}" ShortID="70340112">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="subdued_layer" ID="{0AB907C7-8E26-4F11-8452-9B6CE883257D}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
+									<ObjectRef Name="caught_music" ID="{3CB65CD4-BDAC-4200-B63D-5A3979568E90}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Alert" ID="{6B340627-FD3F-48FB-BFA8-0617F90E8270}">
+				<Event Name="AlertMusic" ID="{83DD2EAE-BC4C-45FC-A384-2CD2985DB620}">
 					<ChildrenList>
-						<Action Name="" ID="{262BE094-B182-4A2F-AD9C-98459388A8D5}" ShortID="899970802">
+						<Action Name="" ID="{B582CEC5-9AA3-483C-9E4F-5719315D6A38}" ShortID="350121554">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="mom_layer_1" ID="{AE6B1637-A2CA-4657-AFB9-4442B1D47FA3}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
+									<ObjectRef Name="final_alerted_layer" ID="{6A01D03D-64B0-4308-B846-989CC887AAA4}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Snack_Music" ID="{143AF3F6-BE56-497E-BA85-14BF5474D306}">
+				<Event Name="SearchingMusic" ID="{28968C08-24EC-4574-8858-317610AB288D}">
 					<ChildrenList>
-						<Action Name="" ID="{CB4F387E-65B8-41FB-A225-199F7A0726E3}" ShortID="924716887">
+						<Action Name="" ID="{793C9EDE-AC0B-423C-AD33-A9DFE43ACB3E}" ShortID="276098288">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="snack_layer" ID="{1978969E-D2B5-40B6-8CBA-BAE17D810C63}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
+									<ObjectRef Name="final_searching_layer" ID="{177D540C-CA44-4D14-ADC4-931FDC766A56}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SnackMusic" ID="{02213366-92BB-413E-A6D8-B194489F7727}">
+					<ChildrenList>
+						<Action Name="" ID="{1968D2FA-738F-4E8D-A5B9-2AF8302B90AE}" ShortID="181145221">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="final_snack_layer" ID="{6BDEB42E-AE9C-4456-9A81-7EB0004ACC23}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SubduedMusic" ID="{DC3FC7EF-3B62-4CF5-8535-44F2E34CFDFA}">
+					<ChildrenList>
+						<Action Name="" ID="{F3223CF8-BEDB-47D4-BB72-4F80DA36798A}" ShortID="562211017">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="final_subdued_layer" ID="{ECF82CC1-60E2-40DB-8E8A-06AA54E17705}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="VictoryMusic" ID="{70C5D71E-D4F9-4013-BD4D-6F9488FDBCC2}">
+					<ChildrenList>
+						<Action Name="" ID="{D5CE545F-D663-4EB6-BFF1-F96801B2850D}" ShortID="117226759">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="victory_music" ID="{30C74E8B-7A89-4074-9EFE-F553C4527A8C}" WorkUnitID="{0E857C75-C72F-4440-A6C5-CD5FEE6A4A07}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
