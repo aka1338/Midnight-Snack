@@ -59,7 +59,6 @@ public class GameManager : MonoBehaviour
 
     public void CloseOpeningScreen()
     {
-        Debug.Log("Trying to close window here!"); 
         gameStartCanvasGroup.DOFade(0, 1f).SetEase(Ease.InOutQuad);
         gameStartCanvasGroup.interactable = false;
     }
@@ -90,9 +89,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("You lost!");
             StartCoroutine(PanCameraToMomAndShake());
-            gameLostCanvasGroup.interactable = true;
-            gameLostCanvas.gameObject.SetActive(true);
-            gameLostCanvasGroup.DOFade(1, 1f).SetEase(Ease.InOutQuad);
+        
         }
     }
 
@@ -111,8 +108,12 @@ public class GameManager : MonoBehaviour
 
     IEnumerator PanCameraToMomAndShake()
     {
-        Debug.Log("waiting"); 
-        yield return new WaitForSecondsRealtime(5f); 
+
+        yield return new WaitForSecondsRealtime(3f);
+        gameLostCanvasGroup.interactable = true;
+        gameLostCanvas.gameObject.SetActive(true);
+        GameEvents.current.MamaTurnLightOn(PlayerController.current.currentRoom);
+        gameLostCanvasGroup.DOFade(1, 1f).SetEase(Ease.InOutQuad);
     }
 
 }
