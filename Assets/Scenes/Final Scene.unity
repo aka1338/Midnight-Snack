@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 50522940}
   - component: {fileID: 50522941}
   m_Layer: 0
-  m_Name: Monster 2 laundry
+  m_Name: Regular Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1694,7 +1694,7 @@ GameObject:
   - component: {fileID: 121267229}
   - component: {fileID: 121267230}
   m_Layer: 0
-  m_Name: Monster 4 Toy
+  m_Name: Regular Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3146,8 +3146,10 @@ GameObject:
   m_Component:
   - component: {fileID: 270302682}
   - component: {fileID: 270302683}
+  - component: {fileID: 270302684}
+  - component: {fileID: 270302685}
   m_Layer: 0
-  m_Name: Monster Sprite
+  m_Name: Monster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3208,7 +3210,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_Sprite: {fileID: 921957153, guid: 2eb917f6e602536448fbf68f0706528f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3218,8 +3220,40 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
+--- !u!58 &270302684
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270302681}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.0000019073485}
+  serializedVersion: 2
+  m_Radius: 6.26725
+--- !u!114 &270302685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270302681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d91fd5d29e62759439f1ad70d9366a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 141657223}
+  speed: 1
+  bobbingAmplitude: 1
+  bobbingFrequency: 1
 --- !u!1 &275157772
 GameObject:
   m_ObjectHideFlags: 0
@@ -6377,8 +6411,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00090027, y: -0.00074005}
-  m_SizeDelta: {x: 67.789, y: 55.467}
+  m_AnchoredPosition: {x: 0.0029297, y: -0.00071716}
+  m_SizeDelta: {x: 122.02, y: 99.841}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &584190642
 MonoBehaviour:
@@ -6401,7 +6435,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 783c28e67ca4aa842ad9aac8cf87c7a2, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6662,8 +6696,10 @@ GameObject:
   m_Component:
   - component: {fileID: 592446654}
   - component: {fileID: 592446655}
+  - component: {fileID: 592446656}
+  - component: {fileID: 592446657}
   m_Layer: 0
-  m_Name: monster spritemiore_1
+  m_Name: Monster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6724,7 +6760,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_Sprite: {fileID: 1254673156, guid: 9090700d0df4be243aa7b5c3e78e2f7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6734,8 +6770,40 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
+--- !u!58 &592446656
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592446653}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000038146973, y: 0}
+  serializedVersion: 2
+  m_Radius: 5.516585
+--- !u!114 &592446657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592446653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d91fd5d29e62759439f1ad70d9366a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 141657223}
+  speed: 1
+  bobbingAmplitude: 1
+  bobbingFrequency: 1
 --- !u!1 &597495396
 GameObject:
   m_ObjectHideFlags: 0
@@ -7917,8 +7985,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -477, y: -95}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -745.82, y: -150}
+  m_SizeDelta: {x: 435.637, y: 144.951}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &681981878
 MonoBehaviour:
@@ -9468,8 +9536,10 @@ GameObject:
   m_Component:
   - component: {fileID: 889164064}
   - component: {fileID: 889164065}
+  - component: {fileID: 889164066}
+  - component: {fileID: 889164067}
   m_Layer: 0
-  m_Name: Monster Sprite
+  m_Name: Monster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9530,7 +9600,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_Sprite: {fileID: 921957153, guid: 2eb917f6e602536448fbf68f0706528f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9540,8 +9610,40 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
+--- !u!58 &889164066
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889164063}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0000009536743}
+  serializedVersion: 2
+  m_Radius: 4.9744754
+--- !u!114 &889164067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889164063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d91fd5d29e62759439f1ad70d9366a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 141657223}
+  speed: 1
+  bobbingAmplitude: 1
+  bobbingFrequency: 1
 --- !u!1 &901113129
 GameObject:
   m_ObjectHideFlags: 0
@@ -12782,7 +12884,7 @@ GameObject:
   - component: {fileID: 1212351449}
   - component: {fileID: 1212351450}
   m_Layer: 0
-  m_Name: Monster 3 Toy
+  m_Name: Regular Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15698,8 +15800,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -478, y: -224}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -745.82, y: -366}
+  m_SizeDelta: {x: 435.64, y: 144.96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1472479846
 MonoBehaviour:
@@ -18081,8 +18183,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1706708510}
   - component: {fileID: 1706708511}
+  - component: {fileID: 1706708512}
+  - component: {fileID: 1706708513}
   m_Layer: 0
-  m_Name: Monster Sprite
+  m_Name: Monster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18143,7 +18247,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_Sprite: {fileID: -1507525705, guid: 2eb917f6e602536448fbf68f0706528f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18153,8 +18257,40 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
+--- !u!58 &1706708512
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706708509}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0000004172325}
+  serializedVersion: 2
+  m_Radius: 6.025277
+--- !u!114 &1706708513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706708509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d91fd5d29e62759439f1ad70d9366a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 141657223}
+  speed: 1
+  bobbingAmplitude: 1
+  bobbingFrequency: 1
 --- !u!1 &1709752208
 GameObject:
   m_ObjectHideFlags: 0
@@ -18713,7 +18849,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010750771, y: -0.009214401}
+  m_Offset: {x: -0.014261246, y: 0.01575607}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -18724,7 +18860,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16760063, y: 0.32424927}
+  m_Size: {x: 1.4411614, y: 2.2850194}
   m_EdgeRadius: 0
 --- !u!50 &1734024672
 Rigidbody2D:
@@ -19112,7 +19248,7 @@ GameObject:
   - component: {fileID: 1802444450}
   - component: {fileID: 1802444451}
   m_Layer: 0
-  m_Name: monster spritemiore_0
+  m_Name: Regular Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20495,6 +20631,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1950039544}
   - component: {fileID: 1950039545}
+  - component: {fileID: 1950039546}
+  - component: {fileID: 1950039547}
   m_Layer: 0
   m_Name: Monster Sprite
   m_TagString: Untagged
@@ -20557,7 +20695,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_Sprite: {fileID: 1933896636, guid: 2eb917f6e602536448fbf68f0706528f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20567,8 +20705,40 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
+--- !u!58 &1950039546
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950039543}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 5.2851653
+--- !u!114 &1950039547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950039543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d91fd5d29e62759439f1ad70d9366a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 141657223}
+  speed: 1
+  bobbingAmplitude: 1
+  bobbingFrequency: 1
 --- !u!1 &1950271070
 GameObject:
   m_ObjectHideFlags: 0
@@ -22143,7 +22313,7 @@ GameObject:
   - component: {fileID: 2078282611}
   - component: {fileID: 2078282612}
   m_Layer: 0
-  m_Name: Monster 4 Toy
+  m_Name: Regular Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
