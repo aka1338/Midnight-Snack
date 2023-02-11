@@ -24,10 +24,13 @@
 			<StateGroups>
 				<StateGroup Id="984691642" Name="InGame">
 					<States>
+						<State Id="184992947" Name="Searching"/>
+						<State Id="721787521" Name="Alert"/>
 						<State Id="748895195" Name="None"/>
-						<State Id="1082004790" Name="Mom"/>
-						<State Id="2909291642" Name="Stealth"/>
+						<State Id="816373421" Name="Caught"/>
+						<State Id="2716678721" Name="Victory"/>
 						<State Id="3321796897" Name="Snack"/>
+						<State Id="3907624379" Name="Subdued"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -44,7 +47,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{878938D1-26DD-1247-1CF7-183C31379631}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D1C8559F-D340-53AF-8E06-4B9C0514DF64}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -330,7 +333,7 @@
 						<MediaRef Id="945329967"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2385628198" Name="Footsteps" MaxAttenuation="12" DurationType="OneShot" DurationMin="0.22730817" DurationMax="1.37">
+				<Event Id="2385628198" Name="Footsteps" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.22730817" DurationMax="1.37">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="3316001432"/>
@@ -410,22 +413,22 @@
 						<MediaRef Id="929243871"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3094798569" Name="Mama" MaxAttenuation="12" DurationType="Infinite">
+				<Event Id="3094798569" Name="Mama" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="797784940"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="180296869" Name="ShadowMonster" MaxAttenuation="12" DurationType="OneShot" DurationMin="1.5388172" DurationMax="1.5388172">
+				<Event Id="180296869" Name="ShadowMonster" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.5388172" DurationMax="1.5388172">
 					<MediaRefs>
 						<MediaRef Id="758012510"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2413434828" Name="Shadowmonsters" MaxAttenuation="12" DurationType="OneShot" DurationMin="1.5388172" DurationMax="1.5388172">
+				<Event Id="2413434828" Name="Shadowmonsters" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.5388172" DurationMax="1.5388172">
 					<MediaRefs>
 						<MediaRef Id="758012510"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3321796897" Name="Snack" DurationType="OneShot" DurationMin="0.284625" DurationMax="0.284625">
+				<Event Id="3321796897" Name="Snack" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.284625" DurationMax="0.284625">
 					<MediaRefs>
 						<MediaRef Id="1048791942"/>
 					</MediaRefs>
@@ -487,41 +490,68 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{8B0BC9C4-454B-A6EA-61A2-76C00B012304}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{CF38E31B-444C-3BB6-9CEA-61B7B053E692}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
-				<File Id="47777980" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>mom_layer_1.wav</ShortName>
-					<CachePath>SFX/mom_layer_1_D79FB2B7.wem</CachePath>
+				<File Id="126817503" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>victory_music.wav</ShortName>
+					<CachePath>SFX/victory_music_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="492664792" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>snack_layer.wav</ShortName>
-					<CachePath>SFX/snack_layer_D79FB2B7.wem</CachePath>
+				<File Id="231372323" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>final_searching_layer.wav</ShortName>
+					<CachePath>SFX/final_searching_layer_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="824736224" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>subdued_layer.wav</ShortName>
-					<CachePath>SFX/subdued_layer_D79FB2B7.wem</CachePath>
+				<File Id="288979830" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>caught_music.wav</ShortName>
+					<CachePath>SFX/caught_music_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="411574856" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>final_subdued_layer.wav</ShortName>
+					<CachePath>SFX/final_subdued_layer_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="677905948" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>final_alerted_layer.wav</ShortName>
+					<CachePath>SFX/final_alerted_layer_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="974892283" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>final_snack_layer.wav</ShortName>
+					<CachePath>SFX/final_snack_layer_D79FB2B7.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="721787521" Name="Alert" DurationType="OneShot" DurationMin="121.95313" DurationMax="121.95313">
+				<Event Id="854666810" Name="AlertMusic" DurationType="OneShot" DurationMin="122.515625" DurationMax="122.515625">
 					<MediaRefs>
-						<MediaRef Id="47777980"/>
+						<MediaRef Id="677905948"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1874288895" Name="Idle" DurationType="OneShot" DurationMin="122.14063" DurationMax="122.14063">
+				<Event Id="3847764686" Name="CaughtMusic" DurationType="OneShot" DurationMin="26.658504" DurationMax="26.658504">
 					<MediaRefs>
-						<MediaRef Id="824736224"/>
+						<MediaRef Id="288979830"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3547389861" Name="Snack_Music" DurationType="OneShot" DurationMin="120.00782" DurationMax="120.00782">
+				<Event Id="2304891232" Name="SearchingMusic" DurationType="OneShot" DurationMin="122.63281" DurationMax="122.63281">
 					<MediaRefs>
-						<MediaRef Id="492664792"/>
+						<MediaRef Id="231372323"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2159309914" Name="SnackMusic" DurationType="OneShot" DurationMin="122.10156" DurationMax="122.10156">
+					<MediaRefs>
+						<MediaRef Id="974892283"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3473112984" Name="SubduedMusic" DurationType="OneShot" DurationMin="122.13281" DurationMax="122.13281">
+					<MediaRefs>
+						<MediaRef Id="411574856"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2539955706" Name="VictoryMusic" DurationType="OneShot" DurationMin="10.023446" DurationMax="10.023446">
+					<MediaRefs>
+						<MediaRef Id="126817503"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{01DD132D-EF79-216C-5F18-E0ADC2E2C1C1}</FileHash>
+	<FileHash>{3B1C5F9F-42FA-5B5B-4FE3-1D3D8EF454BA}</FileHash>
 </SoundBanksInfo>

@@ -33,7 +33,8 @@ public class NoiseEvent : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Player")
+        Debug.Log(collision.gameObject.name); 
+        if (collision.gameObject.name == "PlayerController")
         {
             if (!onCooldown && !oneShotEventTriggered) // if the event is not on cooldown, play the event. 
             {

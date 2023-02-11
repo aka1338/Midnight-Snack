@@ -6,9 +6,12 @@
 				<StateGroup Name="InGame" ID="{E8FEAE27-41F5-4725-8F6E-DA88C2EB6C1E}">
 					<ChildrenList>
 						<State Name="None" ID="{45803435-29AE-4564-95E7-F12C03242757}"/>
-						<State Name="Stealth" ID="{60B0D77E-86DE-47E6-AD19-23DD98F9DE90}"/>
-						<State Name="Snack" ID="{6B5B5EF8-925C-40AE-9C71-901A06BC5252}"/>
-						<State Name="Mom" ID="{BCBF3658-FE06-4C4D-80FA-61C15B9BE6DE}"/>
+						<State Name="Subdued" ID="{5CCF70A3-ECDE-424D-A86C-E3B969E32AD1}"/>
+						<State Name="Alert" ID="{8451B096-B401-474B-8F30-872DA6370D0D}"/>
+						<State Name="Caught" ID="{CD5C04F5-3EBC-4510-9A8B-AC6FFB0C7685}"/>
+						<State Name="Searching" ID="{B8D1BA7E-1ECA-4452-8A80-0F876BE0DA00}"/>
+						<State Name="Victory" ID="{7575277D-F3CF-4140-907F-D87427C38A35}"/>
+						<State Name="Snack" ID="{5944982D-D28D-4146-9E7E-55DBCDFC8E12}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
