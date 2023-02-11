@@ -24,10 +24,13 @@
 			<StateGroups>
 				<StateGroup Id="984691642" Name="InGame">
 					<States>
+						<State Id="184992947" Name="Searching"/>
+						<State Id="721787521" Name="Alert"/>
 						<State Id="748895195" Name="None"/>
-						<State Id="1082004790" Name="Mom"/>
-						<State Id="2909291642" Name="Stealth"/>
+						<State Id="816373421" Name="Caught"/>
+						<State Id="2716678721" Name="Victory"/>
 						<State Id="3321796897" Name="Snack"/>
+						<State Id="3907624379" Name="Subdued"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -487,7 +490,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{C3E2697C-B1DD-C184-E43F-B4D20243F7DB}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{CF38E31B-444C-3BB6-9CEA-61B7B053E692}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -550,5 +553,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{13D8E349-0958-B534-B49B-E990EA997A31}</FileHash>
+	<FileHash>{508E1F7C-C735-CECC-634D-A7E9B37B6DB0}</FileHash>
 </SoundBanksInfo>
