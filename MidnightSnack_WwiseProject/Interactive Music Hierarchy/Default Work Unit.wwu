@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-20</Value>
+								<Value>-27</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -608,7 +608,6 @@
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
 									</PropertyList>
-									<ReferenceList/>
 									<TransitionInfo>
 										<DestinationFadeIn>
 											<MusicFade Name="Destination Fade-in" ID="{7934AB07-6065-4904-AB94-4474C0F85779}">
@@ -625,7 +624,6 @@
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
 									</PropertyList>
-									<ReferenceList/>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{DC8F1FC3-C25B-4AA0-A352-FC309379F5E9}">
@@ -650,7 +648,6 @@
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
 									</PropertyList>
-									<ReferenceList/>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{5415995E-D15A-4747-B994-1A52775C3970}">
@@ -675,7 +672,6 @@
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 									</PropertyList>
-									<ReferenceList/>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{593CEF4A-C2B5-45C7-A078-C412D55DB10F}">
@@ -700,7 +696,6 @@
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
 									</PropertyList>
-									<ReferenceList/>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{BC069E25-188F-4382-A920-A31A92BCB7A4}">
@@ -725,7 +720,6 @@
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
 									</PropertyList>
-									<ReferenceList/>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{EB5E0C25-C2DB-42D4-AC97-934B7CFB48F5}">
@@ -751,7 +745,6 @@
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
 									</PropertyList>
-									<ReferenceList/>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{8091514E-C468-45D0-B4BC-F66B34086887}">
