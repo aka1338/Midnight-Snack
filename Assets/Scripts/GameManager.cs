@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
 {
 
     public CinemachineVirtualCamera[] cameras;
-    private int currentCameraIndex = 0;
 
     public bool isGameOver = false; 
     public bool playerHasSnack = false;
