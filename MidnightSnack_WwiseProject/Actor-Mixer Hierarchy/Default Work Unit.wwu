@@ -1009,7 +1009,7 @@
 								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1339,7 +1339,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>7</Value>
+												<Value>8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

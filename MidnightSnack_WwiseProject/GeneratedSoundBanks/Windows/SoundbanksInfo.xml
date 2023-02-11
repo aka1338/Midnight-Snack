@@ -44,7 +44,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{458ABCC8-88DC-78C9-9C7C-70D5EEC0F37D}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{878938D1-26DD-1247-1CF7-183C31379631}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -330,7 +330,7 @@
 						<MediaRef Id="945329967"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2385628198" Name="Footsteps" MaxAttenuation="8" DurationType="OneShot" DurationMin="0.22730817" DurationMax="1.37">
+				<Event Id="2385628198" Name="Footsteps" MaxAttenuation="12" DurationType="OneShot" DurationMin="0.22730817" DurationMax="1.37">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="3316001432"/>
@@ -410,17 +410,17 @@
 						<MediaRef Id="929243871"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3094798569" Name="Mama" MaxAttenuation="8" DurationType="Infinite">
+				<Event Id="3094798569" Name="Mama" MaxAttenuation="12" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="797784940"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="180296869" Name="ShadowMonster" MaxAttenuation="8" DurationType="OneShot" DurationMin="1.5388172" DurationMax="1.5388172">
+				<Event Id="180296869" Name="ShadowMonster" MaxAttenuation="12" DurationType="OneShot" DurationMin="1.5388172" DurationMax="1.5388172">
 					<MediaRefs>
 						<MediaRef Id="758012510"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2413434828" Name="Shadowmonsters" MaxAttenuation="8" DurationType="OneShot" DurationMin="1.5388172" DurationMax="1.5388172">
+				<Event Id="2413434828" Name="Shadowmonsters" MaxAttenuation="12" DurationType="OneShot" DurationMin="1.5388172" DurationMax="1.5388172">
 					<MediaRefs>
 						<MediaRef Id="758012510"/>
 					</MediaRefs>
@@ -523,5 +523,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{15B8C37F-59E7-CA03-BB53-88EE02F3D433}</FileHash>
+	<FileHash>{01DD132D-EF79-216C-5F18-E0ADC2E2C1C1}</FileHash>
 </SoundBanksInfo>
