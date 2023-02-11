@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo>
-	<Project Name="Midnight Snack_WwiseProject" GUID="{AACD68DE-0480-4B2A-9B41-BDFF058CC6D9}" Generator="2022.1.1.8100"/>
+	<Project Name="MidnightSnack_WwiseProject" GUID="{AACD68DE-0480-4B2A-9B41-BDFF058CC6D9}" Generator="2022.1.1.8100"/>
 	<CacheRoot>../../../../MidnightSnack_WwiseProject/.cache</CacheRoot>
 	<Platforms>
 		<Platform Name="Mac" GUID="{B36188B0-CFFC-4545-A015-5E21A5A403FB}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../MidnightSnack_WwiseProject/GeneratedSoundBanks/Mac"/>
@@ -9,5 +9,5 @@
 	<Languages>
 		<Language Name="English(US)" Id="684519430" GUID="{8DCFDDDC-E848-4B63-B3A3-6E15BD82A23C}" Default="true" UseAsStandIn="true"/>
 	</Languages>
-	<FileHash>{F0AFAE5A-C4AE-DF3C-265C-480726F071DB}</FileHash>
+	<FileHash>{0A7109D4-40CE-6985-ADC9-AD7A95BD8DCC}</FileHash>
 </ProjectInfo>

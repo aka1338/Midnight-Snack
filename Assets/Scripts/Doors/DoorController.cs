@@ -78,6 +78,10 @@ public class DoorController : MonoBehaviour
                 // We should get the door open orientation from the door. 
                 Vector3 rotateVector = new Vector3(closeRotationDirectionX, closeRotationDirectionY, closeRotationDirectionZ);
                 transform.DORotate(rotateVector, 1f).onComplete = EnableDoorCollider;
+
+                // Sound FX 
+                AkSoundEngine.PostEvent(doorCloseEvent.Id, this.gameObject);
+
                 GameEvents.current.NoiseEventTriggerEnter((ROOM)id);
                 triggerArea.isDoorClosed = true;
             }
@@ -113,6 +117,8 @@ public class DoorController : MonoBehaviour
             {
                 // We should get the door open orientation from the door. 
                 Vector3 rotateVector = new Vector3(closeRotationDirectionX, closeRotationDirectionY, closeRotationDirectionZ);
+                AkSoundEngine.PostEvent(doorCloseEvent.Id, this.gameObject);
+
                 transform.DORotate(rotateVector, 1f).onComplete = EnableDoorCollider;
                 triggerArea.isDoorClosed = true;
             }
