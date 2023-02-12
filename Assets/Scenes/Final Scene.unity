@@ -5759,7 +5759,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 645778249}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: RestartGame
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16464,7 +16464,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 645778249}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: UIButtonClicked
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19455,7 +19455,7 @@ MonoBehaviour:
   currentRoom: 0
   spriteRenderer: {fileID: 1734024673}
   frameRate: 1
-  walkSpeed: 10
+  walkSpeed: 5
   nSprites:
   - {fileID: -1389503303, guid: cb5a7394ddca0014da37568c83c19d63, type: 3}
   - {fileID: 2117673729, guid: cb5a7394ddca0014da37568c83c19d63, type: 3}
@@ -20067,7 +20067,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 645778249}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: RestartGame
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21823,8 +21823,8 @@ NavMeshAgent:
   m_GameObject: {fileID: 1994837482}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.51
-  m_Speed: 3
+  m_Radius: 0.5
+  m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
