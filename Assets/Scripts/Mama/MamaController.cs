@@ -82,7 +82,6 @@ public class MamaController : MonoBehaviour
             {
                 if (mamaState == MAMA_STATE.ALERTED && mamaFlippedLight == true) // Player triggered another event! 
                 {
-                    Debug.Log("It's child");
                     currentNavTarget = PlayerController.current.gameObject;
                     agent.SetDestination(currentNavTarget.transform.position);
                 }
@@ -117,7 +116,6 @@ public class MamaController : MonoBehaviour
         {
             if (mamaFlippedLight)
             {
-                Debug.Log("It's child bottom");
                 StartCoroutine(WaitAndReturnToBed());
             }
         }

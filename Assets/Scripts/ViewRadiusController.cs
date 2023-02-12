@@ -118,7 +118,6 @@ public class ViewRadiusController : MonoBehaviour
             {
                 AkSoundEngine.PostEvent(playerCaughtSFXEvent.Id, this.gameObject);
                 GameEvents.current.GameOver(false);
-                Debug.Log("Caught player while room was dark!");
             }
         }
     }

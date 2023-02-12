@@ -9,15 +9,16 @@ public class PlayerHidingSpotSFX : MonoBehaviour
     private AK.Wwise.Event hidingSpotEnteredSFXEvent;
     [SerializeField]
     private AK.Wwise.Event hidingSpotExitedSFXEvent;
-    // Start is called before the first frame update
-    void Start()
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        AkSoundEngine.PostEvent(hidingSpotEnteredSFXEvent.Id, this.gameObject);
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        
+        AkSoundEngine.PostEvent(hidingSpotExitedSFXEvent.Id, this.gameObject);
+
     }
 }

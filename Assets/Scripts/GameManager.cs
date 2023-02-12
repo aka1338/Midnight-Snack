@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     public CinemachineVirtualCamera[] cameras;
 
-    public bool isGameOver = false; 
+    public bool isGameOver = false;
     public bool playerHasSnack = false;
 
     [Header("Canvas Groups")]
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
         cameras[0].Priority = 11;
 
         gameLostCanvasGroup.alpha = 0;
-        gameLostCanvas.gameObject.SetActive(false); 
+        gameLostCanvas.gameObject.SetActive(false);
 
         gameWonCanvasGroup.alpha = 0;
         gameWonCanvas.gameObject.SetActive(false);
@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
         GameEvents.current.onGameOver += SetGameOver;
     }
     // Should track mama's state here. 
-    private MAMA_STATE mamaState = MAMA_STATE.IDLE; 
+    private MAMA_STATE mamaState = MAMA_STATE.IDLE;
 
     public void SetMamaState(MAMA_STATE state)
     {
@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
     private void OnDisable()
     {
 
-        GameEvents.current.onSnackObtained -= OnSnackObtained; 
+        GameEvents.current.onSnackObtained -= OnSnackObtained;
     }
 
     void OnSnackObtained()
@@ -95,7 +95,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void RestartGame() {
+    public void RestartGame()
+    {
+        AkSoundEngine.StopAll();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void QuitGame()
@@ -105,7 +107,7 @@ public class GameManager : MonoBehaviour
 
     public void UIButtonClicked()
     {
-        AkSoundEngine.PostEvent(UIButtonClick.Id, player); 
+        AkSoundEngine.PostEvent(UIButtonClick.Id, player);
     }
 
     IEnumerator PanCameraToMomAndShake()
