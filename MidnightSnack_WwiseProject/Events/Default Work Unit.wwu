@@ -276,6 +276,98 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="HidingSpots" ID="{F0D71414-53DB-4A02-9E2C-2485A2F06CF0}" ShortID="144454823">
+					<ChildrenList>
+						<Event Name="CabinetEnter" ID="{92AF2B7A-8912-46C1-8E8E-87749373EF5F}">
+							<ChildrenList>
+								<Action Name="" ID="{1D3D3767-3ED5-4563-8FC9-3746AF7CCD6C}" ShortID="846617896">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_Hiding_Cabinet_Enter" ID="{242CC958-D41C-4644-A9CB-BE272DE0EA2D}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="CabinetExit" ID="{051302DC-FC89-4405-86D9-89BF25844B4B}">
+							<ChildrenList>
+								<Action Name="" ID="{19629D42-7883-409B-B7A8-0F3D44B3779A}" ShortID="709785860">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_Hiding_Cabinet_Exit" ID="{F8661404-C7AE-4F77-95D3-2A0BB8AAD5C1}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="BasketEnter" ID="{ADDA98DF-1796-433A-9031-EE9061721C35}">
+							<ChildrenList>
+								<Action Name="" ID="{6107E91B-3EBD-4A7C-B2F7-94ECB2E3CE6B}" ShortID="466842178">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_Hiding_Basket_Enter" ID="{36EB9533-FB96-4141-B1B7-FD53AEA93122}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="BasketExit" ID="{C01C9A82-6D42-4607-8EF9-C56E2FAE37D2}">
+							<ChildrenList>
+								<Action Name="" ID="{8EBF5124-2A8D-4FC9-B869-90D7EB9519BB}" ShortID="903040868">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_Hiding_Basket_Exit" ID="{F822E341-02AC-462F-A6CA-E5B2DA90CC33}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ClothEnter" ID="{B5EDED5F-49E4-4B82-87E4-98AE3AF8134E}">
+							<ChildrenList>
+								<Action Name="" ID="{D5A61E29-CBAC-4239-8E83-71E6CF4E2720}" ShortID="673676671">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_Hiding_Cloth_Enter" ID="{6343E7A9-B337-40F3-B20C-079E7209A531}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ClothExit" ID="{AF57517A-47F8-49A8-8564-2310AC46AE12}">
+							<ChildrenList>
+								<Action Name="" ID="{916AF0F5-2E80-40B8-A87E-40DAFCA99E18}" ShortID="410789414">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_Hiding_Cloth_Exit" ID="{CCB1EE81-E32B-4417-83B9-C047108E49BD}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ToyBoxEnter" ID="{5D543178-622D-4570-86A6-7C51B731E043}">
+							<ChildrenList>
+								<Action Name="" ID="{6A1AA9F1-0986-49E7-929F-AD487F9B79F5}" ShortID="668536381">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_Hiding_ToyBox_Enter" ID="{CCA0142B-DD58-4094-9DC4-5B645A0FAB73}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ToyBoxExit" ID="{65A635F6-05EC-42C3-8578-DDE7E78119F0}">
+							<ChildrenList>
+								<Action Name="" ID="{D5DF32F0-E985-4924-8216-E1B06A82E714}" ShortID="201911750">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_Hiding_ToyBox_Exit" ID="{FD5FDA34-A9D1-4B05-850F-330C832EA154}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

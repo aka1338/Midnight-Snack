@@ -1955,6 +1955,13 @@
 				<Folder Name="Misc" ID="{DF153B29-0173-490E-BC9B-D6FA35AC7AAC}" ShortID="741636455">
 					<ChildrenList>
 						<Sound Name="MS_ThoughtBubble" ID="{5C4DADD4-72FC-42E8-BBFE-7988AE353664}" ShortID="699273957">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
@@ -2092,7 +2099,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>2</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2118,6 +2125,186 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="User Interface, Click, Button Press Click, Tap, Video Game, Main Menu, Select, Positive 03 SND86792" ID="{1CFDF6B3-2EB1-446E-9CEB-85F059C252A7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="HidingSpots" ID="{41A2E7DF-3EB7-4D4F-ABC9-CCA39595FA9A}" ShortID="78725389">
+					<ChildrenList>
+						<Sound Name="MS_Hiding_Basket_Enter" ID="{36EB9533-FB96-4141-B1B7-FD53AEA93122}" ShortID="131972487">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_Hiding_Basket_Enter" ID="{338B4088-D1FD-4B85-9B0B-6740320DA46F}">
+									<Language>SFX</Language>
+									<AudioFile>MS_Hiding_Basket_Enter.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="497514938"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_Hiding_Basket_Enter" ID="{338B4088-D1FD-4B85-9B0B-6740320DA46F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_Hiding_Basket_Exit" ID="{F822E341-02AC-462F-A6CA-E5B2DA90CC33}" ShortID="940053576">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_Hiding_Basket_Exit" ID="{4AB2C120-AF0D-4387-BAA7-86F31DCEF1ED}">
+									<Language>SFX</Language>
+									<AudioFile>MS_Hiding_Basket_Exit.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="305688425"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_Hiding_Basket_Exit" ID="{4AB2C120-AF0D-4387-BAA7-86F31DCEF1ED}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_Hiding_Cabinet_Enter" ID="{242CC958-D41C-4644-A9CB-BE272DE0EA2D}" ShortID="792919817">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_Hiding_Cabinet_Enter" ID="{BCE2A0C8-BAEF-4F42-8B0C-683D6B34FE2D}">
+									<Language>SFX</Language>
+									<AudioFile>MS_Hiding_Cabinet_Enter.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="826670842"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_Hiding_Cabinet_Enter" ID="{BCE2A0C8-BAEF-4F42-8B0C-683D6B34FE2D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_Hiding_Cabinet_Exit" ID="{F8661404-C7AE-4F77-95D3-2A0BB8AAD5C1}" ShortID="446303096">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_Hiding_Cabinet_Exit" ID="{FE5B43B4-19CD-4B5A-948F-63A0941B1E51}">
+									<Language>SFX</Language>
+									<AudioFile>MS_Hiding_Cabinet_Exit.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="398108800"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_Hiding_Cabinet_Exit" ID="{FE5B43B4-19CD-4B5A-948F-63A0941B1E51}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_Hiding_Cloth_Enter" ID="{6343E7A9-B337-40F3-B20C-079E7209A531}" ShortID="835341651">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_Hiding_Cloth_Enter" ID="{F679A578-0C5A-4775-9A84-5D5DED4136E9}">
+									<Language>SFX</Language>
+									<AudioFile>MS_Hiding_Cloth_Enter.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="878201216"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_Hiding_Cloth_Enter" ID="{F679A578-0C5A-4775-9A84-5D5DED4136E9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_Hiding_Cloth_Exit" ID="{CCB1EE81-E32B-4417-83B9-C047108E49BD}" ShortID="755180173">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_Hiding_Cloth_Exit" ID="{F1AA028B-C6D1-482E-A5FA-A635F89B668F}">
+									<Language>SFX</Language>
+									<AudioFile>MS_Hiding_Cloth_Exit.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="318890521"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_Hiding_Cloth_Exit" ID="{F1AA028B-C6D1-482E-A5FA-A635F89B668F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_Hiding_ToyBox_Enter" ID="{CCA0142B-DD58-4094-9DC4-5B645A0FAB73}" ShortID="984978200">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_Hiding_ToyBox_Enter" ID="{4EFBEA6A-9C76-439B-A91C-BFCD14B17C45}">
+									<Language>SFX</Language>
+									<AudioFile>MS_Hiding_ToyBox_Enter.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="318009736"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_Hiding_ToyBox_Enter" ID="{4EFBEA6A-9C76-439B-A91C-BFCD14B17C45}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MS_Hiding_ToyBox_Exit" ID="{FD5FDA34-A9D1-4B05-850F-330C832EA154}" ShortID="466721828">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E54B6825-F5C6-431E-B836-05A1505E4C78}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{41BB8375-8CF1-40A7-AD9D-726E14966D24}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MS_Hiding_ToyBox_Exit" ID="{EEFD6EF0-A889-4274-A6F4-3088CD3B1850}">
+									<Language>SFX</Language>
+									<AudioFile>MS_Hiding_ToyBox_Exit.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="905954010"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MS_Hiding_ToyBox_Exit" ID="{EEFD6EF0-A889-4274-A6F4-3088CD3B1850}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
