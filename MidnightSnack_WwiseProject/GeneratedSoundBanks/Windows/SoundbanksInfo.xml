@@ -47,7 +47,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{6A8C7C32-AD63-E548-0C0C-A085228D43C1}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EDC452FD-86C0-CCC5-9D4F-FAEF174B8576}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -119,6 +119,18 @@
 					<ShortName>DoorUnlock_Squeak_1.wav</ShortName>
 					<CachePath>SFX/DoorUnlock_Squeak_1_04F63583.wem</CachePath>
 				</File>
+				<File Id="305688425" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Hiding_Basket_Exit.wav</ShortName>
+					<CachePath>SFX/MS_Hiding_Basket_Exit_10C4C929.wem</CachePath>
+				</File>
+				<File Id="318009736" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Hiding_ToyBox_Enter.wav</ShortName>
+					<CachePath>SFX/MS_Hiding_ToyBox_Enter_10C4C929.wem</CachePath>
+				</File>
+				<File Id="318890521" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Hiding_Cloth_Exit.wav</ShortName>
+					<CachePath>SFX/MS_Hiding_Cloth_Exit_10C4C929.wem</CachePath>
+				</File>
 				<File Id="333460188" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Archived, Test Tone, White Noise SND3563.wav</ShortName>
 					<CachePath>SFX/Archived, Test Tone, White Noise SND3563_54E5B797.wem</CachePath>
@@ -126,6 +138,10 @@
 				<File Id="379979995" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_AmbientHummingGirl.wav</ShortName>
 					<CachePath>SFX/MS_AmbientHummingGirl_5D842C64.wem</CachePath>
+				</File>
+				<File Id="398108800" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Hiding_Cabinet_Exit.wav</ShortName>
+					<CachePath>SFX/MS_Hiding_Cabinet_Exit_10C4C929.wem</CachePath>
 				</File>
 				<File Id="417798216" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_TV_New03.wav</ShortName>
@@ -138,6 +154,10 @@
 				<File Id="489675898" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Toy_Knockover.wav</ShortName>
 					<CachePath>SFX/Toy_Knockover_1C723C24.wem</CachePath>
+				</File>
+				<File Id="497514938" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Hiding_Basket_Enter.wav</ShortName>
+					<CachePath>SFX/MS_Hiding_Basket_Enter_10C4C929.wem</CachePath>
 				</File>
 				<File Id="514119297" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footsteps_Carpet_Mono.wav</ShortName>
@@ -211,6 +231,10 @@
 					<ShortName>MS_Footsteos_Bathroom_4.wav</ShortName>
 					<CachePath>SFX/MS_Footsteos_Bathroom_4_10C4C929.wem</CachePath>
 				</File>
+				<File Id="826670842" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Hiding_Cabinet_Enter.wav</ShortName>
+					<CachePath>SFX/MS_Hiding_Cabinet_Enter_10C4C929.wem</CachePath>
+				</File>
 				<File Id="829762603" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_Footstep_3.wav</ShortName>
 					<CachePath>SFX/MS_Footstep_3_10C4C929.wem</CachePath>
@@ -223,9 +247,17 @@
 					<ShortName>MS_Caught.wav</ShortName>
 					<CachePath>SFX/MS_Caught_AC4438F6.wem</CachePath>
 				</File>
+				<File Id="878201216" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Hiding_Cloth_Enter.wav</ShortName>
+					<CachePath>SFX/MS_Hiding_Cloth_Enter_10C4C929.wem</CachePath>
+				</File>
 				<File Id="903373721" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_AmbientTalkingGirl.wav</ShortName>
 					<CachePath>SFX/MS_AmbientTalkingGirl_275686CC.wem</CachePath>
+				</File>
+				<File Id="905954010" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MS_Hiding_ToyBox_Exit.wav</ShortName>
+					<CachePath>SFX/MS_Hiding_ToyBox_Exit_10C4C929.wem</CachePath>
 				</File>
 				<File Id="929243871" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MS_LightSwitches.wav</ShortName>
@@ -296,9 +328,29 @@
 				</Custom>
 			</Plugins>
 			<Events>
+				<Event Id="1733044707" Name="BasketEnter" DurationType="OneShot" DurationMin="1.4059792" DurationMax="1.4059792">
+					<MediaRefs>
+						<MediaRef Id="497514938"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="140572739" Name="BasketExit" DurationType="OneShot" DurationMin="1.582" DurationMax="1.582">
+					<MediaRefs>
+						<MediaRef Id="305688425"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1831461191" Name="Bathroom" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="778452409"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3655395143" Name="CabinetEnter" DurationType="OneShot" DurationMin="2.088" DurationMax="2.088">
+					<MediaRefs>
+						<MediaRef Id="826670842"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2533082223" Name="CabinetExit" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="398108800"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="816373421" Name="Caught" DurationType="OneShot" DurationMin="3.75" DurationMax="3.75">
@@ -306,9 +358,19 @@
 						<MediaRef Id="873639416"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1891300139" Name="ClothEnter" DurationType="OneShot" DurationMin="1.4081875" DurationMax="1.4081875">
+					<MediaRefs>
+						<MediaRef Id="878201216"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2231306511" Name="Clothes" DurationType="OneShot" DurationMin="1.25" DurationMax="1.25">
 					<MediaRefs>
 						<MediaRef Id="1035741978"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2582535499" Name="ClothExit" DurationType="OneShot" DurationMin="1.5051875" DurationMax="1.5051875">
+					<MediaRefs>
+						<MediaRef Id="318890521"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="128625444" Name="Door_Close" MaxAttenuation="20" DurationType="OneShot" DurationMin="2.3225417" DurationMax="2.3225417">
@@ -444,6 +506,16 @@
 						<MediaRef Id="584325035"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3520216544" Name="ToyBoxEnter" DurationType="OneShot" DurationMin="1.6190208" DurationMax="1.6190208">
+					<MediaRefs>
+						<MediaRef Id="318009736"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2562065866" Name="ToyBoxExit" DurationType="OneShot" DurationMin="2.0329375" DurationMax="2.0329375">
+					<MediaRefs>
+						<MediaRef Id="905954010"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1568083719" Name="TV" MaxAttenuation="16" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="117554140"/>
@@ -553,5 +625,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5F4E1EC8-DB74-0B02-CD4D-5F198B513061}</FileHash>
+	<FileHash>{AAC8CC9C-C25A-7B23-26D7-43DF37556DF3}</FileHash>
 </SoundBanksInfo>

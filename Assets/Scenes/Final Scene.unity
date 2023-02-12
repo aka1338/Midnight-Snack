@@ -629,6 +629,8 @@ GameObject:
   m_Component:
   - component: {fileID: 50522940}
   - component: {fileID: 50522941}
+  - component: {fileID: 50522943}
+  - component: {fileID: 50522942}
   m_Layer: 0
   m_Name: Monster 2 laundry
   m_TagString: Untagged
@@ -703,6 +705,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &50522942
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50522939}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0000009536743}
+  serializedVersion: 2
+  m_Radius: 1.2
+--- !u!114 &50522943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50522939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602ce295d4f602d48978d70a93355ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomID: 3
+  cooldownTime: 2
+  isOneShotEvent: 0
+  noiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1be9f19f637dd7b42b55a2fccad9843c, type: 2}
 --- !u!1 &64982742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1782,6 +1819,8 @@ GameObject:
   m_Component:
   - component: {fileID: 121267229}
   - component: {fileID: 121267230}
+  - component: {fileID: 121267232}
+  - component: {fileID: 121267231}
   m_Layer: 0
   m_Name: Monster 4 Toy
   m_TagString: Untagged
@@ -1856,6 +1895,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &121267231
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121267228}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
+--- !u!114 &121267232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121267228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602ce295d4f602d48978d70a93355ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomID: 7
+  cooldownTime: 2
+  isOneShotEvent: 0
+  noiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 497337015ee88844480b8a7274715de1, type: 2}
 --- !u!1 &125066741
 GameObject:
   m_ObjectHideFlags: 0
@@ -5925,7 +5999,8 @@ MonoBehaviour:
   - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
   - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
   - {fileID: 1141603106, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
-  spriteRender: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  frameRate: 10
 --- !u!1 &496778167
 GameObject:
   m_ObjectHideFlags: 0
@@ -8795,6 +8870,101 @@ Transform:
   m_Father: {fileID: 1751478160}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &793578061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793578062}
+  - component: {fileID: 793578065}
+  - component: {fileID: 793578064}
+  - component: {fileID: 793578063}
+  m_Layer: 0
+  m_Name: CreakyFloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &793578062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793578061}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1431836550}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &793578063
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793578061}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!61 &793578064
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793578061}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &793578065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793578061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602ce295d4f602d48978d70a93355ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomID: 0
+  cooldownTime: 2
+  isOneShotEvent: 0
+  noiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d903bee040ecd974093f53203a2c02c9, type: 2}
 --- !u!1 &811898119
 GameObject:
   m_ObjectHideFlags: 0
@@ -9506,7 +9676,8 @@ MonoBehaviour:
   - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
   - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
   - {fileID: 1141603106, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
-  spriteRender: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  frameRate: 10
 --- !u!1 &862420072
 GameObject:
   m_ObjectHideFlags: 0
@@ -9921,7 +10092,8 @@ MonoBehaviour:
   - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
   - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
   - {fileID: 1141603106, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
-  spriteRender: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  frameRate: 10
 --- !u!1 &901113129
 GameObject:
   m_ObjectHideFlags: 0
@@ -10740,7 +10912,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &945877515
 Transform:
   m_ObjectHideFlags: 0
@@ -11005,6 +11177,101 @@ Transform:
   m_Father: {fileID: 1101553450}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &983700138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 983700139}
+  - component: {fileID: 983700142}
+  - component: {fileID: 983700141}
+  - component: {fileID: 983700140}
+  m_Layer: 0
+  m_Name: CreakyFloor (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &983700139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983700138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 70, y: -29, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1431836550}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &983700140
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983700138}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
+--- !u!61 &983700141
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983700138}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &983700142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983700138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602ce295d4f602d48978d70a93355ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomID: 0
+  cooldownTime: 2
+  isOneShotEvent: 0
+  noiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d903bee040ecd974093f53203a2c02c9, type: 2}
 --- !u!1 &988756975
 GameObject:
   m_ObjectHideFlags: 0
@@ -11199,7 +11466,8 @@ MonoBehaviour:
   - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
   - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
   - {fileID: 1141603106, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
-  spriteRender: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  frameRate: 10
 --- !u!1 &1008178615
 GameObject:
   m_ObjectHideFlags: 0
@@ -12418,7 +12686,8 @@ MonoBehaviour:
   - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
   - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
   - {fileID: 1141603106, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
-  spriteRender: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  frameRate: 10
 --- !u!1 &1146212944
 GameObject:
   m_ObjectHideFlags: 0
@@ -13448,6 +13717,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1212351449}
   - component: {fileID: 1212351450}
+  - component: {fileID: 1212351452}
+  - component: {fileID: 1212351451}
   m_Layer: 0
   m_Name: Monster 3 Toy
   m_TagString: Untagged
@@ -13522,6 +13793,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1212351451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212351448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602ce295d4f602d48978d70a93355ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomID: 5
+  cooldownTime: 2
+  isOneShotEvent: 0
+  noiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 497337015ee88844480b8a7274715de1, type: 2}
+--- !u!58 &1212351452
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212351448}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0000004172325}
+  serializedVersion: 2
+  m_Radius: 1.195
 --- !u!1 &1220913991
 GameObject:
   m_ObjectHideFlags: 0
@@ -14028,7 +14334,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.350914, y: 2.1692908}
+  m_Size: {x: 5.7, y: 2.1692908}
   m_EdgeRadius: 0
 --- !u!212 &1233757416
 SpriteRenderer:
@@ -15430,6 +15736,101 @@ MonoBehaviour:
   isDoorClosed: 1
   mamaInTriggerArea: 0
   id: 1
+--- !u!1 &1373391244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1373391245}
+  - component: {fileID: 1373391248}
+  - component: {fileID: 1373391247}
+  - component: {fileID: 1373391246}
+  m_Layer: 0
+  m_Name: CreakyFloor (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1373391245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373391244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 90, y: -6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1431836550}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1373391246
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373391244}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!61 &1373391247
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373391244}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1373391248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373391244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602ce295d4f602d48978d70a93355ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomID: 0
+  cooldownTime: 2
+  isOneShotEvent: 0
+  noiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d903bee040ecd974093f53203a2c02c9, type: 2}
 --- !u!1 &1378595492
 GameObject:
   m_ObjectHideFlags: 0
@@ -15843,7 +16244,12 @@ Transform:
   m_LocalPosition: {x: -52.177082, y: 6.006358, z: 0.8303168}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 793578062}
+  - {fileID: 1539413295}
+  - {fileID: 1373391245}
+  - {fileID: 983700139}
+  - {fileID: 1616228239}
   m_Father: {fileID: 1078252904}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17234,6 +17640,101 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!1 &1539413294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1539413295}
+  - component: {fileID: 1539413298}
+  - component: {fileID: 1539413297}
+  - component: {fileID: 1539413296}
+  m_Layer: 0
+  m_Name: CreakyFloor (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1539413295
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539413294}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23, y: -8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1431836550}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1539413296
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539413294}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!61 &1539413297
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539413294}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1539413298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539413294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602ce295d4f602d48978d70a93355ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomID: 0
+  cooldownTime: 2
+  isOneShotEvent: 0
+  noiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d903bee040ecd974093f53203a2c02c9, type: 2}
 --- !u!1 &1541216168
 GameObject:
   m_ObjectHideFlags: 0
@@ -18127,7 +18628,8 @@ MonoBehaviour:
   - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
   - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
   - {fileID: 1141603106, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
-  spriteRender: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  frameRate: 10
 --- !u!1 &1602631159
 GameObject:
   m_ObjectHideFlags: 0
@@ -18352,11 +18854,11 @@ MonoBehaviour:
   hidingSpotEnteredSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 9f1a830bb80f3e746970f9e592b4ae24, type: 2}
   hidingSpotExitedSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: f183b09e1f94fa341b412659ef74c587, type: 2}
 --- !u!1 &1611849071
 GameObject:
   m_ObjectHideFlags: 0
@@ -18485,6 +18987,101 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!1 &1616228238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1616228239}
+  - component: {fileID: 1616228242}
+  - component: {fileID: 1616228241}
+  - component: {fileID: 1616228240}
+  m_Layer: 0
+  m_Name: CreakyFloor (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1616228239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616228238}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 59.5, y: -15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1431836550}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1616228240
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616228238}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!61 &1616228241
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616228238}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1616228242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616228238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602ce295d4f602d48978d70a93355ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomID: 0
+  cooldownTime: 2
+  isOneShotEvent: 0
+  noiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d903bee040ecd974093f53203a2c02c9, type: 2}
 --- !u!1 &1629712706
 GameObject:
   m_ObjectHideFlags: 0
@@ -18882,11 +19479,11 @@ MonoBehaviour:
   hidingSpotEnteredSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: dc92f842aa1123a42aadbe62d63f2b93, type: 2}
   hidingSpotExitedSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: dc92f842aa1123a42aadbe62d63f2b93, type: 2}
 --- !u!1 &1700644374
 GameObject:
   m_ObjectHideFlags: 0
@@ -19585,7 +20182,7 @@ MonoBehaviour:
   currentRoom: 0
   spriteRenderer: {fileID: 1734024673}
   frameRate: 1
-  walkSpeed: 10
+  walkSpeed: 5
   nSprites:
   - {fileID: -1389503303, guid: cb5a7394ddca0014da37568c83c19d63, type: 3}
   - {fileID: 2117673729, guid: cb5a7394ddca0014da37568c83c19d63, type: 3}
@@ -20037,6 +20634,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1802444450}
   - component: {fileID: 1802444451}
+  - component: {fileID: 1802444453}
+  - component: {fileID: 1802444452}
   m_Layer: 0
   m_Name: monster spritemiore_0
   m_TagString: Untagged
@@ -20111,6 +20710,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1802444452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802444449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602ce295d4f602d48978d70a93355ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomID: 6
+  cooldownTime: 2
+  isOneShotEvent: 0
+  noiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1be9f19f637dd7b42b55a2fccad9843c, type: 2}
+--- !u!58 &1802444453
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802444449}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.2
 --- !u!1 &1816725292
 GameObject:
   m_ObjectHideFlags: 0
@@ -22371,11 +23005,11 @@ MonoBehaviour:
   hidingSpotEnteredSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 9f1a830bb80f3e746970f9e592b4ae24, type: 2}
   hidingSpotExitedSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 860fff2a75f4cae42a51126f9c788d39, type: 2}
 --- !u!1 &2008180884
 GameObject:
   m_ObjectHideFlags: 0
@@ -22481,7 +23115,8 @@ MonoBehaviour:
   - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
   - {fileID: -489835811, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
   - {fileID: 1141603106, guid: a0b2118cb45fed44e8dfe6e9ba89b53e, type: 3}
-  spriteRender: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  frameRate: 10
 --- !u!1 &2029194604
 GameObject:
   m_ObjectHideFlags: 0
@@ -22991,11 +23626,11 @@ MonoBehaviour:
   hidingSpotEnteredSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 489b0e92986bb8d4fb717524c04d6bf6, type: 2}
   hidingSpotExitedSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 63cdcb23ed3c9794a9c295f3e6f4f40c, type: 2}
 --- !u!1 &2074190842
 GameObject:
   m_ObjectHideFlags: 0
@@ -23176,6 +23811,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2078282611}
   - component: {fileID: 2078282612}
+  - component: {fileID: 2078282614}
+  - component: {fileID: 2078282613}
   m_Layer: 0
   m_Name: Monster 4 Toy
   m_TagString: Untagged
@@ -23250,6 +23887,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2078282613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078282610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602ce295d4f602d48978d70a93355ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomID: 7
+  cooldownTime: 2
+  isOneShotEvent: 0
+  noiseEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1be9f19f637dd7b42b55a2fccad9843c, type: 2}
+--- !u!58 &2078282614
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078282610}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.0000019073486}
+  serializedVersion: 2
+  m_Radius: 1.44
 --- !u!1 &2084215818
 GameObject:
   m_ObjectHideFlags: 0
@@ -23772,11 +24444,11 @@ MonoBehaviour:
   hidingSpotEnteredSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 3488a115c6b80cc4da8466cd18aec8ec, type: 2}
   hidingSpotExitedSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 860fff2a75f4cae42a51126f9c788d39, type: 2}
 --- !u!1 &2129083118
 GameObject:
   m_ObjectHideFlags: 0
