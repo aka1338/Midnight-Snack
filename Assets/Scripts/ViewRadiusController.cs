@@ -98,7 +98,7 @@ public class ViewRadiusController : MonoBehaviour
     {
         if (!GameManager.current.isGameOver)
         {
-            if (collision.gameObject.name == "Mama" && !isDark)
+            if (collision.gameObject.name == "Mama" && !isDark && PlayerController.current.currentRoom == MamaController.current.currentRoom)
             {
                 if (!isHiding)
                 {

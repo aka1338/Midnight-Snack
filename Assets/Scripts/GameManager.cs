@@ -85,14 +85,12 @@ public class GameManager : MonoBehaviour
 
         if (state)
         {
-            Debug.Log("You won!");
             gameWonCanvasGroup.interactable = true;
             gameWonCanvas.gameObject.SetActive(true);
             gameWonCanvasGroup.DOFade(1, 1f).SetEase(Ease.InOutQuad);
         }
         else
         {
-            Debug.Log("You lost!");
             StartCoroutine(PanCameraToMomAndShake());
         }
     }

@@ -18,7 +18,7 @@ public class MamaController : MonoBehaviour
     public TERRAIN currentTerrain;
     public MAMA_STATE mamaState = MAMA_STATE.IDLE;
     public int currentDoorTrigger;
-    public bool mamaFlippedLight = false; 
+    public bool mamaFlippedLight = false;
 
     [Header("Navigation Targets")]
     public GameObject player;
@@ -76,42 +76,49 @@ public class MamaController : MonoBehaviour
     {
         HandleMamaWalkingAnimation();
 
-        // When Mom gets a noise event, she will come into the room the player is on and flip the light on.
-        // She first navigates to the light and flips the light on or off. 
         if (agent.hasPath)
         {
             if (Vector2.Distance(transform.position, currentNavTarget.transform.position) < positionTolerance) // Mama Arrived at Target Location
             {
-
+                if (mamaState == MAMA_STATE.ALERTED && mamaFlippedLight == true) // Player triggered another event! 
+                {
+                    Debug.Log("It's child");
+                    currentNavTarget = PlayerController.current.gameObject;
+                    agent.SetDestination(currentNavTarget.transform.position);
+                }
+                else
                 if (currentNavTarget.name.Contains("Lightswitch")) // Arrived at a lightswitch. Sound event goes here.
                 {
                     if (mamaState == MAMA_STATE.ALERTED && !mamaFlippedLight)
                     {
                         StartCoroutine(PauseAtLightAndTrackPlayer());
-                        mamaFlippedLight = true; 
+                        mamaFlippedLight = true;
+                    } else
+                    {
+                        StartCoroutine(PauseAtLightAndTrackPlayer());
                     }
-                } else 
-
+                }
+                else
                 if (currentNavTarget.name.Contains("Bed") && mamaFlippedLight) // Arrived to bed.
                 {
                     mamaState = MAMA_STATE.IDLE;
                     GameManager.current.SetMamaState(mamaState);
-                    GameEvents.current.MamaTurnLightOff(currentRoom);
                     AkSoundEngine.PostEvent(mamaGetInBedEvent.Id, this.gameObject);
-                    AkSoundEngine.PostEvent(lightSwitchFlipOffEvent.Id, this.gameObject);
-                    mamaFlippedLight = false; 
+                    mamaFlippedLight = false;
+                }
+                else if (currentNavTarget.name.Contains("PlayerController"))
+                {
+                    StartCoroutine(WaitAndReturnToBed());
                 }
 
             }
         }
         else
         {
-            if (currentNavTarget != null)
+            if (mamaFlippedLight)
             {
-                if (currentNavTarget.name.Contains("Player"))
-                {
-                    StartCoroutine(WaitAndReturnToBed());
-                }
+                Debug.Log("It's child bottom");
+                StartCoroutine(WaitAndReturnToBed());
             }
         }
 
@@ -135,7 +142,6 @@ public class MamaController : MonoBehaviour
             spriteRenderer.flipX = false;
         }
     }
-
     private List<Sprite> GetSpriteDirection()
     {
         List<Sprite> selectedSprites = null;
@@ -200,7 +206,6 @@ public class MamaController : MonoBehaviour
         if (collider.gameObject.CompareTag("EntranceHallway"))
         {
             currentRoom = ROOM.ENTRANCE_HALLWAY;
-
         }
         if (collider.gameObject.CompareTag("LaundryRoom"))
         {
@@ -300,7 +305,6 @@ public class MamaController : MonoBehaviour
         // Flip on the light of the room Mama is currently in 
         GameEvents.current.MamaTurnLightOn(currentRoom);
 
-        Debug.Log("Flipping on the light!"); 
         AkSoundEngine.PostEvent(lightSwitchFlipOnEvent.Id, this.gameObject);
 
         mamaState = MAMA_STATE.SEEKING_PLAYER;
@@ -312,6 +316,12 @@ public class MamaController : MonoBehaviour
     IEnumerator WaitAndReturnToBed()
     {
         yield return new WaitForSecondsRealtime(5);
+        GameEvents.current.MamaTurnLightOff(currentRoom);
+        if (mamaFlippedLight)
+        {
+            AkSoundEngine.PostEvent(lightSwitchFlipOffEvent.Id, this.gameObject);
+            mamaFlippedLight = false;  
+        }
         mamaState = MAMA_STATE.RETURNING_TO_BED;
         GameManager.current.SetMamaState(mamaState);
         currentNavTarget = mamaBed;
