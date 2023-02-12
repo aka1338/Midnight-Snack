@@ -47,7 +47,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EDC452FD-86C0-CCC5-9D4F-FAEF174B8576}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2A0FD030-E617-4CE3-8FB8-35FC33D96E3D}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -480,6 +480,45 @@
 						<MediaRef Id="797784940"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3021321841" Name="Mama_Footsteps" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.22730817" DurationMax="1.37">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="3316001432"/>
+							<MediaRefs>
+								<MediaRef Id="95118756"/>
+								<MediaRef Id="273609102"/>
+								<MediaRef Id="560158159"/>
+								<MediaRef Id="805385492"/>
+								<MediaRef Id="1002065778"/>
+								<MediaRef Id="1009247771"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2412606308" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="109493106"/>
+								<MediaRef Id="117734691"/>
+								<MediaRef Id="281478492"/>
+								<MediaRef Id="514119297"/>
+								<MediaRef Id="1028470573"/>
+								<MediaRef Id="1059218504"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2058049674"/>
+							<MediaRefs>
+								<MediaRef Id="297618981"/>
+								<MediaRef Id="603231246"/>
+								<MediaRef Id="672131314"/>
+								<MediaRef Id="721017236"/>
+								<MediaRef Id="773427032"/>
+								<MediaRef Id="829762603"/>
+								<MediaRef Id="956033431"/>
+								<MediaRef Id="1056363622"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="180296869" Name="ShadowMonster" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.5388172" DurationMax="1.5388172">
 					<MediaRefs>
 						<MediaRef Id="758012510"/>
@@ -562,7 +601,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{1F03DAB4-EF43-24D6-6D55-88E6035FE43F}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{D22D5D51-A337-6B94-E0FE-14715A9E2167}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -625,5 +664,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AAC8CC9C-C25A-7B23-26D7-43DF37556DF3}</FileHash>
+	<FileHash>{75287373-7B99-8AEB-B1A4-65AF5BF2A25D}</FileHash>
 </SoundBanksInfo>

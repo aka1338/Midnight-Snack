@@ -169,17 +169,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Mama" ID="{68120470-F06A-4EE5-B31D-DF88FD308DC8}">
-					<ChildrenList>
-						<Action Name="" ID="{F1F92544-2999-4088-8996-580AD14E35AA}" ShortID="473610475">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MS_MomBreathing" ID="{5B15A7E3-41E8-4A97-A05C-B36A5D25FC12}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Misc" ID="{A2AAD936-0A79-4F96-928A-0369040F3B73}" ShortID="600542659">
 					<ChildrenList>
 						<Event Name="Snack" ID="{CCBEC2F8-E90E-4BC6-9C4C-7141C49D72C0}">
@@ -361,6 +350,32 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="MS_Hiding_ToyBox_Exit" ID="{FD5FDA34-A9D1-4B05-850F-330C832EA154}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Mom" ID="{E042CBAC-F2E0-45E6-8666-BE0CA21BB14E}" ShortID="644050352">
+					<ChildrenList>
+						<Event Name="Mama" ID="{68120470-F06A-4EE5-B31D-DF88FD308DC8}">
+							<ChildrenList>
+								<Action Name="" ID="{F1F92544-2999-4088-8996-580AD14E35AA}" ShortID="473610475">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MS_MomBreathing" ID="{5B15A7E3-41E8-4A97-A05C-B36A5D25FC12}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Mama_Footsteps" ID="{EB4CFDAD-A166-428B-9869-0046FEB1A484}">
+							<ChildrenList>
+								<Action Name="" ID="{7E36D364-4BDA-47DB-B299-3DFCCBF51CE8}" ShortID="10890199">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps_Mum" ID="{73D33B52-086D-4E01-8E9F-8BDD5A2D1439}" WorkUnitID="{603E6849-52D8-4AF0-99BA-B2A912DD4BF6}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -10776,7 +10776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &945877515
 Transform:
   m_ObjectHideFlags: 0
@@ -10785,7 +10785,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945877514}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.39914, y: -3.9488833, z: 0}
+  m_LocalPosition: {x: 44.39914, y: -3.81, z: 0}
   m_LocalScale: {x: 106.60175, y: 58.21508, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19344,11 +19344,11 @@ MonoBehaviour:
   hidingSpotEnteredSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: dc92f842aa1123a42aadbe62d63f2b93, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: bd88e669d3a7dbc458ece470509c0665, type: 2}
   hidingSpotExitedSFXEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: dc92f842aa1123a42aadbe62d63f2b93, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 0c333380c4823864c9c60cda273d82b8, type: 2}
 --- !u!1 &1700644374
 GameObject:
   m_ObjectHideFlags: 0
@@ -22414,7 +22414,7 @@ MonoBehaviour:
   footstepsEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 457bee3a0e4ac4c4ebf6d8a94c1fb34a, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: b3662ba34922b4d43a75f42442ada209, type: 2}
   terrainSwitch:
   - idInternal: 0
     valueGuidInternal: 
@@ -23781,7 +23781,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0000019073486}

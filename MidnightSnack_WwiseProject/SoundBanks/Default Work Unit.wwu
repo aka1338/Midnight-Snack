@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{AED6BB70-16D9-44FB-AD68-4FADACE8C13C}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Door_Open" ID="{F7C29F0F-A571-421B-B746-35E39F6E1C22}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Mama_Footsteps" ID="{EB4CFDAD-A166-428B-9869-0046FEB1A484}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Duvet_Awake" ID="{E83E7D00-D9BB-429F-881A-0386144E1301}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Door_Close" ID="{4AEABCAA-2C40-42B7-883F-7AC731081F22}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ToyBoxExit" ID="{65A635F6-05EC-42C3-8578-DDE7E78119F0}" WorkUnitID="{CD606B62-3C10-47D3-AAF0-A02BB964621E}" Origin="Manual" Filter="7"/>
